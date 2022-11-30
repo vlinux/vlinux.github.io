@@ -1,0 +1,1432 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("vueuse-color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}()</script><script>!function(){var t=localStorage.getItem("valaxy-locale")||"zh-CN";document.documentElement.setAttribute("lang",t)}()</script><script type="module" async="" crossorigin="" src="/assets/app.a7fb63da.js"></script><style>@charset "UTF-8";.back-to-top{position:fixed;right:-1.5rem;bottom:1rem;z-index:var(--yun-z-go-up-btn);opacity:0;pointer-events:none;color:var(--va-c-primary);transform:translate(0) rotate(270deg);transition:transform var(--va-transition-duration),opacity var(--va-transition-duration-fast)!important}.progress-circle{transition:.3s stroke-dashoffset;transform:rotate(-90deg);transform-origin:50% 50%}.progress-circle-container{position:absolute}.menu-btn{display:inline-flex;position:fixed;left:.8rem;top:.6rem;line-height:1;z-index:var(--yun-z-menu-btn);cursor:pointer}.sidebar .links{display:flex;justify-content:center}.sidebar .link-item{display:inline-flex}.sidebar .link-item .icon{width:2rem;height:2rem}.links-of-author{display:flex;flex-wrap:wrap;justify-content:center}.links-of-author .icon{width:1.5rem;height:1.5rem}.links-of-author-item{line-height:1;font-size:.9rem}.site-nav{display:flex;justify-content:center;overflow:hidden;line-height:1.5;white-space:nowrap;text-align:center;margin-top:1rem}.site-link-item{display:flex;padding:0 15px;align-items:center;border-left:1px solid var(--va-c-gray);flex-direction:column;color:var(--va-c-text)}.site-link-item:first-child,.site-link-item:last-child{line-height:1;padding:0}.site-link-item:first-child{border-left:none;border-right:1px solid var(--va-c-gray)}.site-link-item:last-child{border-left:1px solid var(--va-c-gray)}.site-link-item:nth-child(2){border:none}.site-link-item .count{color:var(--va-c-text);font-family:var(--va-font-sans);display:block;text-align:center;font-size:1rem}.site-link-item .icon{width:1.5rem;height:1.5rem}.site-link-item .icon:hover{color:var(--va-c-primary-light)}.sidebar-panel{padding:.5rem}.site-author-avatar{display:inline-block;line-height:0;position:relative}.site-author-avatar img{height:96px;width:96px;max-width:100%;margin:0;padding:4px;background-color:#fff;box-shadow:0 0 10px #0003;transition:.4s}.site-author-avatar img:hover{box-shadow:0 0 30px rgba(var(--va-c-primary-rgb),.2)}.site-author-name{margin-top:0;margin-bottom:1rem;line-height:1.5}.site-author-status{position:absolute;height:1.8rem;width:1.8rem;bottom:0;right:0;line-height:1.8rem;border-radius:50%;box-shadow:0 1px 2px #0003;background-color:var(--va-c-bg-light);border:1px solid rgba(255,255,255,.1)}.site-name{color:var(--va-c-text);font-family:var(--va-font-serif);font-weight:900}.site-subtitle{color:var(--va-c-gray);display:block}.site-description{color:var(--va-c-text);font-size:.8rem}.va-bg{position:fixed;width:100%;height:100%;z-index:-1;background-image:var(--va-bg-image);background-size:cover;background-position:center;background-repeat:no-repeat;animation-name:bgFadeIn;animation-duration:2s;opacity:var(--va-bg-img-opacity,1)}@keyframes bgFadeIn{0%{opacity:0}to{opacity:var(--va-bg-img-opacity,1)}}*,:after,:before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}h1,h2,h3,h4{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}strong{font-weight:bolder}code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button{text-transform:none}[type=button],button{-webkit-appearance:button;background-color:transparent;background-image:none}h1,h2,h3,h4,hr,p,pre{margin:0}ul{list-style:none;margin:0;padding:0}button{cursor:pointer}img,svg{display:block;vertical-align:middle}img{max-width:100%;height:auto}body{counter-reset:katexEqnNo mmlEqnNo}html{-webkit-tap-highlight-color:transparent}a{color:var(--va-c-link);font-weight:500}*{outline:0}hr{opacity:.2;margin:1rem}.va-card{background-color:var(--va-c-bg-light)}#app,body,html{margin:0;padding:0;line-height:2}body{background-color:var(--va-c-bg)}.markdown-body code{font-size:.85em}:root{--va-c-text-warning:#544500}.vt-hamburger{display:flex;justify-content:center;align-items:center}.vt-hamburger:hover .vt-hamburger-top{transform:translate(-5.5px)}.vt-hamburger:hover .vt-hamburger-middle{transform:translate(0)}.vt-hamburger:hover .vt-hamburger-bottom{transform:translate(-11px)}.vt-hamburger-container{position:relative;width:22px;height:20px;overflow:hidden}.vt-hamburger-bottom,.vt-hamburger-middle,.vt-hamburger-top{left:0;position:absolute;width:22px;height:2px;background-color:var(--va-c-primary);transition:top .25s,background-color .5s,transform .25s}.vt-hamburger-top{top:0;transform:translate(0)}.vt-hamburger-middle{top:9px;transform:translate(-11px)}.vt-hamburger-bottom{top:18px;transform:translate(-5.5px)}.sidebar{position:fixed;overflow-y:auto;top:0;bottom:0;left:0;width:calc(100vw - 64px);max-width:var(--va-sidebar-width);background-image:var(--yun-sidebar-bg-image);background-color:var(--yun-sidebar-bg-color);background-size:contain;background-repeat:no-repeat;background-position:bottom 1rem center;text-align:center;z-index:var(--yun-z-sidebar);transform:translate(-100%);transition:box-shadow var(--va-transition-duration),background-color var(--va-transition-duration),opacity .25s,transform var(--va-transition-duration) cubic-bezier(.19,1,.22,1)!important}h1:focus .header-anchor,h1:hover .header-anchor,h2:focus .header-anchor,h2:hover .header-anchor,h3:focus .header-anchor,h3:hover .header-anchor{visibility:visible;opacity:1}a.header-anchor{float:left;margin-top:.125em;margin-left:-.87em;padding-right:.23em;font-size:.85em;visibility:hidden;opacity:0;transition:opacity var(--va-transition-duration)}a.header-anchor:before{content:none}a.header-anchor:focus,a.header-anchor:hover{text-decoration:none}:root{--va-sidebar-width:320px;--va-border-width:1px;--va-font-sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;--va-font-mono:Menlo,Monaco,Consolas,"Courier New",monospace;--va-font-serif:"Noto Serif SC",STZhongsong,STKaiti,KaiTi,Roboto,serif;--va-transition-duration-fast:.2s;--va-transition-duration:.4s;--va-transition-duration-slow:.6s;--va-transition:all var(--va-transition-duration-fast) ease-in-out}:root{--va-c-white:#ffffff;--va-c-black:#1a1a1a;--va-c-gray:#8e8e8e;--va-c-danger:#db2828;--va-c-warning:#f2711c;--va-c-text-light-1:#213547;--va-c-text-light-2:rgba(60, 60, 60, .7);--va-c-text-light-3:rgba(60, 60, 60, .33);--va-c-text-light-4:rgba(60, 60, 60, .18);--va-c-text-dark-1:rgba(255, 255, 255, .87);--va-c-text-dark-2:rgba(235, 235, 235, .6);--va-c-text-dark-3:rgba(235, 235, 235, .38);--va-c-text-dark-4:rgba(235, 235, 235, .18);--va-c-primary-light:#359eff;--va-c-primary-lighter:#81c2ff;--va-c-primary-dark:#006bce;--va-c-primary:#0078E7}:root{color-scheme:light;--va-c-brand:#0078E7;--va-border-color:#222;--va-c-bg:white;--va-c-bg-light:white;--va-c-bg-dark:#fafafa;--va-c-bg-soft:#f9f9f9;--va-c-bg-alt:#f9f9f9;--va-c-bg-mute:#f1f1f1;--va-c-text:#333;--va-c-text-light:#555;--va-c-text-lighter:#666;--va-c-text-dark:#111;--va-c-primary-rgb:0,120,231;--va-c-link:var(--va-c-primary-dark);--va-c-divider:rgba(60, 60, 60, .2)}:root{--va-code-line-height:1.7;--va-code-font-size:.875em;--va-code-block-color:var(--va-c-text-dark-1);--va-code-block-bg:#282c34;--va-code-line-highlight-color:rgba(0, 0, 0, .5);--va-code-line-number-color:var(--va-c-text-dark-3);--va-code-copy-code-hover-bg:rgba(255, 255, 255, .05);--va-code-copy-code-active-text:var(--va-c-text-dark-2)}:root{--va-icon-copy:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' class='h-6 w-6' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2'/%3E%3C/svg%3E");--va-icon-copied:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' class='h-6 w-6' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4'/%3E%3C/svg%3E")}.post-title{display:flex;justify-content:center;align-items:center}.yun-main{padding-left:var(--va-sidebar-width);transition:padding-left var(--va-transition-duration);box-sizing:border-box}.yun-icon-btn{cursor:pointer;display:inline-flex;align-items:center;justify-content:center;border:none;width:3rem;height:3rem;border-radius:50%;transition:background-color var(--va-transition-duration)}.yun-icon-btn div{font-size:1.2rem}.yun-icon-btn:hover{background-color:rgba(var(--va-c-primary-rgb),.08)}.yun-icon-btn:active{background-color:rgba(var(--va-c-primary-rgb),.16)}:root{--smc-font-sans:Raleway,-apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;--smc-font-serif:"Songti SC","Noto Serif SC",STZhongsong,STKaiti,KaiTi,Roboto,serif;--smc-font-mono:Menlo,Monaco,Consolas,"Courier New",monospace}:root{--smc-c-primary-light:#4eaaff;--smc-c-primary-lighter:#9bcfff;--smc-c-primary:#0078E7;--smc-theme-name:yun;--smc-line-height:1.8;--smc-c-primary-rgb:0,120,231;--smc-c-text:#24292e;--smc-c-text-light:#555;--smc-c-text-lighter:#666;--smc-header-bottom-color:#eaecef;--smc-border-color:var(--smc-c-primary-light);--smc-code-bg-color:#f6f8fa;--smc-link-color:#005eb4}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:var(--smc-bg-color);color:var(--smc-c-text);font-family:var(--smc-font-sans);font-size:1rem;line-height:var(--smc-line-height);overflow-wrap:break-word}.markdown-body *{box-sizing:border-box}.markdown-body a{background-color:transparent}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body hr{background-color:var(--smc-c-primary,#333);height:2px;margin:1.5rem 0}.markdown-body code,.markdown-body pre{font-family:Source Code Pro,Consolas,Monaco,SFMono-Regular,Ubuntu Mono,Menlo,monospace}.markdown-body code{padding:3px 6px;font-size:.85rem;color:var(--smc-c-text-light);background:var(--smc-code-bg-color);border-radius:3px}.markdown-body pre{margin-top:0;margin-bottom:0;overflow-wrap:normal;padding:1rem;overflow:auto;background-color:var(--smc-code-bg-color);border-radius:3px}.markdown-body pre>code{font-size:.85rem;white-space:pre}.markdown-body pre code{display:block;padding:0;margin:0;overflow:visible;line-height:inherit;word-break:normal;background-color:transparent;border:0}.markdown-body a{color:var(--smc-c-primary);text-decoration:none;border-bottom-color:transparent;transition:all .2s ease-in-out}.markdown-body a:hover{color:var(--smc-link-color);border-bottom:1px solid var(--smc-link-color)}.markdown-body table{width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid var(--smc-c-primary-light,#999)}.markdown-body table thead th{font-weight:600}.markdown-body table>tbody>tr:hover{background-color:rgba(var(--smc-c-primary-rgb),.1)}.markdown-body strong{font-family:var(--smc-font-serif);font-weight:900}.markdown-body p{margin-top:1rem;margin-bottom:1rem;overflow-x:auto;overflow-y:hidden}.markdown-body h1,.markdown-body h2,.markdown-body h3{margin-top:1.5rem;margin-bottom:1rem;font-weight:300;line-height:1.5}.markdown-body h1{font-size:2.5rem;border-bottom:1px solid var(--smc-header-bottom-color)}.markdown-body h2{font-size:2.2rem;border-bottom:1px solid var(--smc-header-bottom-color)}.markdown-body h3{font-size:1.9rem}@media screen and (max-width:768px){.markdown-body h1{font-size:2rem}.markdown-body h2{font-size:1.8rem}.markdown-body h3{font-size:1.6rem}}.markdown-body{--smc-font-family:var(--va-font-sans);--c-toc-link:var(--va-c-text-light)}.markdown-body{word-wrap:break-word}.markdown-body h1,.markdown-body h2,.markdown-body h3{font-family:var(--va-font-serif);font-weight:900}:root{--yun-post-card-max-width:900px;--yun-z-cloud:8;--yun-z-go-down:9;--yun-z-backdrop:9;--yun-z-sidebar:10;--yun-z-fireworks:11;--yun-z-menu-btn:20;--yun-z-go-up-btn:20;--yun-z-search-popup:30;--yun-z-search-btn:31;--va-z-overlay:var(--yun-z-backdrop)}:root{--yun-bg-image:url(https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg);--yun-sidebar-bg-color:var(--va-c-bg-light);--yun-sidebar-bg-image:url(https://cdn.yunyoujun.cn/img/bg/alpha-stars-timing-1.webp)}*,::after,::before{--un-rotate:0;--un-rotate-x:0;--un-rotate-y:0;--un-rotate-z:0;--un-scale-x:1;--un-scale-y:1;--un-scale-z:1;--un-skew-x:0;--un-skew-y:0;--un-translate-x:0;--un-translate-y:0;--un-translate-z:0;--un-scroll-snap-strictness:proximity;--un-border-spacing-x:0;--un-border-spacing-y:0;--un-ring-offset-shadow:0 0 rgba(0,0,0,0);--un-ring-shadow:0 0 rgba(0,0,0,0);--un-shadow:0 0 rgba(0,0,0,0);--un-ring-offset-width:0px;--un-ring-offset-color:#fff;--un-ring-width:0px;--un-ring-color:rgba(147,197,253,0.5)}.i-ri-alipay-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M18.408 16.79c-2.173-.95-3.72-1.646-4.64-2.086c-1.4 1.696-2.872 2.72-5.08 2.72S5 16.064 5.176 14.392c.12-1.096.872-2.888 4.128-2.576c1.72.16 2.504.48 3.912.944c.36-.664.664-1.4.888-2.176H7.88v-.616h3.072V8.864H7.2v-.68h3.752V6.592s.032-.248.312-.248H12.8v1.848h4v.68h-4v1.104h3.264a12.41 12.41 0 0 1-1.32 3.32c.51.182 2.097.676 4.76 1.483a8 8 0 1 0-1.096 2.012zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10zm-3.568-5.632c1.44 0 2.824-.872 3.96-2.352c-1.608-.776-2.944-1.16-4.44-1.16c-1.304 0-1.984.8-2.104 1.416c-.12.616.248 2.096 2.584 2.096z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-archive-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M3 10H2V4.003C2 3.449 2.455 3 2.992 3h18.016A.99.99 0 0 1 22 4.003V10h-1v10.001a.996.996 0 0 1-.993.999H3.993A.996.996 0 0 1 3 20.001V10zm16 0H5v9h14v-9zM4 5v3h16V5H4zm5 7h6v2H9v-2z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-arrow-left-s-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m10.828 12l4.95 4.95l-1.414 1.414L8 12l6.364-6.364l1.414 1.414z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-arrow-right-s-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m13.172 12l-4.95-4.95l1.414-1.414L16 12l-6.364 6.364l-1.414-1.414z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-arrow-up-s-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m12 10.828l-4.95 4.95l-1.414-1.414L12 8l6.364 6.364l-1.414 1.414z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-calendar-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm-2 2H9v2H7V5H4v4h16V5h-3v2h-2V5zm5 6H4v8h16v-8z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-clipboard-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M7 4V2h10v2h3.007c.548 0 .993.445.993.993v16.014a.994.994 0 0 1-.993.993H3.993A.994.994 0 0 1 3 21.007V4.993C3 4.445 3.445 4 3.993 4H7zm0 2H5v14h14V6h-2v2H7V6zm2-2v2h6V4H9z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-cloud-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M17 21H7A6 6 0 0 1 5.008 9.339a7 7 0 1 1 13.984 0A6 6 0 0 1 17 21zm0-12a5 5 0 1 0-9.994.243l.07 1.488l-1.404.494A4.002 4.002 0 0 0 7 19h10a4 4 0 1 0-3.796-5.265l-1.898-.633A6.003 6.003 0 0 1 17 9z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-download-cloud-2-fill{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M13 13v5.585l1.828-1.828l1.415 1.415L12 22.414l-4.243-4.242l1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194a5.5 5.5 0 0 1-.953 10.784L18 17a6 6 0 0 0-11.996-.225L6 17v1.978a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-file-list-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM8 7h8v2H8V7zm0 4h8v2H8v-2zm0 4h8v2H8v-2z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-folder-2-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M12.414 5H21a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2zM20 11H4v8h16v-8zm0-2V7h-8.414l-2-2H4v4h16z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-genderless-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M13 7.066A7.501 7.501 0 0 1 12 22a7.5 7.5 0 0 1-1-14.934V1h2v6.066zM12 20a5.5 5.5 0 1 0 0-11a5.5 5.5 0 0 0 0 11z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-github-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588c-.094-.117.34.427.433.539c.19.227.33.365.44.438c.204.137.587.196 1.15.14c.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292c-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047c.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308c1.477-.933 2.613-1.226 3.422-1.096c.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19c.691.936 1.058 2.045 1.058 3.293c0 3.757-1.674 5.665-4.642 6.392c.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716a1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446l.005-.705c.005-.708.007-1.338.007-1.998c0-.697-.183-1.152-.425-1.36c-.661-.57-.326-1.655.54-1.752c2.967-.333 4.337-1.482 4.337-4.66c0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947c-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66c.865.097 1.201 1.177.544 1.748c-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-heart-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M12.001 4.529a5.998 5.998 0 0 1 8.242.228a6 6 0 0 1 .236 8.236l-8.48 8.492l-8.478-8.492a6 6 0 0 1 8.48-8.464zm6.826 1.641a3.998 3.998 0 0 0-5.49-.153l-1.335 1.198l-1.336-1.197a3.999 3.999 0 0 0-5.494.154a4 4 0 0 0-.192 5.451L12 18.654l7.02-7.03a4 4 0 0 0-.193-5.454z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-home-4-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1zm-6-2h5V9.157l-6-5.454l-6 5.454V19h5v-6h2v6z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-mail-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-money-cny-circle-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm1-7h3v2h-3v2h-2v-2H8v-2h3v-1H8v-2h2.586L8.464 7.879L9.88 6.464L12 8.586l2.121-2.122l1.415 1.415L13.414 10H16v2h-3v1z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-price-tag-3-line=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m10.9 2.1l9.899 1.415l1.414 9.9l-9.192 9.192a1 1 0 0 1-1.414 0l-9.9-9.9a1 1 0 0 1 0-1.414L10.9 2.1zm.707 2.122L3.828 12l8.486 8.485l7.778-7.778l-1.06-7.425l-7.425-1.06zm2.12 6.364a2 2 0 1 1 2.83-2.829a2 2 0 0 1-2.83 2.829z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-qq-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m17.535 12.514l-.696-1.796c0-.021.01-.375.01-.558C16.848 7.088 15.446 4 12 4s-4.848 3.088-4.848 6.16c0 .183.009.537.01.558l-.696 1.796c-.19.515-.38 1.05-.517 1.51c-.657 2.189-.444 3.095-.282 3.115c.348.043 1.354-1.648 1.354-1.648c0 .98.488 2.258 1.542 3.18c-.394.127-.878.32-1.188.557c-.28.214-.245.431-.194.52c.22.385 3.79.245 4.82.125c1.03.12 4.599.26 4.82-.126c.05-.088.085-.305-.194-.519c-.311-.237-.795-.43-1.19-.556c1.055-.923 1.542-2.202 1.542-3.181c0 0 1.007 1.691 1.355 1.648c.162-.02.378-.928-.283-3.116c-.14-.463-.325-.994-.516-1.509zm1.021 8.227c-.373.652-.833.892-1.438 1.057a4.91 4.91 0 0 1-.794.138c-.44.045-.986.065-1.613.064a33.23 33.23 0 0 1-2.71-.116c-.692.065-1.785.114-2.71.116a16.07 16.07 0 0 1-1.614-.064a4.928 4.928 0 0 1-.793-.138c-.605-.164-1.065-.405-1.44-1.059a2.274 2.274 0 0 1-.239-1.652c-.592-.132-1.001-.483-1.279-.911a2.43 2.43 0 0 1-.309-.71a4.028 4.028 0 0 1-.116-1.106c.013-.785.187-1.762.532-2.912c.14-.466.327-1.008.568-1.655l.553-1.43a15.496 15.496 0 0 1-.002-.203C5.152 5.605 7.588 2 12 2c4.413 0 6.848 3.605 6.848 8.16l-.001.203l.553 1.43l.01.026c.225.606.413 1.153.556 1.626c.348 1.15.522 2.129.535 2.916c.007.407-.03.776-.118 1.108c-.066.246-.161.48-.31.708c-.276.427-.684.776-1.277.91c.13.554.055 1.14-.24 1.654z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-speaker-fill{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M4 2h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 18a5 5 0 1 0 0-10a5 5 0 0 0 0 10zm0-12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3zm0 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-train-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m17.2 20l1.8 1.5v.5H5v-.5L6.8 20H5a2 2 0 0 1-2-2V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v11a2 2 0 0 1-2 2h-1.8zM7 5a2 2 0 0 0-2 2v11h14V7a2 2 0 0 0-2-2H7zm5 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4zM6 7h12v4H6V7z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i-ri-translate=""]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M5 15v2a2 2 0 0 0 1.85 1.995L7 19h3v2H7a4 4 0 0 1-4-4v-2h2zm13-5l4.4 11h-2.155l-1.201-3h-4.09l-1.199 3h-2.154L16 10h2zm-1 2.885L15.753 16h2.492L17 12.885zM8 2v2h4v7H8v3H6v-3H2V4h4V2h2zm9 1a4 4 0 0 1 4 4v2h-2V7a2 2 0 0 0-2-2h-3V3h3zM6 6H4v3h2V6zm4 0H8v3h2V6z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-wechat-2-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M8.667 11.511a1.276 1.276 0 0 1-1.285-1.285c0-.718.567-1.286 1.285-1.286c.717 0 1.285.568 1.285 1.286c0 .717-.568 1.285-1.285 1.285zm6.666 0a1.276 1.276 0 0 1-1.285-1.285c0-.718.568-1.286 1.285-1.286c.718 0 1.285.568 1.285 1.286c0 .717-.567 1.285-1.285 1.285zm-8.51 7.704l.715-.436a4 4 0 0 1 2.705-.536c.212.033.386.059.52.076c.406.054.82.081 1.237.081c4.42 0 7.9-3.022 7.9-6.6S16.42 5.2 12 5.2s-7.9 3.022-7.9 6.6c0 1.366.5 2.673 1.432 3.781c.048.057.12.137.214.235a4 4 0 0 1 1.101 3.102l-.025.297zm-.63 2.727a1 1 0 0 1-1.527-.93l.188-2.26a2 2 0 0 0-.55-1.551A6.993 6.993 0 0 1 4 16.868c-1.194-1.421-1.9-3.173-1.9-5.068c0-4.75 4.432-8.6 9.9-8.6s9.9 3.85 9.9 8.6s-4.432 8.6-9.9 8.6c-.51 0-1.01-.033-1.499-.098a23.61 23.61 0 0 1-.569-.084a2 2 0 0 0-1.353.268l-2.387 1.456z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-wechat-pay-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='m19.145 8.993l-9.799 5.608l-.07.046a.646.646 0 0 1-.3.068a.655.655 0 0 1-.58-.344l-.046-.092l-1.83-3.95c-.024-.046-.024-.092-.024-.138c0-.184.139-.321.324-.321c.07 0 .14.023.209.069l2.155 1.515c.162.092.348.161.556.161a.937.937 0 0 0 .348-.069l8.275-3.648C16.934 6.273 14.634 5.2 12 5.2c-4.42 0-7.9 3.022-7.9 6.6c0 1.366.5 2.673 1.432 3.781c.048.057.12.137.214.235a4 4 0 0 1 1.101 3.102l-.025.297l.716-.436a4 4 0 0 1 2.705-.536c.212.033.386.059.52.076c.406.054.82.081 1.237.081c4.42 0 7.9-3.022 7.9-6.6c0-.996-.27-1.95-.755-2.807zM6.192 21.943a1 1 0 0 1-1.526-.932l.188-2.259a2 2 0 0 0-.55-1.551A6.993 6.993 0 0 1 4 16.868c-1.194-1.421-1.9-3.173-1.9-5.068c0-4.75 4.432-8.6 9.9-8.6s9.9 3.85 9.9 8.6s-4.432 8.6-9.9 8.6c-.51 0-1.01-.033-1.499-.098a23.61 23.61 0 0 1-.569-.084a2 2 0 0 0-1.353.268l-2.387 1.456z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.i-ri-women-line{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M11 15.934A7.501 7.501 0 0 1 12 1a7.5 7.5 0 0 1 1 14.934V18h5v2h-5v4h-2v-4H6v-2h5v-2.066zM12 14a5.5 5.5 0 1 0 0-11a5.5 5.5 0 0 0 0 11z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}[i~=ri-sun-line]{--un-icon:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636L5.636 7.05L3.515 4.93zM16.95 18.364l1.414-1.414l2.121 2.121l-1.414 1.414l-2.121-2.121zm2.121-14.85l1.414 1.415l-2.121 2.121l-1.414-1.414l2.121-2.121zM5.636 16.95l1.414 1.414l-2.121 2.121l-1.414-1.414l2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z'/%3E%3C/svg%3E");mask:var(--un-icon) no-repeat;mask-size:100% 100%;-webkit-mask:var(--un-icon) no-repeat;-webkit-mask-size:100% 100%;background-color:currentColor;width:1.2em;height:1.2em}.yun-card{margin:auto;--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgba(0,0,0,0.1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgba(0,0,0,0.1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow);transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms;transition-duration:var(--va-transition-duration)}.va-card{--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgba(0,0,0,0.1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgba(0,0,0,0.1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.va-card:hover,.yun-card:hover{--un-shadow:var(--un-shadow-inset) 0 10px 15px -3px var(--un-shadow-color, rgba(0,0,0,0.1)),var(--un-shadow-inset) 0 4px 6px -4px var(--un-shadow-color, rgba(0,0,0,0.1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}@media (max-width:767.9px){.yun-main{padding-left:0}}.fixed{position:fixed}.relative{position:relative}[bottom~="\31 9"]{bottom:4.75rem}[right~="\32 "]{right:.5rem}.z-1{z-index:1}.z-350{z-index:350}[m~="\30 "]{margin:0}[m~="\32 "]{margin:.5rem}[m~=y-4]{margin-top:1rem;margin-bottom:1rem}.my-1{margin-top:.25rem;margin-bottom:.25rem}[m~=x-2]{margin-left:.5rem;margin-right:.5rem}[m~=y-2]{margin-top:.5rem;margin-bottom:.5rem}[m~=t-4]{margin-top:1rem}[mt-6=""],[m~=t-6]{margin-top:1.5rem}[m~=b-2]{margin-bottom:.5rem}[m~=l-1]{margin-left:.25rem}[m~=l-4]{margin-left:1rem}.block{display:block}.inline-block{display:inline-block}[h~="\38 "]{height:2rem}[w~="\38 "]{width:2rem}[w~=full]{width:100%}.flex,[flex~="\~"]{display:flex}.inline-flex{display:inline-flex}.flex-grow,[flex~=grow]{flex-grow:1}.flex-col,[flex~=col]{flex-direction:column}.transform{transform:translateX(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.animate-iteration-1{animation-iteration-count:1}.items-center{align-items:center}.justify-center{justify-content:center}.justify-around{justify-content:space-around}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}[border~="\~"]{border-width:1px;border-style:solid}[border~=rounded]{border-radius:.25rem}.rounded-full{border-radius:9999px}[fill~=none]{fill:none}[stroke-width~="\32 "]{stroke-width:2px}.p-4{padding:1rem}[p~="\31 "]{padding:.25rem}[p~="\32 "]{padding:.5rem}[p~=x-4]{padding-left:1rem;padding-right:1rem}[p~=b-8]{padding-bottom:2rem}[p~=l-4]{padding-left:1rem}[text~=center]{text-align:center}[text~="\32 xl"]{font-size:1.5rem;line-height:2rem}[text-xl=""],[text~=xl]{font-size:1.25rem;line-height:1.75rem}[text~=sm]{font-size:.875rem;line-height:1.25rem}[text~=xs]{font-size:.75rem;line-height:1rem}[font~=black]{font-weight:900}.text-\$va-c-text-light{color:var(--va-c-text-light)}[text~=red-400]{--un-text-opacity:1;color:rgba(248,113,113,var(--un-text-opacity))}[opacity~="\37 5"]{opacity:.75}.hover\:shadow-md:hover{--un-shadow:var(--un-shadow-inset) 0 4px 6px -1px var(--un-shadow-color, rgba(0,0,0,0.1)),var(--un-shadow-inset) 0 2px 4px -2px var(--un-shadow-color, rgba(0,0,0,0.1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.shadow{--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgba(0,0,0,0.1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgba(0,0,0,0.1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:150ms}[font~=serif]{font-family:var(--va-font-serif)}@media (max-width:767.9px){.lt-md\:ml-0{margin-left:0}[p~="lt-md\:0"]{padding:0}}@media (min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:hidden{display:none}.md\:translate-x-0{--un-translate-x:0rem;transform:translateX(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}}@media (min-width:1024px){.lg\:px-12{padding-left:3rem;padding-right:3rem}}@media (min-width:1280px){.xl\:hidden{display:none}.xl\:px-16{padding-left:4rem;padding-right:4rem}}.post-copyright{font-size:.9rem;padding:.5rem 1rem;border-left:4px solid #ff5252;background-color:var(--va-c-bg-dark);list-style:none;word-break:break-all;position:relative;overflow:hidden}.post-copyright:after{pointer-events:none;position:absolute;color:#fff;background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'%3E%3Cpath fill='gray' d='M245.8 214.9l-33.2 17.3c-9.4-19.6-25.2-20-27.4-20-22.2 0-33.3 14.6-33.3 43.9 0 23.5 9.2 43.8 33.3 43.8 14.4 0 24.6-7 30.5-21.3l30.6 15.5a73.2 73.2 0 01-65.1 39c-22.6 0-74-10.3-74-77 0-58.7 43-77 72.6-77 30.8-.1 52.7 11.9 66 35.8zm143 0l-32.7 17.3c-9.5-19.8-25.7-20-27.9-20-22.1 0-33.2 14.6-33.2 43.9 0 23.5 9.2 43.8 33.2 43.8 14.5 0 24.7-7 30.5-21.3l31 15.5c-2 3.8-21.3 39-65 39-22.7 0-74-9.9-74-77 0-58.7 43-77 72.6-77C354 179 376 191 389 214.8zM247.7 8C104.7 8 0 123 0 256c0 138.4 113.6 248 247.6 248C377.5 504 496 403 496 256 496 118 389.4 8 247.6 8zm.8 450.8c-112.5 0-203.7-93-203.7-202.8 0-105.5 85.5-203.3 203.8-203.3A201.7 201.7 0 01451.3 256c0 121.7-99.7 202.9-202.9 202.9z'/%3E%3C/svg%3E");content:" ";height:10rem;width:10rem;right:-2rem;top:-2rem;opacity:.1}.sponsor-button{background-color:#ffffff1a}.sponsor-button div{transform:scale(1.1);transition:transform var(--va-transition-duration) ease-in-out}.sponsor-button:hover{background-color:#ffffffe6}.sponsor-button:hover div{transform:scale(1.2)}.qrcode-container{overflow:hidden;height:0;transition:height var(--va-transition-duration) ease-in-out}.sponsor-method-img{width:12rem;max-width:90%;aspect-ratio:1}.va-toc[data-v-928b99a5]{text-align:left}.content[data-v-928b99a5]{position:relative;padding-left:16px;font-size:14px;text-align:left}.outline-marker[data-v-928b99a5]{position:absolute;top:32px;left:-2px;z-index:0;opacity:0;width:4px;height:18px;background-color:var(--va-c-brand);transition:top .25s cubic-bezier(0,1,.5,1),background-color .5s,opacity .25s;border-top-right-radius:2px;border-bottom-right-radius:2px}.outline-title[data-v-928b99a5]{letter-spacing:.4px;line-height:28px;font-size:14px;font-weight:600}.visually-hidden[data-v-928b99a5]{position:absolute;width:1px;height:1px;white-space:nowrap;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden}.aside{position:fixed;right:0;top:0;bottom:0;min-width:var(--va-sidebar-width);transform:translate(100%);transition:box-shadow var(--va-transition-duration),background-color var(--va-transition-duration),opacity .25s,transform var(--va-transition-duration) cubic-bezier(.19,1,.22,1)}.aside-container{position:sticky;top:0;height:100vh}@media screen and (min-width:1280px){.aside{transform:translate(0)}}.toc-btn{color:var(--va-c-primary);background-color:#fff}.post-nav{display:flex;justify-content:space-between;align-items:center}.post-nav-item{display:inline-flex;justify-content:center;align-items:center;color:var(--va-c-primary);outline:0;font-size:1.5rem;font-weight:700;text-transform:uppercase;height:3rem;transition:.4s}.post-nav-item:hover{background-color:rgba(var(--va-c-primary-rgb),.1);box-shadow:0 0 15px #0000001a}.post-nav-prev{padding:0 .6rem 0 .1rem}.post-nav-next{padding:0 .1rem 0 .6rem}.post-nav-next,.post-nav-prev{display:inline-flex;align-items:center;height:3rem;font-size:1rem}.post-nav-next .title,.post-nav-prev .title{overflow:hidden;max-width:10rem}.post-nav-next .icon,.post-nav-prev .icon{width:1.2rem;height:1.2rem}@media screen and (min-width:1024px){.post-nav-next .title,.post-nav-prev .title{max-width:18rem}}@media screen and (min-width:1280px){.content{max-width:calc(100vw - 2 * var(--va-sidebar-width) - 1rem - 8px)}}</style><link rel="preload" href="/assets/index.5e999eb6.css" as="style"><link rel="modulepreload" crossorigin="" href="/assets/post.4200530b.js"><link rel="preload" href="/assets/post.1d1be697.css" as="style"><link rel="modulepreload" crossorigin="" href="/assets/ELK日志收集系统概括.731f52ef.js"><link rel="modulepreload" crossorigin="" href="/assets/ValaxyMain.vue_vue_type_style_index_0_lang.af4b7254.js"><link rel="preload" href="/assets/ValaxyMain.d58abc01.css" as="style"><title>运维之境</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#ffffff"><meta name="generator" content="Valaxy 0.11.4"><meta name="description" content="那你终将成为别人的一条裤衩"><meta property="og:description" content="那你终将成为别人的一条裤衩"><meta property="og:locale" content="zh-CN"><meta property="og:site:name" content="运维之境"><meta property="og:title" content="ELK日志收集系统概括"><meta property="og:image" content="/favicon.svg"><meta property="og:url" content="https://www.vlinux.cn/"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_AMS-Regular.0cdd387c.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Caligraphic-Bold.de7701e4.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Caligraphic-Regular.5d53e70a.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Fraktur-Bold.74444efd.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Fraktur-Regular.51814d27.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Main-Bold.0f60d1b8.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Main-BoldItalic.99cd42a3.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Main-Italic.97479ca6.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Main-Regular.c2342cd8.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Math-BoldItalic.dc47344d.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Math-Italic.7af58c5e.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_SansSerif-Bold.e99ae511.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_SansSerif-Italic.00b26ac8.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_SansSerif-Regular.68e8c73e.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Script-Regular.036d4e95.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Size1-Regular.6b47c401.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Size2-Regular.d04c5421.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="data:font/woff2;base64,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"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Size4-Regular.a4af7d41.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/assets/KaTeX_Typewriter-Regular.71d517d6.woff2"></head><body><div id="app" data-server-rendered="true"><!--[--><!--[--><!--[--><div class="va-bg" style="background-image:url(https://cdn.yunyoujun.cn/img/bg/stars-timing-0-blur-30px.jpg)"></div><!--]--><!----><!--]--><!--[--><!--]--><!----><!--[--><!--[--><!----><button type="button" class="vt-hamburger menu-btn sidebar-toggle yun-icon-btn md:hidden" aria-label="mobile navigation" aria-expanded="false"><span class="vt-hamburger-container"><span class="vt-hamburger-top"></span><span class="vt-hamburger-middle"></span><span class="vt-hamburger-bottom"></span></span></button><aside class="md:translate-x-0 va-card transition sidebar"><!--[--><!--[--><!--[--><!----><div class=""><!--[--><div class="sidebar-panel"><div class="site-info" m="t-6"><a href="/about" class="site-author-avatar"><img class="rounded-full" src="https://cos.vlinux.cn/www-vlinux-cn-blog-img/user.jpg" alt="avatar"><span class="site-author-status">🌌</span></a><div class="site-author-name"><a href="/about" class="">卷饼</a></div><a href="/about/site" class="site-name">运维之境</a><h4 class="site-subtitle block" text="xs">如果你太在意别人的话</h4><div class="site-description my-1">那你终将成为别人的一条裤衩</div></div><nav class="site-nav" text-xl="" mt-6=""><a href="/" class="site-link-item yun-icon-btn" title="首页"><div i-ri-home-4-line=""></div></a><a href="/archives/" class="site-link-item" title="归档"><div class="icon" i-ri-archive-line=""></div><span class="count">85</span></a><a href="/categories/" class="site-link-item" title="分类"><div class="icon" i-ri-folder-2-line=""></div><span class="count">16</span></a><a href="/tags/" class="site-link-item" title="标签"><div class="icon" i-ri-price-tag-3-line=""></div><span class="count">115</span></a><a href="/about" class="site-link-item yun-icon-btn" title="关于"><div class="i-ri-clipboard-line"></div></a></nav><hr m="t-4 b-2"><div class="links-of-author"><!--[--><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=38867033&amp;site=qq&amp;menu=yes&amp;jumpflag=1" title="QQ 38867033" target="_blank" style="color:#12b7f5"><div class="i-ri-qq-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://github.com/vlinux" title="GitHub" target="_blank" style="color:#6e5494"><div class="i-ri-github-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://repo.vlinux.cn/" title="杂物堆 Repo" target="_blank" style="color:#08c"><div class="i-ri-download-cloud-2-fill icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG18.jpeg" title="微信公众号" target="_blank" style="color:#1aad19"><div class="i-ri-wechat-2-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://music.kococ.cn/" title="Music" target="_blank" style="color:#e6162d"><div class="i-ri-speaker-fill icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="mailto:ilinux@88.com" title="E-Mail" target="_blank" style="color:#8e71c1"><div class="i-ri-mail-line icon"></div></a><a class="links-of-author-item yun-icon-btn" rel="noopener" href="https://travellings.link" title="Travelling" target="_blank" style="color:var(--va-c-text)"><div class="i-ri-train-line icon"></div></a><!--]--></div><hr m="y-2"><div class="links"><!--[--><a class="link-item yun-icon-btn" title="我的小伙伴们" style="color:#1e90ff" href="https://www.vlinux.cn/links/" target="_blank"><!--[--><div class="i-ri-genderless-line icon"></div><!--]--><!----></a><a href="/bill" class="link-item yun-icon-btn" showexternalicon="false" title="我的小账单" style="color:gold"><!--[--><div class="i-ri-money-cny-circle-line icon"></div><!--]--></a><a class="link-item yun-icon-btn" title="喜欢的女孩子" style="color:#ff69b4" href="https://www.vlinux.cn/girls/" target="_blank"><!--[--><div class="i-ri-women-line icon"></div><!--]--><!----></a><!--]--></div><br></div><div><button class="yun-icon-btn" title="切换深色模式" style="color:#f1cb64"><div i="ri-sun-line dark:ri-moon-line"></div></button><button class="yun-icon-btn" title="切换语言" style="color:var(--va-c-text)"><div i-ri-translate="" class="transition transform"></div></button></div><!--]--></div><!--]--><!--]--><!--]--></aside><!--]--><main class="yun-main lt-md:ml-0" flex="~"><div w="full" flex="~"><!--[--><div class="content" flex="~ col grow" w="full" p="l-4 lt-md:0"><div class="yun-card relative" m="0" style=""><!----><!----><!--[--><!--[--><header class="post-header" m="t-4"><h1 class="post-title" p="2" text="2xl center" font="serif black" style=""><!----><span>ELK日志收集系统概括</span></h1></header><!--]--><!--[--><!--[--><!--[--><!--[--><!----><!----><div class="post-meta justify-center" flex="~" text="sm"><div class="post-time flex items-center"><div class="inline-block" i-ri-calendar-line=""></div><time m="l-1" title="发表于">2020-03-11</time><!----></div></div><!--]--><!--]--><!--]--><!--]--><div p="x-4 b-8" class="sm:px-6 lg:px-12 xl:px-16" w="full"><!--[--><article class="markdown-body"><!--[--><!--[--><table><thead><tr><th>ELK收集日志</th></tr></thead><tbody><tr><td><strong>作者：Andu</strong> <strong>2019/6/30</strong></td></tr><tr><td>精华文章</td></tr><tr><td></td></tr></tbody></table><h1 id="第1章-elk介绍" tabindex="-1">第1章 ELK介绍 <a class="header-anchor" href="#第1章-elk介绍" aria-hidden="true">#</a></h1><p>没有日志收集平台的时候如何分析日志？什么是ELK/EFLK? ELK的数据流转流程?</p><p>官方演示地址：</p><p><a href="https://demo.elastic.co/" target="_blank" rel="noreferrer">https://demo.elastic.co/</a></p><h1 id="第2章-日志收集分类" tabindex="-1">第2章 日志收集分类 <a class="header-anchor" href="#第2章-日志收集分类" aria-hidden="true">#</a></h1><p>代理层：nginx,haproxy</p><p>web层：nginx,tomcat</p><p>数据库层：mysql,redis,mongo,elasticsearch</p><p>操作系统层：source,message</p><h1 id="第3章-安装部署elk" tabindex="-1">第3章 安装部署ELK <a class="header-anchor" href="#第3章-安装部署elk" aria-hidden="true">#</a></h1><h2 id="_3-1-官方地址" tabindex="-1">3.1 官方地址 <a class="header-anchor" href="#_3-1-官方地址" aria-hidden="true">#</a></h2><p><a href="https://www.elastic.co/guide/index.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/index.html</a></p><h2 id="_3-2-安装配置java" tabindex="-1">3.2 安装配置java <a class="header-anchor" href="#_3-2-安装配置java" aria-hidden="true">#</a></h2><pre><code>[root@Andu ~]# yum install java-1.8.0-openjdk.x86_64 -y[[A1\]](#_msocom_1) 
+
+[root@Andu ~]# java -version 
+
+openjdk version "1.8.0_212"
+
+OpenJDK Runtime Environment (build 1.8.0_212-b04)
+
+OpenJDK 64-Bit Server VM (build 25.212-b04, mixed mode)
+</code></pre><h2 id="_3-3-更新时间" tabindex="-1">3.3 更新时间 <a class="header-anchor" href="#_3-3-更新时间" aria-hidden="true">#</a></h2><pre><code>yum install ntpdate -y
+
+ntpdate time1.aliyun.com[[A2\]](#_msocom_2) 
+</code></pre><h2 id="_3-4-安装配置elasticsearch" tabindex="-1">3.4 安装配置elasticsearch <a class="header-anchor" href="#_3-4-安装配置elasticsearch" aria-hidden="true">#</a></h2><pre><code>[root@Andu ~]# mkdir /data/soft/ -p
+
+[root@Andu ~]# cd /data/soft/
+
+[root@Andu soft]# rz
+
+[root@Andu soft]# ll
+
+总用量 506120
+
+-rw-r--r-- 1 root root 114059630 2月 25 11:09 elasticsearch-6.6.0.rpm
+
+-rw-r--r-- 1 root root 36581177 4月 27 12:29 elasticsearch-head.tar.gz
+
+-rw-r--r-- 1 root root 11790119 2月 25 11:08 filebeat-6.6.0-x86_64.rpm
+
+-rw-r--r-- 1 root root 185123116 2月 25 11:11 kibana-6.6.0-x86_64.rpm
+
+-rw-r--r-- 1 root root 170703770 2月 25 11:38 logstash-6.6.0.rpm
+
+[root@Andu soft]# rpm -ivh elasticsearch-6.6.0.rpm 
+
+警告：elasticsearch-6.6.0.rpm: 头V4 RSA/SHA512 Signature, 密钥 ID d88e42b4: NOKEY
+
+准备中...             ################################# [100%]
+
+Creating elasticsearch group... OK
+
+Creating elasticsearch user... OK
+
+正在升级/安装...
+
+  1:elasticsearch-0:6.6.0-1     ################################# [100%]
+
+\### NOT starting on installation, please execute the following statements to configure elasticsearch service to start automatically using systemd
+
+ sudo systemctl daemon-reload
+
+ sudo systemctl enable elasticsearch.service
+
+\### You can start elasticsearch service by executing
+
+ sudo systemctl start elasticsearch.serviceCreated elasticsearch keystore in /etc/elasticsearch
+</code></pre><h3 id="_3-4-1-相关配置目录及配置文件" tabindex="-1">3.4.1 相关配置目录及配置文件 <a class="header-anchor" href="#_3-4-1-相关配置目录及配置文件" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# rpm -qc elasticsearch 
+
+/etc/elasticsearch/elasticsearch.yml
+
+/etc/elasticsearch/jvm.options
+
+/etc/elasticsearch/log4j2.properties
+
+/etc/elasticsearch/role_mapping.yml
+
+/etc/elasticsearch/roles.yml
+
+/etc/elasticsearch/users
+
+/etc/elasticsearch/users_roles
+
+/etc/init.d/elasticsearch
+
+/etc/sysconfig/elasticsearch
+
+/usr/lib/sysctl.d/elasticsearch.conf
+
+/usr/lib/systemd/system/elasticsearch.service
+</code></pre><h3 id="_3-4-2-es配置文件解读" tabindex="-1">3.4.2 ES配置文件解读 <a class="header-anchor" href="#_3-4-2-es配置文件解读" aria-hidden="true">#</a></h3><pre><code>[root@Andu soft]# vim /etc/elasticsearch/elasticsearch.yml
+
+[root@Andu soft]# grep ^[a-z] /etc/elasticsearch/elasticsearch.yml 
+
+node.name: node-1
+
+path.data: /var/lib/elasticsearch[[A3\]](#_msocom_3) 
+
+path.logs: /var/log/elasticsearch[[A4\]](#_msocom_4) 
+
+bootstrap.memory_lock: true[[A5\]](#_msocom_5) 
+
+network.host: 192.168.10.66,127.0.0.1[[A6\]](#_msocom_6) 
+
+http.port: 9200[[A7\]](#_msocom_7) 
+
+[root@Andu soft]# systemctl daemon-reload
+
+[root@Andu soft]# systemctl enable elasticsearch.service
+
+Created symlink from /etc/systemd/system/multi-user.target.wants/elasticsearch.service to /usr/lib/systemd/system/elasticsearch.service.
+
+[root@Andu soft]# systemctl start elasticsearch.service
+</code></pre><h3 id="_3-4-3-启动失败报错" tabindex="-1">3.4.3 启动失败报错 <a class="header-anchor" href="#_3-4-3-启动失败报错" aria-hidden="true">#</a></h3><p>此时启动会发现失败，原因是内存锁定失败</p><pre><code>[2019-05-12T14:39:58,764][ERROR][o.e.b.Bootstrap     ] [node-1] node validation exception
+
+[1] bootstrap checks failed
+
+[1]: memory locking requested for elasticsearch process but memory is not locked
+</code></pre><h3 id="_3-4-4-锁定内存失败解决方案" tabindex="-1">3.4.4 锁定内存失败解决方案 <a class="header-anchor" href="#_3-4-4-锁定内存失败解决方案" aria-hidden="true">#</a></h3><p>官方解决方案</p><pre><code>https://www.elastic.co/guide/en/elasticsearch/reference/6.4/setup-configuration-memory.html
+
+https://www.elastic.co/guide/en/elasticsearch/reference/6.4/setting-system-settings.html#sysconfig
+
+\### 修改启动配置文件
+
+vim /usr/lib/systemd/system/elasticsearch.service
+
+
+
+\### 增加如下参数
+
+[Service]
+
+LimitMEMLOCK=infinity
+
+
+
+\### 重新启动
+
+systemctl daemon-reload
+
+
+
+systemctl restart elasticsearch
+</code></pre><h3 id="_3-4-5-检查启动是否成功" tabindex="-1">3.4.5 检查启动是否成功 <a class="header-anchor" href="#_3-4-5-检查启动是否成功" aria-hidden="true">#</a></h3><pre><code>  [root@Andu ~]# netstat -lntup|grep 9200
+    
+    tcp6    0   0 192.168.10.66:9200   :::*          LISTEN   15824/java     
+    
+    tcp6    0   0 127.0.0.1:9200     :::*          LISTEN   15824/java
+    
+    [root@Andu ~]# curl localhost:9200   
+    
+    {
+    
+     "name" : "node-1",
+    
+     "cluster_name" : "elasticsearch",
+    
+     "cluster_uuid" : "As5ZlEQ2Syq0ktLL0hg5XA",
+    
+     "version" : {
+    
+      "number" : "6.6.0",
+    
+      "build_flavor" : "default",
+    
+      "build_type" : "rpm",
+    
+      "build_hash" : "a9861f4",
+    
+      "build_date" : "2019-01-24T11:27:09.439740Z",
+    
+      "build_snapshot" : false,
+    
+      "lucene_version" : "7.6.0",
+    
+      "minimum_wire_compatibility_version" : "5.6.0",
+    
+      "minimum_index_compatibility_version" : "5.0.0"
+    
+     },
+    
+     "tagline" : "You Know, for Search"
+    
+    }
+</code></pre><h2 id="_3-5-服务模式安装配置es-head插件" tabindex="-1">3.5 服务模式安装配置es-head插件 <a class="header-anchor" href="#_3-5-服务模式安装配置es-head插件" aria-hidden="true">#</a></h2><h3 id="_3-5-1-插件官方地址" tabindex="-1">3.5.1 插件官方地址 <a class="header-anchor" href="#_3-5-1-插件官方地址" aria-hidden="true">#</a></h3><p><a href="https://github.com/mobz/elasticsearch-head" target="_blank" rel="noreferrer">https://github.com/mobz/elasticsearch-head</a></p><h3 id="_3-5-2-使用docker部署elasticsearch-head" tabindex="-1">3.5.2 使用docker部署elasticsearch-head <a class="header-anchor" href="#_3-5-2-使用docker部署elasticsearch-head" aria-hidden="true">#</a></h3><pre><code>docker pull alivv/elasticsearch-head
+
+docker run --name es-head -p 9100:9100 -dit alivv/elasticsearch-head
+</code></pre><h3 id="_3-5-3-使用nodejs编译安装" tabindex="-1">3.5.3 使用nodejs编译安装 <a class="header-anchor" href="#_3-5-3-使用nodejs编译安装" aria-hidden="true">#</a></h3><p>官网地址</p><p><a href="https://nodejs.org/en/download/package-manager/" target="_blank" rel="noreferrer">https://nodejs.org/en/download/package-manager/</a></p><p><a href="https://nodejs.org/dist/latest-v10.x/" target="_blank" rel="noreferrer">https://nodejs.org/dist/latest-v10.x/</a></p><p><a href="http://npm.taobao.org" target="_blank" rel="noreferrer">http://npm.taobao.org</a></p><p>下载安装</p><pre><code>yum install nodejs npm openssl screen -y
+
+
+
+node -v
+
+npm -v
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+cd /opt/             
+
+git clone git://github.com/mobz/elasticsearch-head.git
+
+cd elasticsearch-head/
+
+
+
+cnpm install
+
+screen -S es-head
+
+cnpm run start
+
+Ctrl+A+D
+</code></pre><h3 id="_3-5-4-修改es配置文件支持跨域" tabindex="-1">3.5.4 修改ES配置文件支持跨域 <a class="header-anchor" href="#_3-5-4-修改es配置文件支持跨域" aria-hidden="true">#</a></h3><p>官方说明：</p><p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.6/modules-http.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/elasticsearch/reference/6.6/modules-http.html</a></p><p>配置参数：</p><pre><code>http.cors.enabled: true 
+
+http.cors.allow-origin: "*"
+</code></pre><h3 id="_3-5-5-网页访问" tabindex="-1">3.5.5 网页访问 <a class="header-anchor" href="#_3-5-5-网页访问" aria-hidden="true">#</a></h3><pre><code>IP地址:9200/9100
+</code></pre><h2 id="_3-6-谷歌浏览器插件形式安装es-head" tabindex="-1">3.6 谷歌浏览器插件形式安装es-head <a class="header-anchor" href="#_3-6-谷歌浏览器插件形式安装es-head" aria-hidden="true">#</a></h2><p>[tip type="info"] 使用服务模式安装es-head插件过程比较繁琐，网络不好的时候还会经常卡住，幸运的是es-head插件官方还提供了另外一种更简便的方式，就是google chrome的插件 [/tip]</p><p>[collapse title="优势"] 1.免安装，直接下载插件安装在浏览器即可</p><p>2.只要浏览器和服务器可以通信就能使用</p><p>[/collapse]</p><h2 id="_3-7-安装配置kibana" tabindex="-1">3.7 安装配置kibana <a class="header-anchor" href="#_3-7-安装配置kibana" aria-hidden="true">#</a></h2><h3 id="_3-7-1-安装配置kibana" tabindex="-1">3.7.1 安装配置kibana <a class="header-anchor" href="#_3-7-1-安装配置kibana" aria-hidden="true">#</a></h3><pre><code>[root@Andu soft]# rpm -ivh kibana-6.6.0-x86_64.rpm
+
+[root@Andu soft]# grep "^[a-z]" /etc/kibana/kibana.yml
+
+server.port: 5601
+
+server.host: "192.168.10.66"
+
+elasticsearch.hosts: ["http://localhost:9200"]
+
+kibana.index: ".kibana
+
+[root@Andu soft]# systemctl start kibana
+
+[root@Andu soft]# systemctl status kibana
+
+[root@Andu soft]# netstat -lntup|grep 5601
+
+tcp    0   0 192.168.10.66:5601   0.0.0.0:*        LISTEN   16442/node
+</code></pre><h2 id="_3-8-安装filebeat和logstash" tabindex="-1">3.8 安装filebeat和logstash <a class="header-anchor" href="#_3-8-安装filebeat和logstash" aria-hidden="true">#</a></h2><pre><code>rpm -ivh filebeat-6.6.0-x86_64.rpm
+
+rpm -ivh logstash-6.6.0.rpm 
+</code></pre><h2 id="_3-9-docker安装elk" tabindex="-1">3.9 docker安装elk <a class="header-anchor" href="#_3-9-docker安装elk" aria-hidden="true">#</a></h2><pre><code>version: '3'
+
+services:
+
+ elasticsearch:
+
+  image: elasticsearch:v1
+
+  container_name: elasticsearch
+
+  environment:
+
+   \- cluster.name=docker-cluster
+
+   \- bootstrap.memory_lock=true
+
+   \- "ES_JAVA_OPTS=-Xms8g -Xmx8g"
+
+   \- "discovery.zen.ping.unicast.hosts=elasticsearch"
+
+  ulimits:
+
+   memlock:
+
+​    soft: -1
+
+​    hard: -1
+
+  volumes:
+
+   \- /data/docker_es_data:/usr/share/elasticsearch/data
+
+  ports:
+
+   \- 19200:9200
+
+  networks:
+
+   \- esnet
+
+ elasticsearch-head:
+
+  image: elasticsearch-head:v1
+
+  container_name: elasticsearch-head
+
+  ports:
+
+   \- 19100:9100
+
+  networks:
+
+   \- esnet
+
+ kibana:
+
+  image: kibana:v1
+
+  container_name: kibana
+
+  environment:
+
+   \- ELASTICSEARCH_URL="http://elasticsearch:9200"
+
+   \- kibana.index=".kibana"
+
+  ports:
+
+   \- 15601:5601
+
+  networks:
+
+   \- esnet
+
+ logstash:
+
+  image: logstash:v1
+
+  container_name: logstash 
+
+  environment:
+
+   \- ELASTICSEARCH_URL="http://elasticsearch:9200"
+
+  ports:
+
+   \- 16379:6379
+
+  networks:
+
+   \- esnet
+
+networks:
+
+ esnet:
+</code></pre><h1 id="第4章-使用filebeat配置日志收集" tabindex="-1">第4章 使用filebeat配置日志收集 <a class="header-anchor" href="#第4章-使用filebeat配置日志收集" aria-hidden="true">#</a></h1><h2 id="_4-1-收集nginx日志" tabindex="-1">4.1 收集nginx日志 <a class="header-anchor" href="#_4-1-收集nginx日志" aria-hidden="true">#</a></h2><h3 id="_4-1-1-安装nginx和ab工具" tabindex="-1">4.1.1 安装nginx和ab工具 <a class="header-anchor" href="#_4-1-1-安装nginx和ab工具" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# yum install nginx httpd-tools -y
+</code></pre><h3 id="_4-1-2-启动测试" tabindex="-1">4.1.2 启动测试 <a class="header-anchor" href="#_4-1-2-启动测试" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]#  wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
+
+[root@Andu ~]# systemctl start nginx
+
+[root@Andu ~]# netstat -lntup|grep nginx
+
+tcp    0   0 0.0.0.0:80       0.0.0.0:*        LISTEN   1888/nginx: master 
+
+tcp6    0   0 :::80          :::*          LISTEN   1888/nginx: master
+
+[root@Andu ~]# ab -c 10 -n 100 192.168.10.66/
+
+[root@Andu ~]# ab -c 10 -n 100 192.168.10.66/test.html
+</code></pre><h3 id="_4-1-3-查看日志" tabindex="-1">4.1.3 查看日志 <a class="header-anchor" href="#_4-1-3-查看日志" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# tail -f /var/log/nginx/access.log 
+
+192.168.10.66 - - [13/May/2019:00:24:02 +0800] "GET /test.html HTTP/1.0" 404 3650 "-" "ApacheBench/2.3" "-"
+
+192.168.10.66 - - [13/May/2019:00:24:02 +0800] "GET /test.html HTTP/1.0" 404 3650 "-" "ApacheBench/2.3" "-"
+
+.......................................
+</code></pre><h3 id="_4-1-4-配置filebeat收集普通日志" tabindex="-1">4.1.4 配置filebeat收集普通日志 <a class="header-anchor" href="#_4-1-4-配置filebeat收集普通日志" aria-hidden="true">#</a></h3><p>相关网址</p><p><a href="https://www.elastic.co/guide/en/beats/filebeat/7.x/filebeat-input-log.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/7.x/filebeat-input-log.html</a></p><p><a href="https://www.elastic.co/guide/en/beats/filebeat/7.x/configuration-template.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/7.x/configuration-template.html</a></p><p><a href="https://www.elastic.co/guide/en/beats/filebeat/7.x/configuration-template.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/7.x/configuration-template.html</a></p><p>正确配置</p><pre><code>filebeat.inputs:
+
+\- type: log
+
+ enabled: true
+
+ paths:
+
+  \- /var/log/nginx/access.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+ 
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+ 
+
+output.elasticsearch:
+
+ hosts: ["192.168.10.66:9200"]
+
+ index: "nginx-%{[beat.version]}-%{+yyyy.MM}"
+
+setup.template.name: "nginx"
+
+setup.template.pattern: "nginx-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h3 id="_4-1-5-kibana配置" tabindex="-1">4.1.5 kibana配置 <a class="header-anchor" href="#_4-1-5-kibana配置" aria-hidden="true">#</a></h3><pre><code>management--&gt;index patterns--&gt;nginx--&gt;@timestamp
+</code></pre><h3 id="_4-1-6-修改nginx日志为json格式" tabindex="-1">4.1.6 修改nginx日志为json格式 <a class="header-anchor" href="#_4-1-6-修改nginx日志为json格式" aria-hidden="true">#</a></h3><pre><code> log_format main '{ "time_local": "$time_local", '
+
+​              '"remote_addr": "$remote_addr", '
+
+​              '"referer": "$http_referer", '
+
+​              '"request": "$request", '
+
+​              '"status": $status, '
+
+​              '"bytes": $body_bytes_sent, '
+
+​              '"agent": "$http_user_agent", '
+
+​              '"x_forwarded": "$http_x_forwarded_for", '
+
+​              '"up_addr": "$upstream_addr",'
+
+​              '"up_host": "$upstream_http_host",'
+
+​              '"upstream_time": "$upstream_response_time",'
+
+​              '"request_time": "$request_time"'
+
+  ' }';
+</code></pre><h3 id="_4-1-7-查看日志是否为json格式" tabindex="-1">4.1.7 查看日志是否为json格式 <a class="header-anchor" href="#_4-1-7-查看日志是否为json格式" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# tail -f /var/log/nginx/access.log  
+
+{ "time_local": "13/May/2019:00:30:51 +0800", "remote_addr": "192.168.10.66", "referer": "-", "request": "GET /test.html HTTP/1.0", "status": 404, "bytes": 3650, "agent": "ApacheBench/2.3", "x_forwarded": "-", "up_addr": "-","up_host": "-","upstream_time": "-","request_time": "0.000" }
+
+{ "time_local": "13/May/2019:00:30:51 +0800", "remote_addr": "192.168.10.66", "referer": "-", "request": "GET /test.html HTTP/1.0", "status": 404, "bytes": 3650, "agent": "ApacheBench/2.3", "x_forwarded": "-", "up_addr": "-","up_host": "-","upstream_time": "-","request_time": "0.000" }
+</code></pre><h3 id="_4-1-8-收集多个日志并分类创建索引" tabindex="-1">4.1.8 收集多个日志并分类创建索引 <a class="header-anchor" href="#_4-1-8-收集多个日志并分类创建索引" aria-hidden="true">#</a></h3><p>[tip type="info"] filebeat配置 [/tip]</p><pre><code>[root@Andu filebeat]# cat filebeat.yml 
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/access.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+ tags: ["access"]
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/error.log
+
+ tags: ["error"]
+
+setup.template.settings:
+
+ index.number_of_shards: 3
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.elasticsearch:
+
+ hosts: ["localhost:9200"]
+
+ indices:
+
+  \- index: "nginx_access-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​    tags: "access"
+
+  \- index: "nginx_error-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​    tags: "error"
+
+setup.template.name: "nginx"
+
+setup.template.pattern: "nginx_*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h2 id="_4-2-收集tomcat日志" tabindex="-1">4.2 收集tomcat日志 <a class="header-anchor" href="#_4-2-收集tomcat日志" aria-hidden="true">#</a></h2><h3 id="_4-2-1-安装tomcat" tabindex="-1">4.2.1 安装tomcat <a class="header-anchor" href="#_4-2-1-安装tomcat" aria-hidden="true">#</a></h3><pre><code>yum install tomcat tomcat-webapps tomcat-admin-webapps tomcat-docs-webapp tomcat-javadoc -y
+</code></pre><h3 id="_4-2-2-启动检查" tabindex="-1">4.2.2 启动检查 <a class="header-anchor" href="#_4-2-2-启动检查" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# systemctl start tomcat
+
+[root@Andu ~]# systemctl status tomcat
+
+[root@Andu ~]# lsof -i:8080
+
+COMMAND  PID  USER  FD  TYPE DEVICE SIZE/OFF NODE NAME
+
+java  18915 tomcat  49u IPv6 61950   0t0 TCP *:webcache (LISTEN)
+</code></pre><h3 id="_4-2-3-访问测试" tabindex="-1">4.2.3 访问测试 <a class="header-anchor" href="#_4-2-3-访问测试" aria-hidden="true">#</a></h3><h3 id="_4-2-4-修改日志为json格式" tabindex="-1">4.2.4 修改日志为json格式 <a class="header-anchor" href="#_4-2-4-修改日志为json格式" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# vim /etc/tomcat/server.xml
+
+[root@Andu ~]# cat -n /etc/tomcat/server.xml
+
+\----------------
+
+  137     &lt;Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+
+  138         prefix="localhost_access_log." suffix=".txt"
+
+  139         pattern="{&amp;quot;clientip&amp;quot;:&amp;quot;%h&amp;quot;,&amp;quot;ClientUser&amp;quot;:&amp;quot;%l&amp;quot;,&amp;quot;authenticated&amp;quot;:&amp;quot;%u&amp;quot;,&amp;quot;AccessTime&amp;quot;:&amp;quot;%t&amp;quot;,&amp;quot;method&amp;quot;:&amp;quot;%r&amp;quot;,&amp;quot;status&amp;quot;:&amp;quot;%s&amp;quot;,&amp;quot;SendBytes&amp;quot;:&amp;quot;%b&amp;quot;,&amp;quot;Query?string&amp;quot;:&amp;quot;%q&amp;quot;,&amp;quot;partner&amp;quot;:&amp;quot;%{Referer}i&amp;quot;,&amp;quot;AgentVersion&amp;quot;:&amp;quot;%{User-Agent}i&amp;quot;}"/&gt;
+
+\----------------
+</code></pre><h3 id="_4-2-5-重启确认日志是否为json格式" tabindex="-1">4.2.5 重启确认日志是否为json格式 <a class="header-anchor" href="#_4-2-5-重启确认日志是否为json格式" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# systemctl restart tomcat
+
+[root@Andu ~]# tail -f /var/log/tomcat/localhost_access_log.2019-05-13.txt 
+
+{"clientip":"192.168.47.1","ClientUser":"-","authenticated":"-","AccessTime":"[13/May/2019:13:18:03 +0800]","method":"GET /docs/images/tomcat.gif HTTP/1.1","status":"200","SendBytes":"2066","Query?string":"","partner":"http://192.168.10.66:8080/docs/realm-howto.html","AgentVersion":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"}
+</code></pre><p>在线解析测试正确</p><h3 id="_4-2-6-filebeat配置" tabindex="-1">4.2.6 filebeat配置 <a class="header-anchor" href="#_4-2-6-filebeat配置" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# cat /etc/filebeat/filebeat.yml 
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/tomcat/localhost_access_log*
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+tags: ["tomcat"][[A16\]](#_msocom_16) 
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.elasticsearch:
+
+ hosts: ["localhost:9200"]
+
+ index: "tomcat-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+ when.contains:
+
+​    tags: "tomcat"
+
+setup.template.name: "tomcat"
+
+setup.template.pattern: "tomcatn-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true[[A17\]](#_msocom_17) 
+</code></pre><p>[tip type="success"] 亲测可用配置为如下 [/tip]</p><pre><code>filebeat.inputs:
+
+\#################tomcat#############
+
+\- type: log
+
+ enabled: true
+
+ paths:
+
+  \- /var/log/tomcat/localhost_access_log.*.txt
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+\#################output#############
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.elasticsearch:
+
+ hosts: ["192.168.10.66:9200"]
+
+ indices:
+
+  \- index: "tomcat-access-%{[beat.version]}-%{+yyyy.MM}"
+
+setup.template.name: "tomcat"
+
+setup.template.pattern: "tomcat-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h3 id="_4-2-7-配置tomcat收集多个域名的日志" tabindex="-1">4.2.7 配置tomcat收集多个域名的日志 <a class="header-anchor" href="#_4-2-7-配置tomcat收集多个域名的日志" aria-hidden="true">#</a></h3><p>配置多个host标签</p><h2 id="_4-3-收集java日志" tabindex="-1">4.3 收集java日志 <a class="header-anchor" href="#_4-3-收集java日志" aria-hidden="true">#</a></h2><h3 id="_4-3-1-官方地址" tabindex="-1">4.3.1 官方地址 <a class="header-anchor" href="#_4-3-1-官方地址" aria-hidden="true">#</a></h3><p><a href="https://www.elastic.co/guide/en/beats/filebeat/6.6/multiline-examples.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/6.6/multiline-examples.html</a></p><p>因为java日志的输出信息非常多，需要将多行拼成一个事件，所以需要多行匹配模式</p><p>因为elasticsearch本身就是java开发的，所以我们可以直接收集ES的日志</p><h3 id="_4-3-2-filebeat配置" tabindex="-1">4.3.2 filebeat配置 <a class="header-anchor" href="#_4-3-2-filebeat配置" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# cat /etc/filebeat/filebeat.yml    
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/elasticsearch/elasticsearch.log
+
+ multiline.pattern: '^\['
+
+ multiline.negate: true
+
+ multiline.match: after
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.elasticsearch:
+
+ hosts: ["localhost:9200"]
+
+ index: "es-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+setup.template.name: "es"
+
+setup.template.pattern: "es-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h2 id="_4-4-收集docker日志" tabindex="-1">4.4 收集docker日志 <a class="header-anchor" href="#_4-4-收集docker日志" aria-hidden="true">#</a></h2><h3 id="_4-4-1-安装docker" tabindex="-1">4.4.1 安装docker <a class="header-anchor" href="#_4-4-1-安装docker" aria-hidden="true">#</a></h3><pre><code>rm -fr /etc/yum.repos.d/local.repo
+
+curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+wget -O /etc/yum.repos.d/docker-ce.repo https://mirrors.ustc.edu.cn/docker-ce/linux/centos/docker-ce.repo
+
+sed -i 's#download.docker.com#mirrors.tuna.tsinghua.edu.cn/docker-ce#g' /etc/yum.repos.d/docker-ce.repo
+
+yum install docker-ce -y
+
+systemctl start docker
+
+vi /etc/docker/daemon.json
+
+{
+
+ "registry-mirrors": ["https://registry.docker-cn.com"]
+
+ }
+
+systemctl restart docker
+</code></pre><h3 id="_4-4-2-运行nginx镜像" tabindex="-1">4.4.2 运行nginx镜像 <a class="header-anchor" href="#_4-4-2-运行nginx镜像" aria-hidden="true">#</a></h3><pre><code>docker pull nginx
+
+docker run --name nginx -p 80:80 -d nginx
+
+docker ps
+
+docker logs -f nginx
+</code></pre><h3 id="_4-4-3-配置filebeat收集单个docker日志" tabindex="-1">4.4.3 配置filebeat收集单个docker日志 <a class="header-anchor" href="#_4-4-3-配置filebeat收集单个docker日志" aria-hidden="true">#</a></h3><p>官方介绍：</p><p><a href="https://www.elastic.co/guide/en/beats/filebeat/6.7/filebeat-input-docker.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/6.7/filebeat-input-docker.html</a></p><p>首先查看docker容器的ID</p><pre><code>docker inspect nginx-test|grep -w "Id"
+</code></pre><p>配置文件</p><pre><code>filebeat.inputs:
+
+\- type: docker
+
+ containers.ids: 
+
+  \- '2338d5038f7a2eac96d84d6cf424fb1829bd754ec5e0df944bdd29ba6d61a54e'
+
+ tags: ["docker-nginx"] 
+
+output.elasticsearch:
+
+ hosts: ["localhost:9200"]
+
+ index: "docker-nginx-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+setup.template.name: "docker"
+
+setup.template.pattern: "docker-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h3 id="_4-4-4-使用通配符收集所有容器的日志" tabindex="-1">4.4.4 使用通配符收集所有容器的日志 <a class="header-anchor" href="#_4-4-4-使用通配符收集所有容器的日志" aria-hidden="true">#</a></h3><p>新版本的filebeat增加了收集多个容器的日志的选项</p><p><a href="https://www.elastic.co/guide/en/beats/filebeat/7.2/filebeat-input-container.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/7.2/filebeat-input-container.html</a></p><h3 id="_4-4-5-配置filebeat通过标签收集多个容器日志" tabindex="-1">4.4.5 配置filebeat通过标签收集多个容器日志 <a class="header-anchor" href="#_4-4-5-配置filebeat通过标签收集多个容器日志" aria-hidden="true">#</a></h3><p>假如我们有多个docker镜像或者重新提交了新镜像，那么直接指定ID的就不是太方便了。</p><p>我们从当前的容器提交一个新的镜像并且运行起来</p><pre><code>docker commit nginx nginx:v2
+
+docker images
+
+docker run --name nginx -p 8080:80 -d nginx:v2
+</code></pre><p>此时我们的容器目录下就有了两个不同的容器目录</p><pre><code>[root@elk-176 containers]# ls /var/lib/docker/containers/         
+
+2338d5038f7a2eac96d84d6cf424fb1829bd754ec5e0df944bdd29ba6d61a54e 3bb5250e7e50a4ed8d1fae7a43d3bf4294864ac4e0af125ae5231cd9bd76b914
+</code></pre><p>如果直接配置filebeat存到es里本台机器所有的容器日志都会混在一起没有办法区分</p><p>多容器日志收集处理：</p><p>其实收集的日志本质来说还是文件，而这个日志是以容器-json.log命名存放在默认目录下的json格式的文件：</p><pre><code>[root@elk-176 ~]# head -1 /var/lib/docker/containers/2338d5038f7a2eac96d84d6cf424fb1829bd754ec5e0df944bdd29ba6d61a54e/2338d5038f7a2eac96d84d6cf424fb1829bd754ec5e0df944bdd29ba6d61a54e-json.log
+
+{"log":"192.168.47.1 - - [23/May/2019:19:12:04 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36\" \"-\"\n","stream":"stdout","time":"2019-05-23T19:12:04.939212514Z"}
+</code></pre><p>但是每个容器的ID都不一样，为了区分不同服务运行的不同容器，可以使用docker-compose通过给容器添加labels标签来作为区分</p><p>然后filbeat把容器日志当作普通的json格式来解析并传输到es</p><p>操作步骤：</p><p>1.安装docker-compose</p><pre><code>yum install -y python2-pip
+</code></pre><p>2.这里使用pip安装，默认源为国外，可以使用国内加速，相关网站</p><p><a href="https://mirrors.tuna.tsinghua.edu.cn/help/pypi/" target="_blank" rel="noreferrer">https://mirrors.tuna.tsinghua.edu.cn/help/pypi/</a></p><p>pip加速操作命令</p><pre><code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre><p>3.继续安装docker-compose</p><pre><code>pip install docker-compose
+</code></pre><p>4.检查</p><pre><code>docker-compose version
+</code></pre><p>5.编写docker-compose.yml</p><pre><code>[root@elk-176 ~]# cat docker-compose.yml 
+
+version: '3'
+
+services:
+
+ nginx:
+
+  image: nginx:v2
+</code></pre><p># 设置labels</p><pre><code> labels:
+
+   service: nginx
+
+  \# logging设置增加labels.service
+
+  logging:
+
+   options:
+
+​    labels: "service"
+
+  ports:
+
+   \- "8080:80"
+
+ db:
+
+  image: nginx:latest
+
+  \# 设置labels
+
+  labels:
+
+   service: db 
+
+  \# logging设置增加labels.service
+
+  logging:
+
+   options:
+
+​    labels: "service"
+
+  ports:
+
+   \- "80:80"
+</code></pre><p>6.清理镜像</p><pre><code>docker ps -a|awk 'NR&gt;1{print "docker rm",$1}'|bash
+</code></pre><p>7.运行docker-compose.yml</p><pre><code>docker-compose up -d
+</code></pre><p>8.检查日志是否增加了lable标签</p><pre><code>[root@elk-176 ~]# tail -1 /var/lib/docker/containers/b2c1f4f7f5a2967fe7d12c1db124ae41f009ec663c71608575a4773beb6ca5f8/b2c1f4f7f5a2967fe7d12c1db124ae41f009ec663c71608575a4773beb6ca5f8-json.log
+
+{"log":"192.168.47.1 - - [23/May/2019:13:22:32 +0000] \"GET / HTTP/1.1\" 304 0 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36\" \"-\"\n","stream":"stdout","attrs":{"service":"nginx"},"time":"2019-05-23T13:22:32.478708392Z"}
+</code></pre><p>9.配置filebeat</p><pre><code>[root@elk-176 ~]# cat /etc/filebeat/filebeat.yml   
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/lib/docker/containers/*/*-json.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+output.elasticsearch:
+
+ hosts: ["192.168.10.66:9200"]
+
+ indices:
+
+  \- index: "docker-nginx-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​    attrs.service: "nginx"
+
+  \- index: "docker-db-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​    attrs.service: "db"
+
+setup.template.name: "docker"
+
+setup.template.pattern: "docker-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h3 id="_4-4-6-配置filebeat通过服务类型和日志类型多条件创建不同索引" tabindex="-1">4.4.6 配置filebeat通过服务类型和日志类型多条件创建不同索引 <a class="header-anchor" href="#_4-4-6-配置filebeat通过服务类型和日志类型多条件创建不同索引" aria-hidden="true">#</a></h3><p>目前为止，已经可以按服务来收集日志了，但是错误日志和正确日志混在了一起，不好区分，所以可以进一步进行条件判断，根据服务和日志类型创建不同的索引</p><p>filebeat配置文件</p><pre><code>[root@elk-176 ~]# cat /etc/filebeat/filebeat.yml     
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/lib/docker/containers/*/*-json.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+output.elasticsearch:
+
+ hosts: ["192.168.10.66:9200"]
+
+ indices:
+
+  \- index: "docker-nginx-access-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​     attrs.service: "nginx"
+
+​     stream: "stdout"
+
+  \- index: "docker-nginx-error-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​     attrs.service: "nginx"
+
+​     stream: "stderr"
+
+  \- index: "docker-db-access-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​     attrs.service: "db"
+
+​     stream: "stdout"
+
+  \- index: "docker-db-error-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​     attrs.service: "db"
+
+​     stream: "stderr"
+
+setup.template.name: "docker"
+
+setup.template.pattern: "docker-*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h3 id="_4-4-7-验证提交新镜像运行后日志收集情况" tabindex="-1">4.4.7 验证提交新镜像运行后日志收集情况 <a class="header-anchor" href="#_4-4-7-验证提交新镜像运行后日志收集情况" aria-hidden="true">#</a></h3><p>1.提交新镜像</p><pre><code>[root@elk-176 ~]# docker ps -a
+
+CONTAINER ID    IMAGE        COMMAND         CREATED       STATUS           PORTS        NAMES
+
+f92f4d747584    nginx:latest    "nginx -g 'daemon of…"  45 minutes ago   Exited (0) 51 seconds ago            root_db_1
+
+b2c1f4f7f5a2    nginx:v2      "nginx -g 'daemon of…"  45 minutes ago   Exited (0) 51 seconds ago            root_nginx_1
+
+[root@elk-176 ~]# docker commit root_nginx_1 nginx:v3     
+
+sha256:4457e2b7afc719ef185c75c02031b11c1407efe2e2e57b85f0c9347d04a9ff00
+
+[root@elk-176 ~]# docker commit root_db_1 nginx:v4
+
+sha256:a7e8d8b3290c817194956aa06fc486ef928853121d9c6224fd64fe759c967dda
+
+[root@elk-176 ~]# docker images
+
+REPOSITORY     TAG         IMAGE ID      CREATED       SIZE
+
+nginx        v4          a7e8d8b3290c    35 seconds ago   109MB
+
+nginx        v3         4457e2b7afc7    45 seconds ago   109MB
+
+nginx        v2         c181c6355cd9    2 hours ago     109MB
+
+nginx        latest        53f3fd8007f7    2 weeks ago     109MB
+</code></pre><p>2.修改并运行docker-compose</p><pre><code>[root@elk-176 ~]# cat docker-compose.yml 
+
+version: '3'
+
+services:
+
+ nginx:
+
+  image: nginx:v3
+
+  \# 设置labels
+
+  labels:
+
+   service: nginx
+
+  \# logging设置增加labels.service
+
+  logging:
+
+   options:
+
+​    labels: "service"
+
+  ports:
+
+   \- "8080:80"
+
+ db:
+
+  image: nginx:v4
+
+  \# 设置labels
+
+  labels:
+
+   service: db 
+
+  \# logging设置增加labels.service
+
+  logging:
+
+   options:
+
+​    labels: "service"
+
+  ports:
+
+   \- "80:80"
+
+[root@elk-176 ~]# docker-compose up -d
+
+Starting root_nginx_1 ... 
+
+Starting root_nginx_1 ... done
+
+Starting root_db_1  ... done
+
+[root@elk-176 ~]# docker ps
+
+CONTAINER ID    IMAGE        COMMAND         CREATED       STATUS       PORTS         NAMES
+
+04308aa3928b    nginx:v4       "nginx -g 'daemon of…"  30 seconds ago   Up 1 second     0.0.0.0:80-&gt;80/tcp   root_db_1
+
+49d2e2210e6f    nginx:v3       "nginx -g 'daemon of…"  30 seconds ago   Up 1 second     0.0.0.0:8080-&gt;80/tcp  root_nginx_1
+</code></pre><p>3.访问并查看是否有新数据生成</p><pre><code>curl logcalhost/zhangya.html
+
+curl logcalhost:8080/zhangya.html
+</code></pre><p>4.经过查看发现已经成功收集到了日志，这样我们就做到了不用修改filebeat配置文件也可以持续的收集新镜像的日志并按分类创建不同的索引</p><h3 id="_4-4-8-修改docker容器内日志类型为json" tabindex="-1">4.4.8 修改docker容器内日志类型为json <a class="header-anchor" href="#_4-4-8-修改docker容器内日志类型为json" aria-hidden="true">#</a></h3><p>刚才收集的docker内的日志类型为普通格式，如果我们修改为json格式会如何呢？</p><h1 id="第5章-使用filledeat-modules配置" tabindex="-1">第5章 使用filledeat modules配置 <a class="header-anchor" href="#第5章-使用filledeat-modules配置" aria-hidden="true">#</a></h1><h2 id="_5-1-官方网址" tabindex="-1">5.1 官方网址 <a class="header-anchor" href="#_5-1-官方网址" aria-hidden="true">#</a></h2><p><a href="https://www.elastic.co/guide/en/beats/filebeat/6.6/configuration-filebeat-modules.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/beats/filebeat/6.6/configuration-filebeat-modules.html</a></p><h2 id="_5-2-使用模版配置nginx正常日志" tabindex="-1">5.2 使用模版配置nginx正常日志 <a class="header-anchor" href="#_5-2-使用模版配置nginx正常日志" aria-hidden="true">#</a></h2><p>社区论坛：</p><p><a href="https://discuss.elastic.co/t/filebeat-module-custom-index/181350" target="_blank" rel="noreferrer">https://discuss.elastic.co/t/filebeat-module-custom-index/181350</a></p><h3 id="_5-2-1-filebeat配置文件" tabindex="-1">5.2.1 filebeat配置文件 <a class="header-anchor" href="#_5-2-1-filebeat配置文件" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# cat /etc/filebeat/filebeat.yml 
+
+filebeat.config.modules:
+
+ path: ${path.config}/modules.d/*.yml
+
+ reload.enabled: true
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.elasticsearch:
+
+ hosts: ["localhost:9200"]
+
+ indices:
+
+  \- index: "nginx_access-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​    fileset.name: "access"
+
+  \- index: "nginx_error-%{[beat.version]}-%{+yyyy.MM.dd}"
+
+   when.contains:
+
+​    fileset.name: "error"
+
+setup.template.name: "nginx"
+
+setup.template.pattern: "nginx_*"
+
+setup.template.enabled: false
+
+setup.template.overwrite: true
+</code></pre><h3 id="_5-2-2-filebeat-modules配置" tabindex="-1">5.2.2 filebeat modules配置 <a class="header-anchor" href="#_5-2-2-filebeat-modules配置" aria-hidden="true">#</a></h3><p>使用nginx模版配置需要安装2个插件，默认从官网下载速度太慢，可以提前下载然后离线安装</p><p><a href="https://www.elastic.co/guide/en/elasticsearch/plugins/6.6/ingest-geoip.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/elasticsearch/plugins/6.6/ingest-geoip.html</a></p><p><a href="https://www.elastic.co/guide/en/elasticsearch/plugins/6.6/plugin-management-custom-url.html" target="_blank" rel="noreferrer">https://www.elastic.co/guide/en/elasticsearch/plugins/6.6/plugin-management-custom-url.html</a></p><p>在线安装：</p><pre><code>[root@Andu ~]# /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-user-agent
+
+[root@Andu ~]# /usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-geoip
+</code></pre><p>离线下载安装：</p><pre><code>[root@Andu ~]# wget https://artifacts.elastic.co/downloads/elasticsearch-plugins/ingest-user-agent/ingest-user-agent-6.6.0.zip
+
+[root@Andu ~]# wget https://artifacts.elastic.co/downloads/elasticsearch-plugins/ingest-geoip/ingest-geoip-6.6.0.zip
+
+[root@Andu ~]# /usr/share/elasticsearch/bin/elasticsearch-plugin install file:///root/ingest-geoip-6.6.0.zip 
+
+[root@Andu ~]# /usr/share/elasticsearch/bin/elasticsearch-plugin install file:///root/ingest-user-agent-6.6.0.zip 
+</code></pre><p>激活nginx模块：</p><pre><code>[root@Andu ~]# filebeat modules enable nginx      
+
+[root@Andu ~]# egrep -v "#|^<div id="app"></div>quot; /etc/filebeat/modules.d/nginx.yml    
+
+\- module: nginx
+
+ access:
+
+  enabled: true
+
+  var.paths: ["/var/log/nginx/access.log"]
+
+ error:
+
+  enabled: true
+
+  var.paths: ["/var/log/nginx/error.log"
+</code></pre><p>注意：6.7之后这两个插件默认集成到了elasticsearch，不需要单独安装了</p><h2 id="_5-3-使用模块收集系统日志message和secure日志" tabindex="-1">5.3 使用模块收集系统日志message和secure日志 <a class="header-anchor" href="#_5-3-使用模块收集系统日志message和secure日志" aria-hidden="true">#</a></h2><p>如果不需要转换，也可以直接按普通日志模式收集message和secure日志</p><h2 id="_5-4-导入kibana视图" tabindex="-1">5.4 导入kibana视图 <a class="header-anchor" href="#_5-4-导入kibana视图" aria-hidden="true">#</a></h2><p>默认如果使用filbeat模版导入视图会把所有的服务都导入进去,而我们实际上并不需要这么多视图，</p><p>而且默认的视图模版只能匹配filebeat-*开头的索引，所以这里我们有2个需要需要解决：</p><p>1.通过一定处理只导入我们需要的模版</p><p>2.导入的视图模版索引名称可以自定义</p><p>解决方法：</p><p>1.备份一份filebeat的kibana视图，删除不需要的视图模版文件</p><p>2.修改视图文件里默认的索引名称为我们需要的索引名称</p><pre><code>cp -a /usr/share/filebeat/kibana /root
+
+find . -type f ! -name "*nginx*"|xargs rm -rf
+
+sed -i 's#filebeat\-\*#nginx\-\*#g' Filebeat-nginx-overview.json 
+</code></pre><p>替换索引名称</p><pre><code>filebeat setup --dashboards -E setup.dashboards.directory=/root/kibana/
+</code></pre><h2 id="_5-5-使用模块收集mysql日志和慢日志" tabindex="-1">5.5 使用模块收集mysql日志和慢日志 <a class="header-anchor" href="#_5-5-使用模块收集mysql日志和慢日志" aria-hidden="true">#</a></h2><h2 id="_5-6-使用模块收集mongo日志和redis日志" tabindex="-1">5.6 使用模块收集mongo日志和redis日志 <a class="header-anchor" href="#_5-6-使用模块收集mongo日志和redis日志" aria-hidden="true">#</a></h2><h1 id="第6章-使用缓存收集日志" tabindex="-1">第6章 使用缓存收集日志 <a class="header-anchor" href="#第6章-使用缓存收集日志" aria-hidden="true">#</a></h1><p>当日志的数量非常多的时候，可能需要引入缓存层作为临时存储数据的地方，防止因为ES处理不过来导致日志丢失的情况。</p><p>filebeat支持将日志发送到redis或者kafka作为消息队列缓存。</p><p>但是使用了缓存层，就不能使用模版来配置日志收集了。</p><p>所以最好日志是json格式</p><h2 id="_6-1-使用单台redis作为缓存" tabindex="-1">6.1 使用单台redis作为缓存 <a class="header-anchor" href="#_6-1-使用单台redis作为缓存" aria-hidden="true">#</a></h2><p>这里需要说明，如果使用redis作为缓存</p><p>可以将不同的日志类型单独写成一个键，这样好处是清晰，但是缺点是logstash写起来起来复杂</p><p>也可以将所有的日志全部写入到一个键中，然后靠后端的logstash去过滤处理。</p><h3 id="_6-1-1-安装启动测试redis" tabindex="-1">6.1.1 安装启动测试redis <a class="header-anchor" href="#_6-1-1-安装启动测试redis" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# yum install redis -y
+
+[root@Andu ~]# systemctl status redis
+
+[root@Andu ~]# redis-cli 
+
+127.0.0.1:6379&gt; set k1 v1
+
+OK
+
+127.0.0.1:6379&gt; GEt k1
+
+"v1"
+
+127.0.0.1:6379&gt;
+</code></pre><h3 id="_6-1-2-配置nginx的json日志" tabindex="-1">6.1.2 配置nginx的json日志 <a class="header-anchor" href="#_6-1-2-配置nginx的json日志" aria-hidden="true">#</a></h3><p>将nginx的日志调整为json格式</p><pre><code>  log_format json '{ "time_local": "$time_local", '
+
+​              '"remote_addr": "$remote_addr", '
+
+​              '"referer": "$http_referer", '
+
+​              '"request": "$request", '
+
+​              '"status": $status, '
+
+​              '"bytes": $body_bytes_sent, '
+
+​              '"agent": "$http_user_agent", '
+
+​              '"x_forwarded": "$http_x_forwarded_for", '
+
+​              '"up_addr": "$upstream_addr",'
+
+​              '"up_host": "$upstream_http_host",'
+
+​              '"upstream_time": "$upstream_response_time",'
+
+​              '"request_time": "$request_time"' ' }';
+</code></pre><h3 id="_6-1-3-配置filebeat写入到不同的key中" tabindex="-1">6.1.3 配置filebeat写入到不同的key中 <a class="header-anchor" href="#_6-1-3-配置filebeat写入到不同的key中" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# cat /etc/filebeat/filebeat.yml 
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/access.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+ tags: ["access"]
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/error.log
+
+ tags: ["error"]
+
+setup.template.settings:
+
+ index.number_of_shards: 3
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.redis:
+
+ hosts: ["localhost"]
+
+ keys:
+
+  \- key: "nginx_access"  
+
+   when.contains:
+
+​    tags: "access"
+
+  \- key: "nginx_error"
+
+   when.contains:
+
+​    tags: "error"
+</code></pre><h3 id="_6-1-4-配置logstash读取不同的key" tabindex="-1">6.1.4 配置logstash读取不同的key <a class="header-anchor" href="#_6-1-4-配置logstash读取不同的key" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# cat /etc/logstash/conf.d/redis.conf  
+
+input {
+
+ redis {
+
+  host =&gt; "127.0.0.1"
+
+  port =&gt; "6379"
+
+  db =&gt; "0"
+
+  key =&gt; "nginx_access"
+
+  data_type =&gt; "list"
+
+ }
+
+ redis {
+
+  host =&gt; "127.0.0.1"
+
+  port =&gt; "6379"
+
+  db =&gt; "0"
+
+  key =&gt; "nginx_error"
+
+  data_type =&gt; "list"
+
+ }
+
+}
+
+ 
+
+filter {
+
+ mutate {
+
+  convert =&gt; ["upstream_time", "float"]
+
+  convert =&gt; ["request_time", "float"]
+
+ }
+
+}
+
+ 
+
+output {
+
+  stdout {}
+
+  if "access" in [tags] {
+
+   elasticsearch {
+
+​    hosts =&gt; "http://localhost:9200"
+
+​    manage_template =&gt; false
+
+​    index =&gt; "nginx_access-%{+yyyy.MM.dd}"
+
+   }
+
+  }
+
+  if "error" in [tags] {
+
+   elasticsearch {
+
+​    hosts =&gt; "http://localhost:9200"
+
+​    manage_template =&gt; false
+
+​    index =&gt; "nginx_error-%{+yyyy.MM.dd}"
+
+   }
+
+  }
+
+}
+</code></pre><h3 id="_6-1-5-filebeat收集日志写入到一个key中" tabindex="-1">6.1.5 filebeat收集日志写入到一个key中 <a class="header-anchor" href="#_6-1-5-filebeat收集日志写入到一个key中" aria-hidden="true">#</a></h3><pre><code>[root@Andu ~]# cat /etc/filebeat/filebeat.yml 
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/access.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+ tags: ["access"]
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/error.log
+
+ tags: ["error"]
+
+setup.template.settings:
+
+ index.number_of_shards: 3
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.redis:
+
+ hosts: ["localhost"]
+
+ key: "filebeat"
+</code></pre><h3 id="_6-1-6-logstash根据tag区分一个key里的不同日志" tabindex="-1">6.1.6 logstash根据tag区分一个key里的不同日志 <a class="header-anchor" href="#_6-1-6-logstash根据tag区分一个key里的不同日志" aria-hidden="true">#</a></h3><p>[root@Andu ~]# cat /etc/logstash/conf.d/redis.conf</p><pre><code>input {
+
+ redis {
+
+  host =&gt; "127.0.0.1"
+
+  port =&gt; "6379"
+
+  db =&gt; "0"
+
+  key =&gt; "filebeat"
+
+  data_type =&gt; "list"
+
+ }
+
+}
+
+filter {
+
+ mutate {
+
+  convert =&gt; ["upstream_time", "float"]
+
+  convert =&gt; ["request_time", "float"]
+
+ }
+
+}
+
+output {
+
+  if "access" in [tags] {
+
+   elasticsearch {
+
+​    hosts =&gt; "http://localhost:9200"
+
+​    manage_template =&gt; false
+
+​    index =&gt; "nginx_access-%{+yyyy.MM.dd}"
+
+   }
+
+  }
+
+  if "error" in [tags] {
+
+   elasticsearch {
+
+​    hosts =&gt; "http://localhost:9200"
+
+​    manage_template =&gt; false
+
+​    index =&gt; "nginx_error-%{+yyyy.MM.dd}"
+
+   }
+
+  }
+
+}
+</code></pre><h2 id="_6-2-使用nginx-keepalived代理多台redis" tabindex="-1">6.2 使用nginx+keepalived代理多台redis <a class="header-anchor" href="#_6-2-使用nginx-keepalived代理多台redis" aria-hidden="true">#</a></h2><h3 id="_6-2-1-解决方案介绍" tabindex="-1">6.2.1 解决方案介绍 <a class="header-anchor" href="#_6-2-1-解决方案介绍" aria-hidden="true">#</a></h3><p>上面我们实验了单台redis作为收集日志的缓存层，但是单台redis存在一个问题，就是单点故障</p><p>虽然可以做持久化处理，但是加入服务器坏掉或者修复时间未知的情况下还是有可能会丢数据。</p><p>redis集群方案有哨兵和集群，但可惜的是filebeat和logstash都不支持这两种方案。</p><p>不过利用我们目前所学的知识完全可以解决这个问题，虽然不是彻底解决，但是已经很好了</p><p>方案如下：</p><p>1.使用nginx+keepalived反向代理负载均衡到后面的多台redis</p><p>2.考虑到redis故障切换中数据一致性的问题，所以最好我们只使用2台redis,并且只工作一台，另外一台作为backup，只有第一台坏掉后，第二台才会工作。</p><p>3.filebeat的oputut的redis地址为keepalived的虚拟IP</p><p>4.logstash可以启动多个节点来加速读取redis的数据</p><p>5.后端可以采用多台es集群来做支撑</p><h3 id="_6-2-2-nginx配置文件" tabindex="-1">6.2.2 nginx配置文件 <a class="header-anchor" href="#_6-2-2-nginx配置文件" aria-hidden="true">#</a></h3><p>注意：添加stream模块，要在nginx.conf里最后添加，而不是在conf.d里面添加子配置</p><pre><code>[root@lb02 ~]# cat /etc/nginx/nginx.conf
+
+..........................
+
+stream {
+
+ upstream redis {
+
+   server 10.0.0.51:6381 max_fails=2 fail_timeout=10s;
+
+   server 10.0.0.51:6382 max_fails=2 fail_timeout=10s backup;
+
+ }
+
+ 
+
+ server {
+
+​     listen 6379;
+
+​     proxy_connect_timeout 1s;
+
+​     proxy_timeout 3s;
+
+​     proxy_pass redis;
+
+ }
+
+}
+</code></pre><h3 id="_6-2-3-redis配置" tabindex="-1">6.2.3 redis配置 <a class="header-anchor" href="#_6-2-3-redis配置" aria-hidden="true">#</a></h3><pre><code>[root@db01 /opt/redis_6381/conf]# cat /opt/redis_6381/conf/redis_6381.conf       
+
+bind 10.0.0.51
+
+port 6381
+
+daemonize yes
+
+pidfile /opt/redis_6381/pid/redis_6381.pid
+
+logfile /opt/redis_6381/logs/redis_6381.log
+
+databases 16
+
+save 900 1
+
+save 300 10
+
+save 60 10000
+
+stop-writes-on-bgsave-error yes
+
+rdbcompression yes
+
+rdbchecksum yes
+
+dbfilename redis_6381.rdb
+
+dir /data/redis_6381
+</code></pre><h3 id="_6-2-4-模拟故障测试" tabindex="-1">6.2.4 模拟故障测试 <a class="header-anchor" href="#_6-2-4-模拟故障测试" aria-hidden="true">#</a></h3><h3 id="_6-2-5-logstash配置" tabindex="-1">6.2.5 logstash配置 <a class="header-anchor" href="#_6-2-5-logstash配置" aria-hidden="true">#</a></h3><h3 id="_6-2-6-使用supervisor批量管理多个logstash进程" tabindex="-1">6.2.6 使用supervisor批量管理多个logstash进程 <a class="header-anchor" href="#_6-2-6-使用supervisor批量管理多个logstash进程" aria-hidden="true">#</a></h3><h2 id="_6-3-使用kafka作为缓存" tabindex="-1">6.3 使用kafka作为缓存 <a class="header-anchor" href="#_6-3-使用kafka作为缓存" aria-hidden="true">#</a></h2><h3 id="_6-3-1-介绍" tabindex="-1">6.3.1 介绍 <a class="header-anchor" href="#_6-3-1-介绍" aria-hidden="true">#</a></h3><h3 id="_6-3-2-zookeeper安装配置" tabindex="-1">6.3.2 zookeeper安装配置 <a class="header-anchor" href="#_6-3-2-zookeeper安装配置" aria-hidden="true">#</a></h3><h3 id="_6-3-3-kafka安装配置" tabindex="-1">6.3.3 kafka安装配置 <a class="header-anchor" href="#_6-3-3-kafka安装配置" aria-hidden="true">#</a></h3><h3 id="_6-3-4-kafka集群收发消息测试" tabindex="-1">6.3.4 kafka集群收发消息测试 <a class="header-anchor" href="#_6-3-4-kafka集群收发消息测试" aria-hidden="true">#</a></h3><h3 id="_6-3-5-filebeat配置" tabindex="-1">6.3.5 filebeat配置 <a class="header-anchor" href="#_6-3-5-filebeat配置" aria-hidden="true">#</a></h3><pre><code>[root@kafka-175 conf.d]# cat /etc/filebeat/filebeat.yml 
+
+filebeat.inputs:
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/access.log
+
+ json.keys_under_root: true
+
+ json.overwrite_keys: true
+
+ tags: ["access"]
+
+\- type: log
+
+ enabled: true 
+
+ paths:
+
+  \- /var/log/nginx/error.log
+
+ tags: ["error"]
+
+setup.template.settings:
+
+ index.number_of_shards: 3
+
+setup.kibana:
+
+ host: "192.168.10.66:5601"
+
+output.kafka:
+
+ hosts: ["192.168.10.66:9092","192.168.47.176:9092","192.168.47.177:9092"]
+
+ topic: elklog
+</code></pre><h3 id="_6-3-6-logstash配置" tabindex="-1">6.3.6 logstash配置 <a class="header-anchor" href="#_6-3-6-logstash配置" aria-hidden="true">#</a></h3><pre><code>[root@kafka-175 conf.d]# cat /etc/logstash/conf.d/kafka.conf
+
+input{
+
+ kafka{
+
+  bootstrap_servers=&gt;"192.168.10.66:9092"
+
+  topics=&gt;["elklog"]
+
+  group_id=&gt;"logstash"
+
+  codec =&gt; "json"
+
+ }
+
+}
+
+filter {
+
+ mutate {
+
+  convert =&gt; ["upstream_time", "float"]                                                            
+
+  convert =&gt; ["request_time", "float"]
+
+ }
+
+}
+
+output {
+
+  if "access" in [tags] {
+
+   elasticsearch {
+
+​    hosts =&gt; "http://localhost:9200"
+
+​    manage_template =&gt; false
+
+​    index =&gt; "nginx_access-%{+yyyy.MM.dd}"
+
+   }
+
+  }
+
+  if "error" in [tags] {
+
+   elasticsearch {
+
+​    hosts =&gt; "http://localhost:9200"
+
+​    manage_template =&gt; false
+
+​    index =&gt; "nginx_error-%{+yyyy.MM.dd}"
+
+   }
+
+  }
+
+}
+</code></pre><h1 id="第7章-配置logstash同步mysql数据" tabindex="-1">第7章 配置logstash同步mysql数据 <a class="header-anchor" href="#第7章-配置logstash同步mysql数据" aria-hidden="true">#</a></h1><p>略</p><h1 id="第8章-kibana画图展示" tabindex="-1">第8章 kibana画图展示 <a class="header-anchor" href="#第8章-kibana画图展示" aria-hidden="true">#</a></h1><p>略</p><h1 id="第9章-grafana画图展示" tabindex="-1">第9章 grafana画图展示 <a class="header-anchor" href="#第9章-grafana画图展示" aria-hidden="true">#</a></h1><p>除了kibana外，grafana也支持从es调取数据并展示</p><p><a href="https://grafana.com/docs/features/datasources/elasticsearch/#using-elasticsearch-in-grafana" target="_blank" rel="noreferrer">https://grafana.com/docs/features/datasources/elasticsearch/#using-elasticsearch-in-grafana</a></p><h1 id="第10章-如何在公司推广elk项目" tabindex="-1">第10章 如何在公司推广ELK项目 <a class="header-anchor" href="#第10章-如何在公司推广elk项目" aria-hidden="true">#</a></h1><p>如何在公司推广ELK的项目</p><p>1.优先表达出对其他人带来的便利和好处</p><p>- 领导</p><p>- 开发</p><p>- 测试</p><p>- DBA</p><p>-- 以后你自己相查什么数据都可以直接查</p><p>-- 以前插个日志运维得查10分钟，现在你只要点几下鼠标就ok了</p><p>-- 我专门为你们部门定制了一个图形面板，你看看效果，有啥不满意的尽管说，我优先给你们部门解决</p><p>2.对于运维来说，json日志更友好</p><p>- 告诉领导，json格式更友好，做出测试环境，并给领导演示json格式优点</p><p>- 提前统计好到底需要收集哪些日志</p><p>- 要求能转成json的就转成json</p><p>- 自己改不了的，给领导说，让开发改成json格式</p><p>- 那行，领导你看，如果不改成json，就只能是这个效果了，后续的新需求，可能就满足不了了</p><p>- 并不是说所有日志，必须是json</p><p>3.推广演示</p><p>- 提前都准备好文档和ppt还有测试环境</p><p>- 一定要对比传统分析日志和ELK之后带来的巨大改变</p><h1 id="第11章-面试问题" tabindex="-1">第11章 面试问题 <a class="header-anchor" href="#第11章-面试问题" aria-hidden="true">#</a></h1><hr><p>[<a href="#_msoanchor_1">A1]</a>ELK每个组件都需要JAVA环境</p><p>[<a href="#_msoanchor_2">A2]</a>搭建群集一定要同步时间</p><p>[<a href="#_msoanchor_3">A3]</a>数据库存储目录</p><p>[<a href="#_msoanchor_4">A4]</a>日志文件存储位置</p><p>[<a href="#_msoanchor_5">A5]</a>锁定内存</p><p>[<a href="#_msoanchor_6">A6]</a>监听地址，最好添加上本机地址</p><p>[<a href="#_msoanchor_7">A7]</a>监听端口</p><p>[<a href="#_msoanchor_8">A8]</a>配置filebeat支持json格式传输到Es</p><p>[<a href="#_msoanchor_9">A9]</a>修改索引名称，推荐以月份结尾，因为Kibana支持月份</p><p>[<a href="#_msoanchor_10">A10]</a>关闭默认模板索引</p><p>[<a href="#_msoanchor_11">A11]</a>引用设置索引</p><p>[<a href="#_msoanchor_13">A13]</a>定义JSON键值对，使得ES读数据更加明显索引更加奥里给</p><p>[<a href="#_msoanchor_14">A14]</a>定义错误日志存放目录，tags指定下方可指定条件，可以是键值里得任何一种。</p><p>[<a href="#_msoanchor_15">A15]</a>当tags是error的时候收集日志简直不要奥里给</p><p>[<a href="#_msoanchor_16">A16]</a>如果只监听一个服务不用添加条件：定义条件</p><p>[<a href="#_msoanchor_17">A17]</a>不用纠结每添加一种服务就要该名称 只要之前改过，就可以不用修改就可以使用</p><!--]--><!--[--><!--]--><!--]--><div text="center"><!----></div><!----></article><!--]--><!--[--><!--[--><!--[--><div class="yun-sponsor-container flex justify-center items-center flex-col"><button class="sponsor-button yun-icon-btn shadow hover:shadow-md" title="打赏" text="red-400"><div i-ri-heart-line=""></div></button><div m="y-4" class="qrcode-container qrcode flex justify-around"><!--[--><a class="flex flex-col justify-center items-center animate-iteration-1" href="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG203.jpeg" target="_blank" style="color:#00a3ee"><img class="sponsor-method-img" border="~ rounded" p="1" loading="lazy" src="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG203.jpeg" title="支付宝"><div text="xl" m="2" class="i-ri-alipay-line"></div></a><a class="flex flex-col justify-center items-center animate-iteration-1" href="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG205.jpeg" target="_blank" style="color:#12b7f5"><img class="sponsor-method-img" border="~ rounded" p="1" loading="lazy" src="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG205.jpeg" title="QQ 支付"><div text="xl" m="2" class="i-ri-qq-line"></div></a><a class="flex flex-col justify-center items-center animate-iteration-1" href="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG204.jpeg" target="_blank" style="color:#2dc100"><img class="sponsor-method-img" border="~ rounded" p="1" loading="lazy" src="https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG204.jpeg" title="微信支付"><div text="xl" m="2" class="i-ri-wechat-pay-line"></div></a><!--]--></div></div><ul class="post-copyright" m="y-4"><li class="post-copyright-author"><strong>本文作者：</strong><span>卷饼</span></li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://www.vlinux.cn/posts/elk日志收集系统概括">https://www.vlinux.cn/posts/elk日志收集系统概括</a></li><li class="post-copyright-license"><strong>版权声明：</strong><span>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 ">CC BY-NC-SA</a> 许可协议。</span></li></ul><!--]--><!--]--><!--]--></div><!--]--><!----></div><!--[--><!--]--><!--[--><div class="post-nav"><div class="post-nav-item"><a href="/posts/tomcat认知梳理" class="post-nav-prev" title="Tomcat认知梳理"><div class="icon" i-ri-arrow-left-s-line=""></div><span class="title truncate" text="sm">Tomcat认知梳理</span></a></div><div class="post-nav-item"><a href="/posts/jenkins（ca-ci）部署" class="post-nav-next" title="Jenkins（CA/CI）部署"><span class="title truncate" text="sm">Jenkins（CA/CI）部署</span><div class="icon" i-ri-arrow-right-s-line=""></div></a></div></div><!--]--><!--[--><!--]--><!----><!--[--><!--]--><footer class="va-footer p-4 text-$va-c-text-light" text="center sm"><div class="beian" m="y-2"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">豫ICP备20001100号-3</a></div><div class="copyright flex justify-center items-center" p="1"><span>©<!--[--> 2016 -<!--]--> 2022</span><a m="x-2" class="inline-flex animate-pulse" href="https://sponsors.yunyoujun.cn" target="_blank" title="Sponsor YunYouJun"><div class="i-ri-cloud-line"></div></a><span>卷饼</span></div><div class="powered" m="2"><span>由 <a href="https://github.com/YunYouJun/valaxy" target="_blank" rel="noopener">Valaxy</a> v0.11.4 驱动</span> | <span>主题 - <a href="https://yun.valaxy.site" title="valaxy-theme-yun" target="_blank">Yun</a> v0.11.4</span></div><!--[--><!--]--></footer><!--[--><!--]--></div><!--]--><!--[--><!--[--><button class="xl:hidden toc-btn shadow fixed yun-icon-btn z-350" opacity="75" right="2" bottom="19"><div i-ri-file-list-line=""></div></button><!----><!--  --><aside class="va-card aside" m="l-4" text="center"><div class="aside-container" flex="~ col"><h2 m="t-6 b-2" font="serif black">文章目录</h2><div style="display:none" data-v-928b99a5=""><div class="content" data-v-928b99a5=""><div class="outline-title" data-v-928b99a5="">On this page</div><div class="outline-marker" data-v-928b99a5=""></div><nav aria-labelledby="doc-outline-aria-label" data-v-928b99a5=""><span id="doc-outline-aria-label" class="visually-hidden" data-v-928b99a5="">Table of Contents for current page</span><ul class="root va-toc relative z-1" data-v-928b99a5="" data-v-5552addd=""><!--[--><!--]--></ul></nav></div></div><div class="flex-grow"></div><div class="custom-container"><!--[--><!--]--></div></div></aside><!--]--><!--]--></div></main><a href="#" class="back-to-top yun-icon-btn"><div w="8" h="8" i-ri-arrow-up-s-line=""></div><svg class="progress-circle-container" viewBox="0 0 100 100"><circle stroke-dasharray="301.59289474462014 301.59289474462014" stroke-dashoffset="301.59289474462014" class="progress-circle" cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></circle></svg></a><!--]--><!--]--></div><script>window.__INITIAL_STATE__='{"pinia":{"app":{"isSidebarOpen":false,"isRightSidebarOpen":false}}}'</script><link rel="stylesheet" href="/assets/post.1d1be697.css"><link rel="stylesheet" href="/assets/ValaxyMain.d58abc01.css"><link rel="stylesheet" href="/assets/index.5e999eb6.css"></body></html>
