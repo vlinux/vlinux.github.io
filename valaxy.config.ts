@@ -8,82 +8,48 @@ import { addonWaline } from 'valaxy-addon-waline'
  */
 const config: UserConfig<ThemeUserConfig> = {
   lang: 'zh-CN',
-  title: '云游君的小站',
+  title: '运维之境',
   author: {
-    name: '云游君',
+    name: '卷饼',
+    avatar: 'http://cos.vlinux.cn/vlinux-logo/user.jpg',
   },
-  description: '云游君的小站',
-  url: 'https://www.yunyoujun.cn',
+  subtitle: '如果你太在意别人的话',
+  description: '那你终将成为别人的一条裤衩',
+  url: 'https://www.vlinux.cn',
   social: [
     {
-      name: 'RSS',
-      link: '/atom.xml',
-      icon: 'i-ri-rss-line',
-      color: 'orange',
-    },
-    {
-      name: 'QQ 群 1050458482',
-      link: 'https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi',
+      name: 'QQ 38867033',
+      link: 'https://wpa.qq.com/msgrd?v=3&uin=38867033&site=qq&menu=yes&jumpflag=1',
       icon: 'i-ri-qq-line',
       color: '#12B7F5',
     },
     {
       name: 'GitHub',
-      link: 'https://github.com/YunYouJun',
+      link: 'https://github.com/vlinux',
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
     {
-      name: '微博',
-      link: 'https://weibo.com/jizhideyunyoujun',
-      icon: 'i-ri-weibo-line',
-      color: '#E6162D',
-    },
-    {
-      name: '豆瓣',
-      link: 'https://www.douban.com/people/yunyoujun/',
-      icon: 'i-ri-douban-line',
-      color: '#007722',
-    },
-    {
-      name: '网易云音乐',
-      link: 'https://music.163.com/#/user/home?id=247102977',
-      icon: 'i-ri-netease-cloud-music-line',
-      color: '#C20C0C',
-    },
-    {
-      name: '知乎',
-      link: 'https://www.zhihu.com/people/yunyoujun/',
-      icon: 'i-ri-zhihu-line',
-      color: '#0084FF',
-    },
-    {
-      name: '哔哩哔哩',
-      link: 'https://space.bilibili.com/1579790',
-      icon: 'i-ri-bilibili-line',
-      color: '#FF8EB3',
+      name: '杂物堆 Repo',
+      link: 'https://repo.vlinux.cn/',
+      icon: 'i-ri-download-cloud-2-fill',
+      color: '#0088CC',
     },
     {
       name: '微信公众号',
-      link: 'https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg',
+      link: 'https://cos.vlinux.cn/www-vlinux-cn-blog-img/WechatIMG18.jpeg',
       icon: 'i-ri-wechat-2-line',
       color: '#1AAD19',
     },
     {
-      name: 'Twitter',
-      link: 'https://twitter.com/YunYouJun',
-      icon: 'i-ri-twitter-line',
-      color: '#1da1f2',
-    },
-    {
-      name: 'Telegram Channel',
-      link: 'https://t.me/elpsycn',
-      icon: 'i-ri-telegram-line',
-      color: '#0088CC',
+      name: 'Music',
+      link: 'https://music.kococ.cn/',
+      icon: 'i-ri-speaker-fill',
+      color: '#E6162D',
     },
     {
       name: 'E-Mail',
-      link: 'mailto:me@yunyoujun.cn',
+      link: 'mailto:ilinux@88.com',
       icon: 'i-ri-mail-line',
       color: '#8E71C1',
     },
@@ -98,9 +64,9 @@ const config: UserConfig<ThemeUserConfig> = {
   search: {
     algolia: {
       enable: true,
-      appId: 'CJXXAGRCYN',
-      apiKey: 'ae1966d2aeab22bf9335679f45d2cd9a',
-      indexName: 'my-hexo-blog',
+      appId: 'J0AB4BDWYY',
+      apiKey: 'af4ee176f36490f6b1846fe8add6dd03',
+      indexName: 'valaxy_blog',
     },
   },
 
@@ -109,7 +75,7 @@ const config: UserConfig<ThemeUserConfig> = {
   themeConfig: {
     banner: {
       enable: true,
-      title: '云游君的小站',
+      title: '运维之境',
     },
 
     pages: [
@@ -118,6 +84,12 @@ const config: UserConfig<ThemeUserConfig> = {
         url: '/links/',
         icon: 'i-ri-genderless-line',
         color: 'dodgerblue',
+      },
+      {
+        name: '我的小账单',
+        url: '/bill',
+        icon: 'i-ri-money-cny-circle-line',
+        color: '#FFD700',
       },
       {
         name: '喜欢的女孩子',
@@ -131,8 +103,12 @@ const config: UserConfig<ThemeUserConfig> = {
       since: 2016,
       beian: {
         enable: true,
-        icp: '苏ICP备17038157号',
+        icp: '豫ICP备20001100号-3',
       },
+    },
+    bg_image: {
+      enable: true,
+      dark: 'https://cos.vlinux.cn/vlinux-logo/www-vlinux-cn-background-dark.jpeg',
     },
   },
 
@@ -148,7 +124,7 @@ const config: UserConfig<ThemeUserConfig> = {
 
   addons: [
     addonWaline({
-      serverURL: 'https://waline.yunyoujun.cn',
+      serverURL: 'https://waline.vlinux.cn',
     }),
   ],
 }
