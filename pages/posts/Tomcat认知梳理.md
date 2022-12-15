@@ -113,7 +113,7 @@ catalina.shtomcat    核心管理脚本,以后jvm优化参数及相关配置,修
 
 
 
-```objectivec
+```bash
 [root@sweb01 /opt/tomcat/bin]# cd
 [root@sweb01 ~]# /opt/tomcat/bin/startup.sh 
 Using CATALINA_BASE:   /opt/tomcat
@@ -165,7 +165,7 @@ tcp    LISTEN     0      1      ::ffff:127.0.0.1:8005                 :::*      
 
 
 
-```objectivec
+```bash
 [root@sweb01 ~]# /opt/tomcat/bin/shutdown.sh 
 Using CATALINA_BASE:   /opt/tomcat
 Using CATALINA_HOME:   /opt/tomcat
@@ -237,7 +237,7 @@ Using CLASSPATH:       /opt/tomcat/bin/bootstrap.jar:/opt/tomcat/bin/tomcat-juli
 
 
 
-```objectivec
+```bash
 [root@sweb01 ~]# /opt/tomcat/bin/shutdown.sh 
 Using CATALINA_BASE:   /opt/tomcat
 Using CATALINA_HOME:   /opt/tomcat
@@ -805,7 +805,7 @@ zabbix网页操作
 
 
 
-```objectivec
+```bash
 [root@sweb01 /opt/tomcat_02/conf]# /opt/tomcat_01/bin/startup.sh 
 Using CATALINA_BASE:   /opt/tomcat_01
 Using CATALINA_HOME:   /opt/tomcat_01
@@ -940,7 +940,7 @@ telnet管理端口保护
 
 
 
-```objectivec
+```bash
 #屏蔽dns查询enableLookups="false";
 vim /application/tomcat/conf/server.xml
     <Connector  port="8081" protocol="HTTP/1.1"
@@ -1027,7 +1027,7 @@ securerandom.source=file:/dev/urandom
 
 
 
-```objectivec
+```bash
 [root@m01 ~/tomcat]# cat tomcat.yml 
 - hosts: tomcat
   tasks:

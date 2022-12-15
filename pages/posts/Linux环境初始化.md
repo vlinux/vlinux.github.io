@@ -10,7 +10,7 @@ date: 2020-02-25 18:29:00
 
 
 
-```undefined
+```bash
 1.记命令 80-150
 2.记参数 常用 3-5个
 3.练习 考试题手写
@@ -21,7 +21,7 @@ date: 2020-02-25 18:29:00
 
 
 
-```undefined
+```bash
 1.理解 思考 提问
 2.应用场景 干嘛用的 怎么用
 3.安装部署 配置文件 启动 测试 关闭 
@@ -122,7 +122,7 @@ eth1: LAN区段 模拟内网 172.16.1.x
 
 
 
-```undefined
+```bash
 net.ifnames=0 biosdevname=0
 ```
 
@@ -214,7 +214,7 @@ export PS1="[\[\e[34;1m\]\u@\[\e[0m\]\[\e[32;1m\]\H\[\e[0m\] \[\e[31;1m\]\w\[\e[
 
 
 
-```undefined
+```bash
 yum repolist
 ```
 
@@ -238,7 +238,7 @@ curl -o /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
 
 
 
-```undefined
+```bash
 yum install -y tree vim wget bash-completion   bash-completion-extras  lrzsz net-tools sysstat iotop iftop htop unzip  telnet  ntpdate
 ```
 

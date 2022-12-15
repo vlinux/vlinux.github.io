@@ -47,7 +47,7 @@ docker run -d -p 8080:8080 -v /etc/prometheusalert-center:/app/conf --name Prome
 
 **启动后可使用浏览器打开以下地址查看**
 
-```http
+```bash
 http://127.0.0.1:8080
 ```
 

@@ -184,11 +184,18 @@ Created symlink /etc/systemd/system/multi-user.target.wants/php-fpm.service → 
 ```
 
 在此文件中插入
+
+```bash
 <?php
 
 phpinfo ();
 
 ?>
+```
+
+
+
+
 ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kococ/TYPECHO_IMG/mu77/2020022813581788.png)
 然后转到浏览器，并在下面输入URL。使用用服务器的实际IP地址替换服务器本文测试的地址。![在这里插入图片描述](https://cdn.jsdelivr.net/gh/kococ/TYPECHO_IMG/mu77/20200228140346635.png)
 

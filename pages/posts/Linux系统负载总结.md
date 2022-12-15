@@ -140,7 +140,7 @@ Linux 3.10.0-514.16.1.el7.x86_64 (localhost.localdomain)    11/24/2018  _x86_64_
 
 
 
-```objectivec
+```bash
 [root@localhost ~]# pidstat -u 5 1
 Linux 3.10.0-514.16.1.el7.x86_64 (localhost.localdomain)    11/24/2018  _x86_64_    (16 CPU)
 

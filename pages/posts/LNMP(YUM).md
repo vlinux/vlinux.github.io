@@ -841,7 +841,7 @@ define('DB_HOST', '172.16.1.51');
 
 
 
-```undefined
+```bash
 web01      nginx+php
 web02      nginx+php
 db01        mysql

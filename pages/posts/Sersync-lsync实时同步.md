@@ -15,7 +15,7 @@ date: 2020-03-12 16:10:00
 
 
 
-```undefined
+```bash
 什么条件才同步
 多久同步一次
 用什么备份方式同步
@@ -177,7 +177,7 @@ done
 
 
 
-```undefined
+```bash
 inotify优点
 1)监控文件系统事件变化
 
@@ -293,7 +293,7 @@ ________________________________________________________________
 
 
 
-```undefined
+```bash
 ./sersync2 -rdo confxml.xml
 ```
 
@@ -344,7 +344,7 @@ Lysncd 实际上是lua语言封装了 inotify 和 rsync 工具，采用了 Linux
 
 
 
-```undefined
+```bash
 yum install lsyncd -y
 ```
 
@@ -441,7 +441,7 @@ https://www.cnblogs.com/zxci/p/6243574.html
 
 
 
-```undefined
+```bash
 systemctl start lsyncd 
 ```
 

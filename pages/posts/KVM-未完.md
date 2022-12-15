@@ -16,7 +16,7 @@ date: 2020-03-19 15:26:00
 
 
 
-```undefined
+```bash
 yum install libvirt virt-install qemu-kvm -y
 ```
 
@@ -50,7 +50,7 @@ virsh list --all
 
 
 
-```undefined
+```bash
 virsh start centos7
 ```
 
@@ -58,7 +58,7 @@ virsh start centos7
 
 
 
-```undefined
+```bash
 virsh reboot centos7
 ```
 
@@ -66,7 +66,7 @@ virsh reboot centos7
 
 
 
-```undefined
+```bash
 virsh shutdown centos7
 virsh destroy centos7
 ```
@@ -75,7 +75,7 @@ virsh destroy centos7
 
 
 
-```undefined
+```bash
 virsh dumpxml centos7
 ```
 
@@ -91,7 +91,7 @@ virsh dumpxml centos7 > centos7.xml
 
 
 
-```undefined
+```bash
 virsh destroy centos7
 virsh undefine centos7
 ```
@@ -108,7 +108,7 @@ virsh define centos7.xml
 
 
 
-```undefined
+```bash
 virsh domrename panghu shouhu
 ```
 
@@ -124,7 +124,7 @@ virsh suspend centos7
 
 
 
-```undefined
+```bash
 virsh resume centos7
 ```
 
@@ -132,7 +132,7 @@ virsh resume centos7
 
 
 
-```undefined
+```bash
 virsh autostart centos7
 ll /etc/libvirt/qemu/autostart/
 ```
@@ -145,7 +145,7 @@ ll /etc/libvirt/qemu/autostart/
 
 
 
-```undefined
+```bash
 virsh shutdown centos7
 ```
 
@@ -184,7 +184,7 @@ virsh list
 
 
 
-```undefined
+```bash
 virsh vncdisplay centos7
 ```
 
@@ -216,7 +216,7 @@ virsh console centos7
 
 
 
-```undefined
+```bash
 ctrl + ]
 ```
 
@@ -226,7 +226,7 @@ ctrl + ]
 
 
 
-```undefined
+```bash
 raw：不支持做快照，性能好
 qcow2：支持快照，性能不如raw好
 ```
@@ -269,7 +269,7 @@ qemu-img resize /data/centos7.qcow2 1T
 
 
 
-```undefined
+```bash
 virsh destroy centos7
 ```
 
@@ -325,7 +325,7 @@ virsh snapshot-list centos7
 
 
 
-```undefined
+```bash
 virsh snapshot-revert centos7 snap1
 ```
 
@@ -405,7 +405,7 @@ virsh start centos7-clone
 
 
 
-```undefined
+```bash
 virsh iface-bridge eth0 br0
 ```
 
@@ -439,7 +439,7 @@ ip a
 
 
 
-```undefined
+```bash
 ping xxxx
 ```
 
@@ -490,7 +490,7 @@ virsh attach-disk centos7 /opt/centos7-add.qcow2 vdb --subdriver qcow2 --config
 
 
 
-```undefined
+```bash
 virsh detach-disk centos7 vdb
 ```
 
@@ -498,7 +498,7 @@ virsh detach-disk centos7 vdb
 
 
 
-```undefined
+```bash
 virsh detach-disk centos7 vdb
 virsh detach-disk centos7 vdb --config
 ```
@@ -530,7 +530,7 @@ df -h|tail -1
 
 
 
-```undefined
+```bash
 xfs_growfs /dev/vdb
 df -h|tail -1
 ```
@@ -631,7 +631,7 @@ virsh edit centos7
 
 
 
-```undefined
+```bash
 virsh setvcpus centos7 4 --live 
 ```
 
@@ -639,8 +639,7 @@ virsh setvcpus centos7 4 --live
 
 
 
-```undefined
+```bash
 setvcpus centos7 4 --config
 ```
-
 

@@ -78,7 +78,7 @@ iptables是采用数据包过滤机制工作的，所以它会对请求的数据
 
 
 
-```undefined
+```bash
 modprobe ip_tables
 modprobe iptable_filter
 modprobe iptable_nat
@@ -171,7 +171,7 @@ iptables -nL --line-numbers 查看规则号码
 
 
 
-```undefined
+```bash
 iptables A INPUT -p tcp -m state --dport 22 -j DROP
 iptables -nL
 iptables -nL --line-numbers
@@ -203,7 +203,7 @@ iptables -t filter -A INPUT -p tcp --dport 22 -j DROP
 
 
 
-```undefined
+```bash
 iptables -I INPUT -p tcp -s 10.0.0.253 -i eth0 -j DROP
 iptables -A INPUT -p tcp ! -s 10.0.0.1 -i eth0 -j DROP
 iptables -A INPUT -p tcp ! -s 10.0.0.0/24 -i eth0 -j DROP
@@ -272,7 +272,7 @@ iptables -I INPUT 2 -p icmp ! -s 10.0.0.1 --icmp-type 8 -j DROP
 
 
 
-```undefined
+```bash
 iptables -I INPUT -p tcp --dport 3306 -j DROP
 ```
 
@@ -322,7 +322,7 @@ target     prot opt source               destination
 
 
 
-```undefined
+```bash
 iptables -F
 iptables -X
 iptables -Z

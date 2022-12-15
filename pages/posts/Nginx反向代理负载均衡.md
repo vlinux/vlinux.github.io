@@ -166,7 +166,7 @@ location / {
 
 
 
-```undefined
+```bash
 lb01       代理服务器
 web01   web服务器
 ```
@@ -282,7 +282,7 @@ server {
 
 
 
-```undefined
+```bash
 upstream upload_pools{
     server 10.0.0.8:80;
 }
