@@ -1,0 +1,1232 @@
+---
+title: Prometheus+Grafana全方位监控系统
+categories: DevOps
+tags: [Prometheus]
+date: 2020-08-30 16:38:00
+---
+# Prometheus+Grafana全方位监控系统
+
+`emmm`，前段时间写了一篇关于使用`Prometheus+grafana+node-exporter`监控`k8s`的文章，那篇写的很简单，只是单纯的搭建出来了，目前我对这东西一点都不了解，所以先来了解一下`Prometheus`和他常用的组件吧，包括`Prometheus/Grafana/node-exports/Alertmanager`，开始吧。
+
+本文包括`Prometheus`概述、部署、配置、监控、告警、之前我做监控用的都是`zabbix`，`zabbix`也算是一个全面型的监控系统，但是他不太适合容器监控，他对容器监控集成欠缺很多，他比较偏向于非容器监控。
+
+`Prometheus`算是一个全能型选手，原生支持容器监控，当然监控传统应用也不是吃干饭的，所以就是容器和非容器他都支持，所有的监控系统都具备这个流程，数据采集→数据处理→数据存储→数据展示→告警，本文就是针对`Prometheus`展开的，所以先看看`Prometheus`概述
+
+## Prometheus概述
+
+先来看一下`Prometheus`是个啥
+
+### Prometheus是什么
+
+中文名普罗米修斯，最初在`SoundCloud`上构建的监控系统，自`2012`年成为社区开源项目，用户非常活跃的开发人员和用户社区，2016年加入`CNCF`，成为继`kubernetes`之后的第二个托管项目，[官方网站](https://prometheus.io/)
+
+### Prometheus特点
+
+官方扒过来的
+
+- 多维数据模型：由度量名称和键值对标识的时间序列数据
+- PromSQL: —种灵活的查询语言，可以利用多维数据完成复杂的查询
+- 不依赖分布式存储，单个服务器节点可直接工作
+- 基于HTTP的pull方式釆集时间序列数据
+- 推送时间序列数据通过PushGateway组件支持
+- 通过服务发现或静态配罝发现目标
+- 多种图形模式及仪表盘支持(grafana)
+
+### Prometheus 组成与架构
+
+来看一张图，官方扒到的
+
+![20190702133835](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702133835.png#mirages-width=774&mirages-height=462&mirages-cdn-type=5)
+
+| 名称              | 说明                                       |
+| ----------------- | ------------------------------------------ |
+| Prometheus Server | 收集指标和存储时间序列数据，并提供查询接口 |
+| Push Gateway      | 短期存储指标数据，主要用于临时性任务       |
+| Exporters         | 采集已有的三方服务监控指标并暴露metrics    |
+| Alertmanager      | 告警                                       |
+| Web UI            | 简单的WEB控制台                            |
+
+集成了数据的采集，处理，存储，展示，告警一系列流程都已经具备了
+
+### 数据模型
+
+`Prometheus`将所有数据存储为时间序列，具有相同度量名称以及标签属于同个指标，也就是说`Prometheus`从数据源拿到数据之后都会存到内置的`TSDB`中，这里存储的就是时间序列数据，它存储的数据会有一个度量名称，譬如你现在监控一个`nginx`，首先你要给他起个名字，这个名称也就是度量名，还会有`N`个标签，你可以理解名称为表名，标签为字段，所以，每个时间序列都由度量标准名称和一组键值对(也称为标签)唯一标识。
+
+时间序列的格式是这样的，
+
+```
+<metrice name> {<label name>=<label value>,...}
+```
+
+`metrice name`指的就是度量标准名称，`label name`也就是标签名，这个标签可以有多个，栗子
+
+```
+nginx_http_access{method="GET",uri="/index.html"}
+```
+
+这个度量名称为`nginx_http_access`，后面是两个标签，和他们各对应的值，当然你还可以继续指定标签，你指定的标签越多查询的维度就越多。
+
+### 指标类型
+
+看表格吧
+
+| 类型名称  | 说明                                                 |
+| --------- | ---------------------------------------------------- |
+| Counter   | 递增计数器，适合收集接口请求次数                     |
+| Guage     | 可以任意变化的数值，适用CPU使用率                    |
+| Histogram | 对一段时间内数据进行采集，并对有所数值求和于统计数量 |
+| Summary   | 与Histogram类型类似                                  |
+
+### 作业和实例
+
+实例指的就是你可以抓取的目标，这个会在`Prometheus `配置文件中提现，作业是具有相同目标的实例集合称为作业，你可以理解为是一个组，一会写配置文件的时候会详细解析，下面开始安装`Prometheus`。
+
+## Prometheus部署
+
+先通过二进制来部署`Prometheus`吧，[下载地址](https://github.com/prometheus/prometheus/releases)，我们要下载服务端，也就是这个包
+
+![20190702152359](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702152359.png#mirages-width=1214&mirages-height=339&mirages-cdn-type=5)
+
+我在服务器上直接下载了，下载完后解压移动到别的目录。
+
+```bash
+[root@rj-bai ~]# wget https://github.com/prometheus/prometheus/releases/download/v2.10.0/prometheus-2.10.0.linux-amd64.tar.gz
+[root@rj-bai ~]# tar zxf prometheus-2.10.0.linux-amd64.tar.gz 
+[root@rj-bai ~]# mv prometheus-2.10.0.linux-amd64 /usr/local/prometheus
+[root@rj-bai ~]# cd /usr/local/prometheus/ && ls
+console_libraries  consoles  LICENSE  NOTICE  prometheus  prometheus.yml  promtool
+```
+
+先配置一下监控本机吧，它默认的配置文件是`prometheus.yml`，已经配置好了，也就是这一段，
+
+```yaml
+  - job_name: 'prometheus'
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+    - targets: ['localhost:9090']
+```
+
+`targets`就是一个作业，也就是被监控端，监控本机的`9090`端口，启动选项也有很多，了解一下，主要是关注两点，分别如下。
+
+```shell
+      --storage.tsdb.path="data/"   ##存储数据的目录，默认/data
+      --storage.tsdb.retention.time ##数据存储时间，默认15天
+```
+
+这里提一下存储的问题，`TSDB`不太适合长期去存储数据，数据量大了支持并不是很好，官方声明也是不会对这一块存储进行改善，给你的建议是使用外部存储，譬如使用`InfluxDB`，这里暂时就不改他的默认存储了，把他进入系统服务吧，写一个`systemd`的配置文件，直接启动了
+
+```bash
+[root@rj-bai /usr/local/prometheus]# cat > /usr/lib/systemd/system/prometheus.service <<OEF 
+> [Unit]
+> Description=prometheus server daemon
+> 
+> [Service]
+> Restart=on-failure
+> ExecStart=/usr/local/prometheus/prometheus --config.file=/usr/local/prometheus/prometheus.yml
+> 
+> [Install]
+> WantedBy=multi-user.target
+> OEF
+[root@rj-bai /usr/local/prometheus]# systemctl daemon-reload && systemctl start prometheus.service
+```
+
+这样就启动了撒，去访问`9090`端口就可以看到页面了，这个页面能看到的东西很多，自己点点看吧，能看到这个页面就表示莫得问题。
+
+![20190702163712](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702163712.png#mirages-width=1845&mirages-height=454&mirages-cdn-type=5)
+
+目前使用二进制部署主要是因为方便改配置文件，下面开始看配置文件。
+
+## 全局配置文件介绍
+
+`prometheus` 已经安装起来了，下面看一下配置文件与核心功能，很多功能都是通过配置文件去实现的，比较多，所以先熟悉一下他的配置文件。
+
+### 全局配置文件
+
+也就是`prometheus.yml`，官方说明[地址](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)，大概分为这几块，我把注释去掉了，全局配置选项
+
+```yaml
+global:
+  [ scrape_interval: <duration> | default = 1m ]      ##采集间隔
+  [ scrape_timeout: <duration> | default = 10s ]      ##采集超时时间
+  [ evaluation_interval: <duration> | default = 1m ]  ##告警评估周期
+  external_labels:                                    ##外部标签             
+    [ <labelname>: <labelvalue> ... ]
+```
+
+指定告警规则
+
+```yaml
+rule_files:
+  [ - <filepath_glob> ... ]
+```
+
+配置被监控端
+
+```yaml
+scrape_configs:
+  [ - <scrape_config> ... ]
+```
+
+配置告警方式
+
+```yaml
+alerting:
+  alert_relabel_configs:
+    [ - <relabel_config> ... ]
+  alertmanagers:
+    [ - <alertmanager_config> ... ]
+```
+
+指定远程存储
+
+```yaml
+remote_write:
+  [ - <remote_write> ... ]
+remote_read:
+  [ - <remote_read> ... ]
+```
+
+这就是一个整体的配置文件，现在再看默认的配置文件就能看懂某一段是干啥的了，现在开始配置`scrape_configs`
+
+### scrape_configs
+
+这块就是来配置我们要监控的东西，在这一块中配置的东西又有很多了，看一下官方的，一堆，我还是去掉注释分段贴出来吧。
+
+```yaml
+job_name: <job_name>  ##指定job名字
+[ scrape_interval: <duration> | default = <global_config.scrape_interval> ]
+[ scrape_timeout: <duration> | default = <global_config.scrape_timeout> ]  ##这两段指定采集时间，默认继承全局
+[ metrics_path: <path> | default = /metrics ]  ##metrics路径，默认metrics
+[ honor_labels: <boolean> | default = false ]  ##默认附加的标签，默认不覆盖
+```
+
+它默认暴露监控数据的接口就是`ip:9090/metrics`，你可以去指定这个名称，访问一下这里看看，
+
+![20190702171903](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702171903.png#mirages-width=647&mirages-height=399&mirages-cdn-type=5)
+
+在`ip:9090/targets`能看到当前监控的主机，现在只有本机一个，标签显示也在这里。
+
+![20190702171956](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702171956.png#mirages-width=1450&mirages-height=277&mirages-cdn-type=5)
+
+在看下一段，这里定义的是要如何去访问采集目标
+
+```yaml
+[ scheme: <scheme> | default = http ]  ## 默认使用http方式去访问
+params:
+  [ <string>: [<string>, ...] ]        ## 配置访问时携带的参数
+basic_auth:
+  [ username: <string> ]
+  [ password: <secret> ]
+  [ password_file: <string> ]          ## 配置访问接口的用户名密码
+[ bearer_token: <secret> ]
+[ bearer_token_file: /path/to/bearer/token/file ]  ##指定认证token
+tls_config:
+  [ <tls_config> ]                     ## 指定CA证书
+[ proxy_url: <string> ]                ## 使用代理模式访问目标
+```
+
+下一段，服务发现配置，贴了几个，不是完整的
+
+```yaml
+consul_sd_configs:                   ##通过consul去发现
+  [ - <consul_sd_config> ... ]
+dns_sd_configs:                      ##通过DNS去发现
+  [ - <dns_sd_config> ... ]
+file_sd_configs:                   ##通过文件去发现
+  [ - <file_sd_config> ... ]
+kubernetes_sd_configs:               ##通过kubernetes去发现
+  [ - <kubernetes_sd_config> ... ]
+```
+
+静态配置被监控端
+
+```yaml
+static_configs:
+  [ - <static_config> ... ]
+```
+
+刚刚监控本机的就是静态配置去监控的，也是就这一段，
+
+```yaml
+scrape_configs:
+  - job_name: 'prometheus'
+
+    static_configs:
+    - targets: ['localhost:9090']
+```
+
+最后标签配置
+
+```yaml
+relabel_configs:
+  [ - <relabel_config> ... ]          ##在数据采集前对标签进行重新标记
+metric_relabel_configs:
+  [ - <relabel_config> ... ]          ##在数据采集之后对标签进行重新标记
+[ sample_limit: <int> | default = 0 ] ##采集样本数量，默认0
+```
+
+下面看一下`relabel_configs`
+
+### relabel_configs
+
+就是用来重新打标记的，对于`prometheus` 数据模型最关键点就是一个指标名称和一组标签来组成一个多维度的数据模型，你想完成一个复杂的查询就需要你有很多维度，`relabel_configs` 就是对标签进行处理的，他能帮你在数据采集之前对任何目标的标签进行修改，重打标签的意义就是如果标签有重复的可以帮你重命名，看一哈现在的，上面铁锅
+
+![20190708111918](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708111918.png#mirages-width=1855&mirages-height=455&mirages-cdn-type=5)
+
+现在`instance`是他默认给我加的标签，想改的话就需要`relabel_configs`去帮你重打标签，他也可以删除标签，如果某个标签用不到了也可以删掉，再就是过滤标签，再看一下`relabel_configs`的配置有哪些，也就是这一段
+
+```yaml
+relabel_configs: 
+  [ source_labels: '[' <labelname> [, ...] ']' ]   ##源标签，指定对哪个现有标签进行操作
+  [ separator: <string> | default = ; ]            ##多个源标签时连接的分隔符
+  [ target_label: <labelname> ]                    ##要将源标签换成什么名字
+  [ regex: <regex> | default = (.*) ]              ##怎么来匹配源标签，默认匹配所有
+  [ modulus: <uint64> ]                            ##不怎么会用到
+  [ replacement: <string> | default = $1 ]         ##替换正则表达式匹配到的分组，分组引用$1,$2,$3
+  [ action: <relabel_action> | default = replace ] ##基于正则表达式匹配执行的操作，默认替换
+```
+
+这东西到底怎么用，做个演示，根据两台服务器聚合查看`CPU`使用率，说白了就是同时去查看这两台服务器的`CPU`利用率，用这个标签就可以实现了。
+
+#### 添加标签
+
+去`WEB`界面看一下当前被监控端`CPU`使用率，用`sql`去查，也就是这个值。
+
+![20190708111918](https://res.rj-bai.com/201907/20190708111918.png)
+
+可以看到一个度量名称和两个默认附加的标签，我现在想统计两台服务器的`CPU`使用率，就需要加一个标签了，说白了就是添加一个维度去获取这两台服务器`CPU`使用率，接下来去改配置文件吧，给他加个标签，如下，
+
+```yaml
+    static_configs:
+    - targets: ['localhost:9090']
+      labels:
+        server: local 
+```
+
+热更新一下，
+
+```bash
+[root@rj-bai /usr/local/prometheus]# ps aux | grep prometheus.yml  | grep -v grep  | awk {'print $2'} | xargs kill -hup
+```
+
+看一下有没有生效，刷新一下页面就能看到了，
+
+![20190708113120](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708113120.png#mirages-width=694&mirages-height=480&mirages-cdn-type=5)
+
+然后可以根据这个标签去查了，语法是这样的，内置函数，
+
+```
+sum(process_cpu_seconds_total{server="local"})
+```
+
+![201907081124](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708113824.png#mirages-width=1214&mirages-height=413&mirages-cdn-type=5)
+
+所以就算你有`N`个被监控的服务器打上这个标签之后在这里就可以看到总数了，添加标签很简单，下面看一下重命名标签，就是将现有的标签进行重命名。
+
+#### 标签重命名
+
+就是将一个已有的标签重命名一个新的标签，实际操作一下，之前的标签去掉了，现在要把`job_name`改个名字，也就是这一块的配置，
+
+```yaml
+  - job_name: 'prometheus'
+
+    static_configs:
+    - targets: ['localhost:9090']
+```
+
+目前`job_name`为`prometheus`，当前这个虚拟机是跑在`IP`地址为`21`的物理机上，所以现在把他的`job_name`改成`server21`，
+
+```yaml
+scrape_configs:
+  - job_name: 'server21'
+
+    static_configs:
+    - targets: ['localhost:9090']
+```
+
+重启一下，刷新页面就可以看到了，
+
+![20190708160319](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708160319.png#mirages-width=1543&mirages-height=371&mirages-cdn-type=5)
+
+我现在要将`job`这个标签标记为`local`，也就是将`job="server21`改为`local="server21`，下面开始用`relabel`进行重命名，改完之后的配置是这样的，
+
+```yaml
+scrape_configs:
+  - job_name: 'server21'
+
+    static_configs:
+    - targets: ['localhost:9090']
+    relabel_configs:
+    - action: replace
+      source_labels: ['job']  ##源标签
+      regex: (.*)             ##正则，会匹配到job值，也就是server21
+      replacement: $1         ##引用正则匹配到的内容，也就是server21
+      target_label: local     ##赋予新的标签，名为local
+```
+
+这样就可以了撒，重新加载一下，看页面，
+
+![20190708161317](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708161317.png#mirages-width=617&mirages-height=368&mirages-cdn-type=5)
+
+新的数据已经有了，之前的标签还会保留，因为没有配置删除他，这样就可以了，现在就可以聚合了，
+
+![20190708161530](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708161530.png#mirages-width=1136&mirages-height=419&mirages-cdn-type=5)
+
+这样他就会将所有实例使用率相加求和。
+
+#### action重新打标签动作
+
+如表所示，上面就是用了一个默认的。
+
+| 值        | 描述                                                         |
+| --------- | ------------------------------------------------------------ |
+| replace   | 默认，通过正则匹配source_label的值，使用replacement来引用表达式匹配的分组 |
+| keep      | 删除regex于链接不匹配的目标source_labels                     |
+| drop      | 删除regex与连接匹配的目标source_labels                       |
+| labeldrop | 匹配Regex所有标签名称                                        |
+| labelkeep | 匹配regex所有标签名称                                        |
+| hashmod   | 设置target_label为modulus连接的哈希值source_lanels           |
+| labelmap  | 匹配regex所有标签名称，复制匹配标签的值分组，replacement分组引用(${1},${2})替代 |
+
+比如说我现在不想采集本机的数据了，就可以用上面的标签进行操作了，加点东西就行了，
+
+```yaml
+scrape_configs:
+  - job_name: 'server21'
+
+    static_configs:
+    - targets: ['localhost:9090']
+    relabel_configs: 
+    - action: replace
+      source_labels: ['job']
+      regex: (.*)
+      replacement: $1
+      target_label: local
+    - action: drop
+      source_labels: ["job"]
+```
+
+删除标签为`job`的节点，目前只有一个节点，所以这个跑了之后就看不到数据了，如果真的要用这个给不需要监控的节点打一个标签，然后在这里匹配就行了，所以现在重新载入的话就没数据了，
+
+![20190708164048](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708164048.png#mirages-width=515&mirages-height=325&mirages-cdn-type=5)
+
+最后看一下删除标签。
+
+#### 删除标签
+
+刚刚我新打了一个标签，也就是`local`标签，所以之前的`job`标签可以不要了，下面直接给他删了吧，
+
+```yaml
+scrape_configs:
+  - job_name: 'server21'
+
+    static_configs:
+    - targets: ['localhost:9090']
+    relabel_configs: 
+    - action: replace
+      source_labels: ['job']
+      regex: (.*)
+      replacement: $1
+      target_label: local
+    - action: labeldrop 
+      regex: job
+```
+
+重载一下就看到`job`的标签了。
+
+![20190708164600](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708164600.png#mirages-width=467&mirages-height=413&mirages-cdn-type=5)
+
+这样就可以了撒，下面看看基于文件的服务发现功能
+
+### 基于文件的服务发现
+
+下面会涉及到基于文件的服务发现，还有就是基于`kubernetes`的服务发现，这个到监控`k8s`集群的时候再说吧，先看基于文件的吧，现在还没准备别的服务器，还是发现本身吧，先把配置文件改成这样，重载之后就看不到本机了。
+
+```yaml
+[root@rj-bai /usr/local/prometheus]# cat prometheus.yml
+global:
+  scrape_interval:     15s 
+  evaluation_interval: 15s 
+
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+
+rule_files:
+
+scrape_configs:
+  - job_name: 'prometheus'
+```
+
+![20190708171041](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708171041.png#mirages-width=942&mirages-height=299&mirages-cdn-type=5)
+
+然后就可以去改配置文件了，通过服务发现将自身加入进去，
+
+```yaml
+[root@rj-bai /usr/local/prometheus]# cat prometheus.yml
+global:
+  scrape_interval:     15s 
+  evaluation_interval: 15s 
+
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+
+rule_files:
+
+scrape_configs:
+  - job_name: 'prometheus'
+    file_sd_configs: 
+      - files: ['/usr/local/prometheus/files_sd_configs/*.yaml']  ##指定服务发现文件位置
+        refresh_interval: 5s                                      ##刷新间隔改为5秒
+```
+
+重载服务，然后去写服务发现的`YAML`文件吧，
+
+```yaml
+[root@rj-bai /usr/local/prometheus/files_sd_configs]# cat configs.yml 
+- targets: ['localhost:9090'] 
+  labels:
+    name: server21
+```
+
+这样就可以了，文件保存五秒后就能看到发现的主机了，查数据也没问题
+
+![20190708173554](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173554.png#mirages-width=1234&mirages-height=334&mirages-cdn-type=5)
+
+![20190708173611](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173611.png#mirages-width=1432&mirages-height=254&mirages-cdn-type=5)
+
+![20190708173654](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173654.png#mirages-width=940&mirages-height=419&mirages-cdn-type=5)
+
+就是这种原理，下面开始监控`linux`和一些服务吧
+
+## 监控栗子
+
+### 监控linux服务器
+
+`emmmm`，在被监控端需要装一个名为`node_exporter`的导出器，他会帮你收集系统指标和一些软件运行的指标，把指标暴露出去，这样`prometheus`就可以去采集了，具体`node_exporter`能采集哪些东西，看官方的[`github`](https://github.com/prometheus/node_exporter)吧，还是蛮多的，现在随便找个服务器下载一下`node_exporter`运行起来就行了。
+
+```bash
+[root@kubeadm-node ~]# wget https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-amd64.tar.gz
+[root@kubeadm-node ~]# tar zxf node_exporter-0.18.1.linux-amd64.tar.gz 
+[root@kubeadm-node ~]# mv node_exporter-0.18.1.linux-amd64 /usr/local/node_exporter
+[root@kubeadm-node ~]# cd /usr/local/node_exporter
+```
+
+在启动之前看一下他的启动参数，
+
+```bash
+[root@kubeadm-node /usr/local/node_exporter]# ./node_exporter --help
+```
+
+可以看到一堆，她就是一个收集器，配置你要收集或不收集哪些信息，看`default`就能看出来撒，加到系统服务中吧，用`systemctl`去管理。
+
+```bash
+[root@kubeadm-node /usr/local/node_exporter]# cat > /usr/lib/systemd/system/node_exporter.service <<OEF 
+> [Unit]
+> Description=node_exporter
+> 
+> [Service]
+> Restart=on-failure
+> ExecStart=/usr/local/node_exporter/node_exporter
+> 
+> [Install]
+> WantedBy=multi-user.target
+> OEF
+[root@kubeadm-node /usr/local/node_exporter]# systemctl daemon-reload 
+[root@kubeadm-node /usr/local/node_exporter]# systemctl start node_exporter.service
+[root@kubeadm-node /usr/local/node_exporter]# curl -s 127.0.0.1:9100/metrics | head 
+```
+
+![20190709105800](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709105800.png#mirages-width=766&mirages-height=390&mirages-cdn-type=5)
+
+正常启动了撒，现在要配置`prometheus`来监控这个主机了，之前配置过动态发现了，现在再加一个，把服务端和被监控端分开，所以新加了这个。
+
+```bash
+[root@rj-bai /usr/local/prometheus]# cat prometheus.yml
+  - job_name: 'nodes'
+    file_sd_configs: 
+      - files: ['/usr/local/prometheus/nodes_sd_configs/*.yml']
+        refresh_interval: 5s 
+[root@rj-bai /usr/local/prometheus]# mkdir nodes_sd_configs && cd nodes_sd_configs
+[root@rj-bai /usr/local/prometheus]# ps aux | grep prometheus.yml  | grep -v grep  | awk {'print $2'} | xargs kill -hup
+[root@rj-bai /usr/local/prometheus/nodes_sd_configs]# cat nodes.yml
+- targets: ['192.168.1.248:9100'] 
+  labels:
+    name: server20
+```
+
+直接去看页面吧，应该已经添加进去了，顺便查一下数据
+
+![20190709111843](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709111843.png#mirages-width=1390&mirages-height=400&mirages-cdn-type=5)
+
+![20190709112040](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709112040.png#mirages-width=851&mirages-height=441&mirages-cdn-type=5)
+
+这样就可以了，莫得问题，下面用`PromSQL`获取`CPU&`内存硬盘使用率
+
+### 使用PromSQL
+
+想查数据就需要写`PromSQL`去查询了，
+
+#### 查询CPU使用率
+
+比如果我想查看刚刚加进来的`nodes CPU`利用率，以`node`开头的`sql`都是`node_expores`采集的指标，度量很多，看`CPU`使用率看着一个指标就够了，
+
+![](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709112714.png#mirages-width=1723&mirages-height=923&mirages-cdn-type=5)
+
+总`CPU`使用情况，会列出你处理器多少核，每个核的使用情况，这个CPU是干什么使用的，用户态还是内核态还是操作`IO`等待的时间，还有优先级调度使用的`CPU`，他会通过一个名为`mode`的标签去区分这些，一般不会这么去统计，现在统计一下刚刚加进去的那个`nodes`五分钟之内`CPU`平均使用率是多少，还是得写`PromSQL`，大概是这样，
+
+```sql
+100 - irate(node_cpu_seconds_total{mode="idle"}[5m])*100
+```
+
+`emmm`，`node_cpu_seconds_total{mode="idle"}[5m]`这一段是统计出了服务器最近5分钟`CPU`的空闲率，执行之后是这种效果，
+
+![20190709114438](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709114438.png#mirages-width=1682&mirages-height=808&mirages-cdn-type=5)
+
+这是五分钟之内所有值，然后使用了`irate`函数来统计它的平均值，转化成了百分比，乘了一百，所以执行结果如下。
+
+![20190709114935](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709114935.png#mirages-width=1761&mirages-height=439&mirages-cdn-type=5)
+
+这就是所有`CPU`的空闲率了，我要取的是所有CPU的使用率，所以又一百减去了空闲率的值就是使用率了，所以上面第一条`sql`执行发回的结果如下。
+
+![20190709115136](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709115136.png#mirages-width=1667&mirages-height=420&mirages-cdn-type=5)
+
+这就是五分钟之内总的`CPU`的平均使用率了，我的那个节点就是四核`CPU`，每个都被列出来了，真鸡儿麻烦，再看一下内存使用率，和上面其实一样，值都有了，求出他的百分比就行了，
+
+#### 查询内存使用率
+
+`linux`内核有一个内存缓存机制，所以`buff/cache`的占用不算是已被使用的物理内存，所以计算方式就是将这三个值加到一起就是剩余内存了，
+
+![20190709134042](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709134042.png#mirages-width=611&mirages-height=61&mirages-cdn-type=5)
+
+`sql`的话这样写，直接查一下，
+
+```sql
+node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes
+```
+
+![20190709134504](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709134504.png#mirages-width=1600&mirages-height=341&mirages-cdn-type=5)
+
+这就是总共剩余的内存，单位是`bite`，现在我要计算使用内存百分比，和上面看`CPU`使用率的方法一致，`sql`如下
+
+```sql
+100 - (node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes) / node_memory_MemTotal_bytes *100
+```
+
+![20190709135149](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709135149.png#mirages-width=1505&mirages-height=408&mirages-cdn-type=5)
+
+下面看看硬盘使用率
+
+#### 查询硬盘使用率
+
+你的磁盘和挂载点可能不止一个，先看一下目前收集到的信息，
+
+![20190709145758](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709145758.png#mirages-width=1470&mirages-height=478&mirages-cdn-type=5)
+
+所以就要指定分区进行计算了，所以匹配这里写了一个正则去匹配你挂载的磁盘，如下
+
+```sql
+100- (node_filesystem_free_bytes{mountpoint="/",fstype=~"ext4|xfs"} / node_filesystem_size_bytes{mountpoint="/",fstype=~"ext4|xfs"} *100)
+```
+
+`node_filesystem_size_bytes`查的是`/`总大小，`node_filesystem_free_bytes`查的是剩余大小，只匹配`ext4&xfs`类型的，像是什么`tmpfs&shm`类型的都不匹配，还是算出了剩余的百分比，所以执行后的结果是这样，
+
+![20190709150539](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709150539.png#mirages-width=1907&mirages-height=326&mirages-cdn-type=5)
+
+![20190709150559](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709150559.png#mirages-width=1185&mirages-height=254&mirages-cdn-type=5)
+
+计算方式大概就是这样，现在还没涉及到图形展示这一块，下面看一下获取系统服务运行状态。
+
+#### 查询系统服务运行状态
+
+就是监控系统服务运行状态，说白了就是监控以`systemctl`启动的服务，现在监控一下这个，`node_exports`就支持对这种服务进行监控，目前还没有启用这个功能，现在启动一下撒，直接去改`node_exports`的启动文件，加两条参数即可。
+
+```shell
+[root@kubeadm-node ~]# cat /usr/lib/systemd/system/node_exporter.service 
+[Unit]
+Description=node_exporter
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/local/node_exporter/node_exporter --collector.systemd --collector.systemd.unit-whitelist=(docker|sshd).service
+
+[Install]
+WantedBy=multi-user.target
+```
+
+第二段就是制定我要监控哪些系统服务，我写了`docker&sshd`，重启后可以去查询了，
+
+```bash
+[root@kubeadm-node ~]# systemctl daemon-reload         
+[root@kubeadm-node ~]# systemctl restart node_exporter.service 
+```
+
+我查一下当前`docker&sshd`的运行状态是什么，可以直接这样写了，
+
+```sql
+node_systemd_unit_state{exported_name=~"(docker|sshd).service"}
+```
+
+![20190709153503](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709153503.png#mirages-width=1908&mirages-height=601&mirages-cdn-type=5)
+
+目前`state=active`的值为`0`，说明正常运行，所以之后写告警规则的时候就去判断这个值是不是`1`，如果不是就要进行某些操作了，下面装一下`grafana`吧
+
+### 部署grafana
+
+`grafana`就是一个图形展示系统，他主要是对度量指标进行分析可视化，他本身不会存储任何数据，他只会展示数据库里面的数据，支持很多类型的数据库，[官网](https://grafana.com/)，刚好我装有`docker`，其实目前在操作的这两台服务是一个`k8s`集群，用`kubeadm`启动的，所以我直接用`docker`启动了，还是写个`deployment`，算了直接用`docker`命令启吧，
+
+```bash
+[root@kubeadm-node ~]# docker run \
+> -u 0 \
+> -d \
+> -p 3000:3000  \
+> --name=grafana   \
+> -v /var/lib/grafana:/var/lib/grafana \
+> grafana/grafana
+```
+
+这样就行了，直接访问`3000`端口就好了，用户名密码默认`admin/admin`，初次登陆会让你修改密码，就可以看到主页了，然后直接添加数据源，把`prometheus`加进去，保存就行了，
+
+![20190709163321](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709163321.png#mirages-width=556&mirages-height=777&mirages-cdn-type=5)
+
+然后直接导入一个仪表盘进来吧，`ID`是`9276`，大概是这种效果，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709173630.png#mirages-width=1786&mirages-height=883&mirages-cdn-type=5)
+
+然后网络带宽那里没数据，我看了一下他的`sql`，只需要将`$nic`改为你的网卡名就有数据了，所以现在监控`linux`服务器是没问题了，下面试试监控`docker`。
+
+### 监控docker
+
+想要监控`docker`需要用到名为`cadvisor`的工具，是谷歌开源的，它用于收集正在运行的容器资源使用和性能信息，[github](https://github.com/google/cadvisor)地址，你需要在要监控的服务器上部署`cadvisor`，直接用`docker`去启动就完了，命令如下
+
+```bash
+docker run \
+  --volume=/:/rootfs:ro \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/dev/disk/:/dev/disk:ro \
+  --publish=8080:8080 \
+  --detach=true \
+  --name=cadvisor \
+  google/cadvisor:latest
+```
+
+容器启动后也是会暴露一个指标接口，默认是`8080/metrics`，这里就不访问了，下一步就是加入到普罗米修斯中进行监控了，去改他的配置文件，静态配置一个吧，
+
+```yaml
+  - job_name: 'docker'
+    static_configs: 
+    - targets: ['192.168.1.248:8080']
+```
+
+加完直接重载，页面直接导入一个图表吧，`ID`是`193`或者11277再或者11600！！！，效果是这样的，
+
+![20190709181607](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709181607.png#mirages-width=1787&mirages-height=969&mirages-cdn-type=5)
+
+主要就是监控容器的`CPU`内存网络流量的，都可看到，目前我`248`就运行了六个容器，就是这样，下面在看看监控`mysql`
+
+### 监控mysql
+
+监控`mysql`就会用到`mysql_exporter`，这个也能在官网下到，也就是[这里](https://prometheus.io/download/#mysqld_exporter)，这个东西需要你安装到运行`mysql`的实例上，本地的`mysql`比较多，我随便找了一个扔了上去，先去`mysql`创建一个用户吧，这个程序需要连接明月三千里才能获取到指标。
+
+```sql
+mysql> CREATE USER 'exporter'@'localhost' IDENTIFIED BY 'exporter';
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'exporter'@'localhost';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select user,host from mysql.user;
+```
+
+![20190709184630](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709184630.png#mirages-width=476&mirages-height=226&mirages-cdn-type=5)
+
+用户创建好了去解压包吧，
+
+```shell
+[root@mysql ~]# tar zxf mysqld_exporter-0.11.0.linux-amd64.tar.gz -C /usr/local/ && cd /usr/local/
+[root@mysql local]# mv mysqld_exporter-0.11.0.linux-amd64/ mysqld_exporter && cd mysqld_exporter
+```
+
+需要写一个文件，`mysqld_exporter`直接读这个文件就可以连接`mysql`了，
+
+```bash
+[root@mysql mysqld_exporter]# cat .my.cnd
+[client]
+user=exporter
+password=exporter
+```
+
+文件有了，在启动的时候指定一下读取这个文件，直接启动
+
+```shell
+[root@mysql mysqld_exporter]# ./mysqld_exporter --config.my-cnf=.my.cnf
+```
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709185400.png#mirages-width=692&mirages-height=115&mirages-cdn-type=5)
+
+现在把这个加到普罗米修斯中，
+
+```yaml
+  - job_name: 'mysql'
+    static_configs: 
+    - targets: ['192.168.1.126:9104']
+```
+
+然后导入一个仪表盘，`ID`为`7362`，看页面，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709190259.png#mirages-width=1795&mirages-height=900&mirages-cdn-type=5)
+
+还是有些空值，而且官方也说了`5.6`版本有些不支持，我看了一下`Buffer Pool Size of Total RAM`的`sql`，是这样写的，
+
+```sql
+(mysql_global_variables_innodb_buffer_pool_size{instance="$host"} * 100) / on (instance) node_memory_MemTotal_bytes{instance="$host"}
+```
+
+现在应该能看的差不多了，他去查了`mysql`节点的总内存，但是我明月三千里节点并没有装`node_exports`，所以就没数据了，总之支持采集的数据和仪表盘模板很多，自行琢磨吧，上面只是最简单的几个例子，下面来看看告警这一块的东西。
+
+## alertmanager
+
+普罗米修斯本身是不支持告警的，告警是由`alertmanager`这个组件完成的，普罗米修斯将告警收集起来会推送给`alertmanager`，`alertmanager`接收到告警后决定怎么去处理这些告警，应该发给谁，下面先部署一下`alertmanager`吧，我直接下载了，在普罗米修斯服务器上，
+
+### 部署alertmanager
+
+`alertmanager`没必要和普罗米修斯放在一个服务器上，他们之间能通讯就可以了，我目前资源紧张就扔到一起了，直接`wget`了，
+
+```bash
+[root@rj-bai ~]# wget https://github.com/prometheus/alertmanager/releases/download/v0.18.0/alertmanager-0.18.0.linux-amd64.tar.gz
+```
+
+让他先下着，聊一下普罗米修斯和`alertmanager`是怎么通讯的，首先你需要在`prometheus`中定义你的监控规则，说白了就是写一个触发器，某个值超过了我设置的阈值我就要告警了，触发告警之后`prometheus`会推送当前的告警规则到`alertmanager`，`alertmanager`收到了会进行一系列的流程处理，然后发送到接收人手里，他的处理规则也是很复杂的，后面会说，现在也下载完了，解压
+
+```shell
+[root@rj-bai ~]# tar zxf alertmanager-0.18.0.linux-amd64.tar.gz 
+[root@rj-bai ~]# mv alertmanager-0.18.0.linux-amd64 /usr/local/alertmanager && cd /usr/local/alertmanager && ls
+alertmanager  alertmanager.yml  amtool  LICENSE  NOTICE
+```
+
+有两个二进制文件，分别是启动程序和一个工具，还有一个主配置文件，先来了解一下他的主配置文件，
+
+```yaml
+global:
+  resolve_timeout: 5m
+```
+
+全局配置，设置解析超时时间，
+
+```yaml
+route:
+  group_by: ['alertname']      ##alertmanager中的分组，选哪个标签作为分组的依据
+  group_wait: 10s              ##分组等待时间，拿到第一条告警后等待10s，如果有其他的一起发送出去
+  group_interval: 10s          ##各个分组之前发搜告警的间隔时间
+  repeat_interval: 1h          ##重复告警时间，默认1小时
+  receiver: 'web.hook'         ##接收者
+```
+
+这里是配置告警的，配置告警怎么发送，怎么来分配，
+
+```yaml
+receivers:
+- name: 'web.hook'
+  webhook_configs:
+  - url: 'http://127.0.0.1:5001/'
+```
+
+这里是配置告警的接收者，我要发送给谁，
+
+```yaml
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']
+```
+
+这里用于配置告警收敛的，主要就是减少发送告警，来发送一些关键的，所以先把这段注释了吧，暂时用不到，之后会用到，所以基于这个配置文件改改，暂时先发送`email`吧，所以改完的配置文件如下，
+
+```yaml
+[root@rj-bai /usr/local/alertmanager]# cat alertmanager.yml 
+global:
+  resolve_timeout: 5m
+  smtp_smarthost: 'smtp.163.com:25'         #smtp服务地址
+  smtp_from: 'xxx@163.com'                  #发送邮箱
+  smtp_auth_username: 'xxx@163.com'         #认证用户名
+  smtp_auth_password: 'xxxx'                #认证密码
+  smtp_require_tls: false                   #禁用tls
+
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1m
+  receiver: 'email'                      #定义接受告警组名
+receivers:                                  
+- name: 'email'                          #定义组名
+  email_configs:                         #配置邮件
+  - to: 'xx@xxx.com'                     #收件人
+```
+
+保存后检查一下这个文件有没有问题，命令如下，
+
+```shell
+[root@rj-bai /usr/local/alertmanager]# ./amtool check-config alertmanager.yml 
+Checking 'alertmanager.yml'  SUCCESS
+```
+
+然后去启动吧，还是加到系统服务中吧，
+
+```shell
+[root@rj-bai /usr/local/alertmanager]# cat > /usr/lib/systemd/system/alertmanager.service <<OEF 
+> [Unit]
+> Description=alertmanager
+> 
+> [Service]
+> Restart=on-failure
+> ExecStart=/usr/local/alertmanager/alertmanager --config.file=/usr/local/alertmanager/alertmanager.yml
+> 
+> [Install]
+> WantedBy=multi-user.target
+> OEF
+[root@rj-bai /usr/local/alertmanager]# systemctl start alertmanager
+```
+
+现在`alertmanager`是装完了，需要和`prometheus`融合一下，需要配置两部分，分别如下，
+
+```yaml
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+       - 127.0.0.1:9093   ##配置alertmanager地址，我的在本机
+
+rule_files:
+  - "rules/*.yml"         ##配置告警规则的文件
+```
+
+配置这两项就够了，保存之后创建`rules`目录，接下来就可以配置告警规则了。
+
+### 配置告警规则并邮件通知
+
+我直接在官方复制过来了一个例子顺便改了改，如下，
+
+```yaml
+[root@rj-bai /usr/local/prometheus/rules]# cat example.yml
+groups:
+- name: exports.rules     ##定义这组告警的组名，同性质的，都是监控实例exports是否开启的模板
+  rules:
+
+  - alert: 采集器凉了     ## 告警名称
+    expr: up == 0        ## 告警表达式，监控up指标，如果等于0就进行下面的操作
+    for: 1m              ## 持续一分钟为0进行告警
+    labels:              ## 定义告警级别
+      severity: ERROR
+    annotations:         ## 定义了告警通知怎么写，默认调用了{$labels.instance&$labels.job}的值
+      summary: "实例 {{ $labels.instance }} 采集器凉了撒"
+      description: "实例 {{ $labels.instance }} job 名为 {{ $labels.job }} 的采集器凉了有一分钟了撒"
+```
+
+每个实例都会有一个`up`的指标，上面的标签名`job`都能看到，用`sql`去查一下，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711145721.png#mirages-width=1720&mirages-height=403&mirages-cdn-type=5)
+
+采集器在开启状态下返回值就是`1`，如果采集器出现问题没启动或是什么别的异常都会返回`0`，`0`就是代表异常了，所以说白了就是那条规则就是监控所有实例的`up`指标，如果指标值为`0`且持续时间超过一分钟我就要告警了，保存吧，直接重启`prometheus`吧，重启之后可以在`web`控制台看到你配置的规则了，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711152123.png#mirages-width=1840&mirages-height=360&mirages-cdn-type=5)
+
+emmmm，既然配置完了，验证一下吧，随便关掉一个采集器，等邮件就行了，我把明月三千里的关掉了，然后发现有一条告警处于`PENDING`状态，他已经准备去通知`alertmanager`了，
+
+![](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711153136.png#mirages-width=1834&mirages-height=466&mirages-cdn-type=5)
+
+
+
+一分钟之后我收到邮件了，长这样，
+
+![20190711154859](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711154859.png#mirages-width=1120&mirages-height=578&mirages-cdn-type=5)
+
+如果问题没解决他每分钟都会给你发一封邮件，刚刚配置了，发送邮件的等待时间一会会细说一下，我再停一个，我再把`docker`停了，看看他发出的邮件是什么样的，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711155830.png#mirages-width=1118&mirages-height=766&mirages-cdn-type=5)
+
+这里两条告警被合并到一个邮件里发出来了，这就是做了分组，如果你有同类告警的，也就是根据`alertname `去区分的，都会给你合并，`mysql&docker`被合并到一起了，再看一下他还是支持哪些方式来告警，看[这里](https://prometheus.io/docs/alerting/configuration/)吧，拉到最下面可以看到支持微信，丁丁目前是不支持的，有第三方的，我将来会对接企业微信的撒，暂时现用邮件吧，下面看看`alertmanager`的告警状态吧。
+
+### 告警状态
+
+目前`alertmanager`告警状态分为三种，如下
+
+| 值       | 说明                                                         |
+| -------- | ------------------------------------------------------------ |
+| Inactive | 什么都没有发生                                               |
+| Pending  | 已触发阈值，但未满足告警持续时间，for时间                    |
+| Firing   | 已触发阈值且满足告警持续时间，通知alertmanager你可以发送告警了 |
+
+在这个阶段是有个时间的，并不是出现问题告警会马上发出去，这个时间包含了数据采集时间、告警评估时间，这两个时间是在`prometheus`中配置的，也就是这里，
+
+```yaml
+global:
+  scrape_interval:     15s 
+  evaluation_interval: 15s 
+```
+
+目前是十五秒采集一次数据，评估告警规则时间也是十五秒，这个评估告警规则的时间就是我每隔多长时间要进行一次评估是否到达的阈值了，说白了这东西的目的就是为了减少告警的次数，更加精确的判断当前的状态是不是`ok`的，下面在看看告警的分配
+
+### 告警的分配
+
+具体告警要怎么去分配，也是在`alertmanager`中配置的，也就是这一段，
+
+```yaml
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1m
+  receiver: 'email'
+```
+
+这就是设置告警的分发策略了，这个`route`可以拆分成多个子路由，目前所有的告警都会发送到名为`email`的接收器里面，`email`接收器的规则也是在配置文件中指定的，也就是这一段，
+
+```yaml
+receivers:
+- name: 'email'
+  email_configs:
+  - to: 'xx@xxx.com'
+```
+
+接收器目前只有一个名为`email`的，也可以有多个，如果你有什么特殊需求，需要将不同类型的告警发送给不同的人，就需要配置多个接收器去区分了，如下，
+
+```yaml
+global:
+  resolve_timeout: 5m
+  smtp_smarthost: 'smtp.163.com:25'
+  smtp_from: 'xxx@163.com'
+  smtp_auth_username: 'xxx@163.com'
+  smtp_auth_password: 'xxx'
+  smtp_require_tls: false
+
+route:
+  receiver: 'default-receiver'                  ##定义默认接收器名，如果其他的匹配不到走这个
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  group_by: [cluster, alertname]                ##分组设置
+  routes:                                       ##子路由
+  - receiver: 'database-pager'                  ##定义接收器名字          
+    group_wait: 10s                             ##分组设置
+    match_re:                                   ##正则匹配
+      service: mysql|cassandra                  ##他会接收标签service值为mysql&&cassandra的告警
+  - receiver: 'frontend-pager'                  ##接收器名
+    group_by: [product, environment]            ##分组设置
+    match:                                      ##直接匹配
+      team: frontend                            ##匹配标签team值为frontend的告警
+receivers:                                      ##定义接收器
+- name: 'default-receiver'                      ##接收器名字
+  email_configs:                                ##邮件接口
+  - to: 'xxx.xx.com'                            ##接收人，下面以此类推
+- name: 'database-pager'
+  email_configs:
+  - to: 'xxx.xx.com'
+- name: 'frontend-pager'
+  email_configs:
+  - to: 'xxx@.xx.com'
+```
+
+我就不掩饰了，配置其实很简单，演示很麻烦撒，算了算了，过，下面看一哈告警收敛
+
+### 告警收敛
+
+收敛就是尽量压缩告警邮件的数量，太多了谁都会懵逼，可能有些关键的呗淹没了，`alertmanager`中有很多收敛机制，最主要的就是分组抑制静默，`alertmanager`收到告警之后他会先进行分组，然后进入通知队列，这个队列会对通知的邮件进行抑制静默，再根据`router`将告警路由到不同的接收器，这就是`alertmanager`收到一个告警后经历的阶段，只是一个大概的情况，下面深入了解一下这几个阶段到底是什么原理怎么去配置，先来简单看一下他们的定义
+
+| 机制             | 说明                                             |
+| ---------------- | ------------------------------------------------ |
+| 分组(group)      | 将类似性质的告警合并为单个进行通知               |
+| 抑制(Inhibition) | 当告警发生后，停止重复发送由此告警引发的其他告警 |
+| 静默(Silences)   | 是一种简单的特定时间静音提醒的机制               |
+
+#### 分组
+
+举个栗子，比如说我在阿里云有`10`台服务器，但是我忘续费了，结果服务器到期都被停掉了(真实发生过)，这时候`node_exports`肯定也无法访问了，服务器都停了，这时候普罗米修斯发现这`10`个服务器都凉了，我要准备通知`alertmanager`告警了，在不做分组的情况下你的告警媒介会有十条信息发出来，这种情况下我们可以他这些信息合并到一起撒，一条信息列出哪些服务器凉了。
+
+其实分组设置最开始的时候我就做了，这一段就是设置分组的，
+
+```yaml
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1m
+```
+
+这里配置了分组的依据，默认就是`alertname`，这个名字可以随便写的，做了分组之后他会去匹配你告警时的名字，告警的名字是在这里配置的，
+
+```yaml
+  - alert: 采集器凉了
+```
+
+如果是相同名字的告警在一定时间内出现多条，这个一定时间指的就是`group_wait`的时间，那么多条就会合并成一条告警信息发出来，这个之前就配置了，所以在我停掉`mysql&docker`采集器之后他就把这两条告警合并成一条信息发了出来，也就是这张图，上面贴过了。
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711155830.png#mirages-width=1118&mirages-height=766&mirages-cdn-type=5)
+
+这两条的告警名字都是采集器凉了撒，而且在十秒钟之内出现了两条，所以就被合并成一条发出来了，分组的目的就是为了减少告警信息的数量，同类告警聚合，所以现在总结一下配置分组的参数。
+
+```yaml
+  group_by: ['alertname']  #根据标签进行alert分组，可以写多个
+  group_wait: 10s          #发送告警等待时间，
+  group_interval: 10s      #分组告警信息间隔时间，譬如两组，第一组发送后等待十秒发送第二组
+  repeat_interval: 1m      #重复发送告警时间，时间不要太短，也不要太长
+```
+
+#### 抑制
+
+他的主要作用就是消除冗余告警，我们会受到一个关键的告警信息，这个也是在`alertmanager`中配置的，我标签只留了一个，
+
+```yaml
+inhibit_rules:
+  - source_match:          
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['instance']
+```
+
+这段配置意思就是当我收到一个告警级别为`critical`时，他就会抑制掉`warning`这个级别的告警，这个告警等级是在你编写规则的时候定义的，最后一行就是要对哪些告警做抑制，通过标签匹配的，我这里只留了一个`instance`，举个最简单的例子，当现在`alertmanager`先收到一条`critical`、又收到一条`warning`且`instance`值一致的两条告警他的处理逻辑是怎样的。
+
+我现在监控`nginx`，`nginx`宕掉的告警级别为`warning`，宿主机宕掉的告警级别为`critical`，譬如说现在我跑`nginx`的服务器凉了，这时候`nginx`肯定也凉了，普罗米修斯发现后通知`alertmanager`，普罗米修斯发过来的是两条告警信息，一条是宿主机凉了的，一条是`nginx`凉了的，`alertmanager`收到之后，发现告警级别一条是`critical`，一条是`warning`，而且`instance`标签值一致，也就是说这是在一台机器上发生的，所以他就会只发一条`critical`的告警出来，`warning`的就被抑制掉了，我们收到的就是服务器凉了的通知，大概就是这样，暂时不演示了。
+
+#### 静默
+
+就是一个简单的特定时间静音提醒的机制，主要是使用标签匹配这一批不发送告警，譬如说我某天要对服务器进行维护，可能会涉及到服务器重启，在这期间肯定会有`N`多告警发出来，所以你可以子啊这期间配置一个静默，这类的告警就不要发了，我知道发生了啥子事情，配置静默就很简单了，直接在`web`页面配置就行了，`9093`端口，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715113322.png#mirages-width=1435&mirages-height=425&mirages-cdn-type=5)
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715113602.png#mirages-width=1173&mirages-height=769&mirages-cdn-type=5)
+
+选择开始时间结束时间，通过标签匹配去做，我匹配了`job=docker`的机器，创建，所以我先在把容器采集器停掉也不会有告警出来了，我就不停了，就是这样配置，比较简单，扯了一堆，是时候自己写一个告警规则了，结合上面一切的东西。
+
+## 编写告警规则栗子
+
+来监控内存吧，内存使用率超过`80`我就要告警了，还是先需要写`sql`，把我想要的值查出来，所以要查当前内存使用率大于百分之八十的`sql`如下，
+
+```sql
+(node_memory_MemTotal_bytes - node_memory_MemFree_bytes - node_memory_Buffers_bytes - node_memory_Cached_bytes) / (node_memory_MemTotal_bytes )* 100 > 80
+```
+
+下面就是要写规则了，我写的规则如下，顺便把之前的规则也改了一下，
+
+```yaml
+[root@rj-bai /usr/local/prometheus/rules]# cat memory.yml 
+groups:
+- name: memeory_rules
+  rules:
+
+  - alert: 内存炸了
+    expr: (node_memory_MemTotal_bytes - node_memory_MemFree_bytes - node_memory_Buffers_bytes - node_memory_Cached_bytes) / (node_memory_MemTotal_bytes )* 100 > 80
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      summary: "{{ $labels.instance }} 内存炸了"
+      description: "{{ $labels.instance }} 内存炸了，当前使用率为 {{ $value }}"
+```
+
+这样就可以了撒，我又把明月三千里加入到监控，也就是安装了`node_exports`，现在也能正常获取到使用率了，下面试试上面提到的那个告警分配，我要把明月三千里的告警信息发送到我另一个邮箱，`job`名字`mysql`，
+
+```yaml
+  - job_name: 'mysql'
+    static_configs: 
+    - targets: ['192.168.1.126:9104']
+    - targets: ['192.168.1.126:9100']
+```
+
+重启一下撒，能看到这些，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715142721.png#mirages-width=1225&mirages-height=304&mirages-cdn-type=5)
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715143146.png#mirages-width=666&mirages-height=692&mirages-cdn-type=5)
+
+然后去配置一下告警的分配，我要把关于明月三千里的告警发送到另一个邮箱，所以这里改了一哈，
+
+```yaml
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 5m
+  receiver: 'default-receiver'
+  routes: 
+    - group_by: ['mysql']
+      group_wait: 10s
+      group_interval: 10s
+      repeat_interval: 5m
+      receiver: 'mysql-pager'
+      match_re:
+        job: mysql
+
+receivers:
+- name: 'default-receiver'
+  email_configs:
+  - to: 'xxx@xx.com'
+- name: 'mysql-pager'
+  email_configs:
+  - to: 'xxx@xx.cn'
+
+inhibit_rules:
+  - source_match:          
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['instance']
+```
+
+所以一会收到明月三千里的邮件是我`cn`的邮箱，这样就可以了撒，重启`alertmanager`，为了让他发出告警邮件，我调一下阈值，改为百分之`20`，所以我`com`收到的邮件如下，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715150334.png#mirages-width=971&mirages-height=460&mirages-cdn-type=5)
+
+`cn`收到的邮件如下
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715150419.png#mirages-width=936&mirages-height=437&mirages-cdn-type=5)
+
+然后再试一下抑制，我再加一个监控项，我要监控`TCP`连接数，状态是`ESTABLISHED`的，超过`300`我就要告警了，定义告警级别为`critical`，所以`rule`文件如下，
+
+```yaml
+[root@rj-bai /usr/local/prometheus/rules]# cat tcp-established.yml 
+groups:
+- name: tcp-established_rules
+  rules:
+
+  - alert: TCP连接数过高
+    expr: node_sockstat_TCP_alloc > 300 
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "{{ $labels.instance }} TCP连接数过高"
+      description: "{{ $labels.instance }} TCP连接数过高，当前连接数 {{ $value }}"
+```
+
+重启后看页面，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715160750.png#mirages-width=1534&mirages-height=809&mirages-cdn-type=5)
+
+有三条告警已经进入`Pending`状态了，没意外的话`cn`邮箱只有一条告诉你连接数过高的告警信息发出来了，内存使用率过高的就会被抑制，看一下，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161059.png#mirages-width=1861&mirages-height=792&mirages-cdn-type=5)
+
+所以这条已经被抑制了，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161644.png#mirages-width=907&mirages-height=452&mirages-cdn-type=5)
+
+`248`服务器不受影响，`com`邮箱还是会收到内存炸了的告警，
+
+![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161714.png#mirages-width=891&mirages-height=456&mirages-cdn-type=5)
+
+就是这样撒，你想编写其他的告警规则流程和上面是一样的，告警的分配和抑制不是必需的，自行琢磨吧，下一篇准备重写`K8S`监控方面的东西，了解这些东西之后之后就应该很简单了撒，本篇就这样，过。
