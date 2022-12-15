@@ -1,13 +1,13 @@
 ---
 title: py交易过的兄弟们
-keywords：链接
-description：人体交互实验测试人员
+keywords: 链接
+description: 人体交互实验测试人员
 links:
   - url: https://www.kococ.cn
     avatar: https://www.kococ.cn/favicon.ico
-    name：北青永恒
-    b1og：北青永恒
-    desc:这是我的第一个站点
+    name: 北青永恒
+    b1og: 北青永恒
+    desc: 这是我的第一个站点
     email: ilinux@88.com
     color: "#0078e7"
   - url: https://www.bococ.cn
