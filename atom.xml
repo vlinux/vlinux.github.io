@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.vlinux.cn/</id>
+    <title>运维之境</title>
+    <updated>2022-12-16T06:28:54.488Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>卷饼</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://www.vlinux.cn/"/>
+    <link rel="self" href="https://www.vlinux.cn/feed.atom"/>
+    <subtitle>那你终将成为别人的一条裤衩</subtitle>
+    <logo>https://cos.vlinux.cn/vlinux-logo/user.jpg</logo>
+    <icon>https://www.vlinux.cn/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2022 © 卷饼</rights>
+    <entry>
+        <title type="html"><![CDATA[Centos8.1搭建LAMP(YUM)]]></title>
+        <id>https://www.vlinux.cn/posts/Centos8.1搭建LAMP(YUM)</id>
+        <link href="https://www.vlinux.cn/posts/Centos8.1搭建LAMP(YUM)"/>
+        <updated>2020-09-08T09:51:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>CentOS8.1 yum安装LAMP</h1>
+<p>在Linux公社看到类似的文章，于是想自己动手搭建一下LAMP，于是分享给大家。</p>
+<p>LAMP是Linux，Apache，MySQL和PHP的首字母</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T08:07:20.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Iptables防火墙机制]]></title>
+        <id>https://www.vlinux.cn/posts/Iptables防火墙机制</id>
+        <link href="https://www.vlinux.cn/posts/Iptables防火墙机制"/>
+        <updated>2020-03-20T10:42:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第1章 iptables介绍</h1>
+<h2>1.iptables是什么？</h2>
+<p>iptables是开源的基于数据包过滤的防火墙工具。</p>
+<h2>2.iptables企业应用场景</h2>
+<p>1、主机防火</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T08:04:28.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[KVM-未完]]></title>
+        <id>https://www.vlinux.cn/posts/KVM-未完</id>
+        <link href="https://www.vlinux.cn/posts/KVM-未完"/>
+        <updated>2020-03-19T15:26:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第1章 KVM介绍</h1>
+<h1>第2章 创建一个KVM虚拟机</h1>
+<h2>1.VM虚拟机开启CPU虚拟化功能</h2>
+<p>设置-处理器-虚拟化</p>
+<h2>2.安装软件</h2>
+<pre><code class="language-bash">y</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T08:03:57.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LNMP(YUM)]]></title>
+        <id>https://www.vlinux.cn/posts/LNMP(YUM)</id>
+        <link href="https://www.vlinux.cn/posts/LNMP(YUM)"/>
+        <updated>2019-07-07T16:56:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第一章 LNMP架构概述</h1>
+<h2>1.1 什么是LNMP</h2>
+<p>LNMP 是一套技术的组合， L=Linux、 N=Nginx、 M=MySQL、 P=PHP</p>
+<h2>1.2 LNMP架构</h2>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T08:02:01.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux环境初始化]]></title>
+        <id>https://www.vlinux.cn/posts/Linux环境初始化</id>
+        <link href="https://www.vlinux.cn/posts/Linux环境初始化"/>
+        <updated>2020-02-25T18:29:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第0章 学习方法的变化</h1>
+<h2>1.第一阶段学习方法</h2>
+<pre><code class="language-bash">1.记命令 80-150
+2.记参数 常用 3-5个
+3.练习 考试题手写
+4.回顾 总结
+</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T08:01:12.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux系统负载总结]]></title>
+        <id>https://www.vlinux.cn/posts/Linux系统负载总结</id>
+        <link href="https://www.vlinux.cn/posts/Linux系统负载总结"/>
+        <updated>2020-09-08T11:15:00.000Z</updated>
+        <content type="html"><![CDATA[<p>一般在我们发现系统有问题的时候，大家的第一反应肯定都是看下当前的CPU使用状态，看下当前的内存使用状态，看下当前的磁盘使用状态。那么不可避免的大家肯定会使用<code>top</code>这个命令,那么我们今天看下top中</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T08:00:31.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nginx反向代理负载均衡]]></title>
+        <id>https://www.vlinux.cn/posts/Nginx反向代理负载均衡</id>
+        <link href="https://www.vlinux.cn/posts/Nginx反向代理负载均衡"/>
+        <updated>2019-09-16T21:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第一章 反向代理</h1>
+<h2>Nginx代理服务基本概述</h2>
+<p>1.代理一词往往并不陌生, 该服务我们常常用到如(代理理财、代理租房、代理收货等等)，如下图所示</p>
+<p>![img](htt</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T07:59:19.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PrometheusAlert 一个基于Prometheus_alertmanager的全家桶告警项目]]></title>
+        <id>https://www.vlinux.cn/posts/PrometheusAlert-一个基于Prometheus_alertmanager的全家桶告警项目</id>
+        <link href="https://www.vlinux.cn/posts/PrometheusAlert-一个基于Prometheus_alertmanager的全家桶告警项目"/>
+        <updated>2021-01-13T14:30:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>PrometheusAlert 一个基于Prometheus_alertmanager的全家桶告警项目</h1>
+<p>Prometheus Alert是开源的运维告警中心消息转发系统,支持主流的监控系统P</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T07:58:21.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sersync/lsync实时同步]]></title>
+        <id>https://www.vlinux.cn/posts/Sersync-lsync实时同步</id>
+        <link href="https://www.vlinux.cn/posts/Sersync-lsync实时同步"/>
+        <updated>2020-03-12T16:10:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第一章 为什么需要实时同步</h1>
+<h2>1.第二阶段实时同步解决了什么问题:</h2>
+<p>解决 NFS单点故障问题<br>
+备份NFS数据并且提供冗余的服务功能</p>
+<h2>2.实时同步难点</h2>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T07:57:14.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tomcat认知梳理]]></title>
+        <id>https://www.vlinux.cn/posts/Tomcat认知梳理</id>
+        <link href="https://www.vlinux.cn/posts/Tomcat认知梳理"/>
+        <updated>2020-03-11T16:25:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第1章 tomcat简介</h1>
+<p>Tomcat是Apache软件基金会(Apache Software Foundation)的Jakarta项目中的一个核心项目,由Apache,Sun和其他一些公</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T07:56:12.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MYSQL命令行输入密码警告问题解决方案]]></title>
+        <id>https://www.vlinux.cn/posts/MYSQL命令行输入密码警告问题解决方案</id>
+        <link href="https://www.vlinux.cn/posts/MYSQL命令行输入密码警告问题解决方案"/>
+        <updated>2021-01-20T10:07:11.000Z</updated>
+        <content type="html"><![CDATA[<h1>1.1 问题显示</h1>
+<pre><code>[root@localhost ~]# mysql -uroot -p1234567
+mysql: [Warning] Using a password o</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-15T07:48:09.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中小型企业架构演变]]></title>
+        <id>https://www.vlinux.cn/posts/中小型企业架构演变</id>
+        <link href="https://www.vlinux.cn/posts/中小型企业架构演变"/>
+        <updated>2020-03-12T09:33:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>演变过程</h1>
+<p><img src="https://cdn.jsdelivr.net/" alt="网架构演变"></p>
+<h1>完成架构图</h1>
+<p>![请输入图片描述][2]</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:57.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[12K-20K面试题]]></title>
+        <id>https://www.vlinux.cn/posts/12K-20K面试题</id>
+        <link href="https://www.vlinux.cn/posts/12K-20K面试题"/>
+        <updated>2021-01-13T10:41:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>一、linux</h1>
+<ol>
+<li>
+<p>系统启动流程</p>
+</li>
+<li>
+<p>linux文件类型</p>
+</li>
+<li>
+<p>centos6和7怎么添加程序开机自启动？</p>
+</li>
+<li>
+<p>如何升级内核，目前最新版本号多少？</p>
+</li>
+</ol>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Alertmanage最详细的配置文件解释]]></title>
+        <id>https://www.vlinux.cn/posts/Alertmanage最详细的配置文件解释</id>
+        <link href="https://www.vlinux.cn/posts/Alertmanage最详细的配置文件解释"/>
+        <updated>2022-11-08T09:51:28.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="language-yaml">global:
+#全局配置
+  resolve_timeout: 5m
+  #全局配置，设置解析超时时间
+  http_config:
+  #使用 WebHook 发送通知</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Centos 7.9 使用kubeadm安装kubernetes 1.25.0]]></title>
+        <id>https://www.vlinux.cn/posts/Centos-7.9-使用kubeadm安装kubernetes-1.25.0</id>
+        <link href="https://www.vlinux.cn/posts/Centos-7.9-使用kubeadm安装kubernetes-1.25.0"/>
+        <updated>2022-09-30T11:40:40.000Z</updated>
+        <content type="html"><![CDATA[<h2>1.机器准备</h2>
+<p>| hostname   | ip地址        | 系统版本   | cpu  | 内存 |<br>
+| ---------- | ------------- | -----</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Centos7编译安装SHC并加密脚本文件]]></title>
+        <id>https://www.vlinux.cn/posts/Centos7编译安装SHC并加密脚本文件</id>
+        <link href="https://www.vlinux.cn/posts/Centos7编译安装SHC并加密脚本文件"/>
+        <updated>2019-08-27T15:28:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>工具说明</h2>
+<blockquote>
+<ul>
+<li>shc是一个加密shell脚本的工具.它的作用是把shell脚本转换为一个可执行的二进制文件.</li>
+<li>用shell脚本对系统进行自动化维护,简单,便捷而且可移植性好.</li>
+</ul>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Consul+Registrator+Nginx实现容器服务自动发现]]></title>
+        <id>https://www.vlinux.cn/posts/Consul+Registrator+Nginx实现容器服务自动发现</id>
+        <link href="https://www.vlinux.cn/posts/Consul+Registrator+Nginx实现容器服务自动发现"/>
+        <updated>2019-01-01T15:34:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架</h1>
+<blockquote>
+<p>我们先来看一下服务发现常用的框架有哪些：</p>
+<ul>
+<li>zookeeper</li>
+<li>eureka</li>
+</ul>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Consul使用中文手册]]></title>
+        <id>https://www.vlinux.cn/posts/Consul使用中文手册</id>
+        <link href="https://www.vlinux.cn/posts/Consul使用中文手册"/>
+        <updated>2021-01-28T14:49:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>使用consul</h1>
+<h2>介绍</h2>
+<p>Consul包含多个组件,但是作为一个整体,为你的基础设施提供服务发现和服务配置的工具.他提供以下关键特性:</p>
+<p><strong>服务发现</strong> Consul的客户端</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DHCP动态分配IP地址（Linux）]]></title>
+        <id>https://www.vlinux.cn/posts/DHCP动态分配IP地址（Linux）</id>
+        <link href="https://www.vlinux.cn/posts/DHCP动态分配IP地址（Linux）"/>
+        <updated>2020-02-17T11:31:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>简介</h1>
+<blockquote>
+<p>动态主机配置协议（DHCP，Dynamic Host Configuration Protocol），该协议用于自动管理局域网内主机的IP地址、子网掩码、网关地址及DNS地址等</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker+K8s实践指南]]></title>
+        <id>https://www.vlinux.cn/posts/Docker+K8s实践指南</id>
+        <link href="https://www.vlinux.cn/posts/Docker+K8s实践指南"/>
+        <updated>2020-02-27T18:26:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>写在前面的话</h2>
+<p>不得不承认中国的IT行业已经进入了云计算时代，越来越多的企业开始使用弹性的云服务来支撑自己的业务。云计算是机遇也是挑战，作为运维人员需要面临云计算时代企业对运维需求的萎缩，以</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dockerfile小实验]]></title>
+        <id>https://www.vlinux.cn/posts/Dockerfile小实验</id>
+        <link href="https://www.vlinux.cn/posts/Dockerfile小实验"/>
+        <updated>2020-06-16T18:42:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>综合实验</h1>
+<p>[tip type=&quot;success&quot; title=&quot;运行一个Docker容器，在浏览器打开niubi.com能访问到百度首页&quot;]<br>
+运行一个Docker容器，在浏览器打开ni</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker基本四种网络模型]]></title>
+        <id>https://www.vlinux.cn/posts/Docker基本四种网络模型</id>
+        <link href="https://www.vlinux.cn/posts/Docker基本四种网络模型"/>
+        <updated>2020-06-23T16:40:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>一，NAT（最小）</h3>
+<pre><code>NAT网络模型，默认情况下，均为NAT模式，如网络的端口映射就为NAT
+</code></pre>
+<h3>二，none</h3>
+<pre><code>格式：docker run -</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker搭建Nginx日志高级监控-基于Loki + Promtail + Grafana]]></title>
+        <id>https://www.vlinux.cn/posts/Docker搭建Nginx日志高级监控-基于Loki-+-Promtail-+-Grafana</id>
+        <link href="https://www.vlinux.cn/posts/Docker搭建Nginx日志高级监控-基于Loki-+-Promtail-+-Grafana"/>
+        <updated>2021-06-30T14:55:35.000Z</updated>
+        <content type="html"><![CDATA[<h1>手把手搭建Nginx日志高级监控 —— 基于Loki + Promtail + Grafana</h1>
+<blockquote>
+<p>参考官方文档：</p>
+<p>Loki: <a href="https://grafana.com/docs/lo">https://grafana.com/docs/lo</a></p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker的daemon.json配置详解]]></title>
+        <id>https://www.vlinux.cn/posts/Docker的daemon.json配置详解</id>
+        <link href="https://www.vlinux.cn/posts/Docker的daemon.json配置详解"/>
+        <updated>2020-06-14T09:03:00.000Z</updated>
+        <content type="html"><![CDATA[<p>docker-daemon.json各配置详解</p>
+<pre><code>{
+“api-cors-header”:&quot;&quot;, ——————在引擎API中设置CORS标头
+“authorizatio
+</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker的引入]]></title>
+        <id>https://www.vlinux.cn/posts/Docker的引入</id>
+        <link href="https://www.vlinux.cn/posts/Docker的引入"/>
+        <updated>2019-07-23T11:09:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第1章 Docker容器介绍</h1>
+<h2>1.1 docker是什么</h2>
+<p>Docker 是 Docker.Inc 公司开源的一个基于 LXC技</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ELK+Redis+Grafana监控分析Nginx生产日志终极版]]></title>
+        <id>https://www.vlinux.cn/posts/ELK+Redis+Grafana监控分析Nginx生产日志终极版</id>
+        <link href="https://www.vlinux.cn/posts/ELK+Redis+Grafana监控分析Nginx生产日志终极版"/>
+        <updated>2020-10-13T13:23:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>先上架构图</h2>
+<p>![74899ea95827d087e0f86d034cfbaea6](<a href="https://vlinux-1259060227.cos.ap-shanghai.myqcloud.c">https://vlinux-1259060227.cos.ap-shanghai.myqcloud.c</a></p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ELK-Nginx日志分析及绘图]]></title>
+        <id>https://www.vlinux.cn/posts/ELK-Nginx日志分析及绘图</id>
+        <link href="https://www.vlinux.cn/posts/ELK-Nginx日志分析及绘图"/>
+        <updated>2020-08-27T16:28:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>1. 前言</h2>
+<p>先上一张整体的效果图：</p>
+<p>[![img](<a href="https://cdn.jsdelivr.net/gh/kococ/TYPECHO_IMG/mu77/828019-2019091">https://cdn.jsdelivr.net/gh/kococ/TYPECHO_IMG/mu77/828019-2019091</a></p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ELK 部署文档]]></title>
+        <id>https://www.vlinux.cn/posts/ELK-部署文档</id>
+        <link href="https://www.vlinux.cn/posts/ELK-部署文档"/>
+        <updated>2020-09-24T17:06:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>1. 前言</h2>
+<p>在日常运维工作中，对于系统和业务日志的处理尤为重要。尤其是分布式架构，每个服务都会有很多节点，如果要手工一个一个的去取日志，运维怕是要累死。</p>
+<p><strong>简单介绍：</strong></p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ELK日志收集系统概括]]></title>
+        <id>https://www.vlinux.cn/posts/ELK日志收集系统概括</id>
+        <link href="https://www.vlinux.cn/posts/ELK日志收集系统概括"/>
+        <updated>2020-03-11T09:45:00.000Z</updated>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>ELK收集日志</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>作者：Andu</strong>  <strong>2019/6/30</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ES-Elasticsearch数据库备份恢复脚本]]></title>
+        <id>https://www.vlinux.cn/posts/ES-Elasticsearch数据库备份恢复脚本</id>
+        <link href="https://www.vlinux.cn/posts/ES-Elasticsearch数据库备份恢复脚本"/>
+        <updated>2021-01-13T11:50:00.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>1.备份数据</strong><br>
+1.1 创建备份仓库</p>
+<pre><code class="language-shell">$ curl -u elastic:123456 -XPOST '192.168.1.1:9200/_snapshot/hsbc</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GItlab设计与部署]]></title>
+        <id>https://www.vlinux.cn/posts/GItlab设计与部署</id>
+        <link href="https://www.vlinux.cn/posts/GItlab设计与部署"/>
+        <updated>2020-03-09T17:16:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Gitlab安装</h1>
+<p>GitLab简介<br>
+GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。可通过Web界面进行访问公开的或者</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git命令集合~]]></title>
+        <id>https://www.vlinux.cn/posts/Git命令集合~</id>
+        <link href="https://www.vlinux.cn/posts/Git命令集合~"/>
+        <updated>2019-03-27T16:59:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>水一篇文章</h1>
+<p>1.git init 初始化仓库 把一个目录初始化为版本仓库 （可以是空的目录 也可以是带内容的仓库）</p>
+<p>2.git status 查看当前仓库的状态</p>
+<p><a href="http://3.gi">3.gi</a></p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GlusterFS分布式文件系统群集]]></title>
+        <id>https://www.vlinux.cn/posts/GlusterFS分布式文件系统群集</id>
+        <link href="https://www.vlinux.cn/posts/GlusterFS分布式文件系统群集"/>
+        <updated>2018-12-05T17:25:00.000Z</updated>
+        <content type="html"><![CDATA[<p>13.1 GlusterFS概述<br>
+1.GlusterFS简介<br>
+GlusterFS是一个开源的分布式文件系统，同时也是Scale-Out存储解决方案Gluster的核心，在存储数据方面具有强大的横向</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Go语言入门-安装踩坑]]></title>
+        <id>https://www.vlinux.cn/posts/Go语言入门-安装踩坑</id>
+        <link href="https://www.vlinux.cn/posts/Go语言入门-安装踩坑"/>
+        <updated>2021-03-18T10:22:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>前景</h2>
+<blockquote>
+<p>GO近几年真的越来越热火朝天，本着人道主义精神，学吧。</p>
+<p>其实是为了生存，本篇会详细介绍安装环境过程中的所有报错及解决方法</p>
+<p>本文基于Win系统</p>
+</blockquote>
+<h2></h2>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Grafana为Dashboard添加独立权限控制]]></title>
+        <id>https://www.vlinux.cn/posts/Grafana为Dashboard添加独立权限控制</id>
+        <link href="https://www.vlinux.cn/posts/Grafana为Dashboard添加独立权限控制"/>
+        <updated>2022-09-30T14:07:17.000Z</updated>
+        <content type="html"><![CDATA[<p>Grafana作为一款开源的度量分析与可视化套件，已经得到了大家的认可并被广泛使用，他可用于基础设施的时序监控数据展示，应用程序数据分析可视化，另外在包括气象、家庭自动化和过程控制等其他领域也使用广泛</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信]]></title>
+        <id>https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信</id>
+        <link href="https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信"/>
+        <updated>2022-01-26T16:18:23.000Z</updated>
+        <content type="html"><![CDATA[<h2>背景</h2>
+<blockquote>
+<p>公司的服务资源几乎都在腾讯云上,现在客户需求每天看到服务器和部分服务的使用报告</p>
+</blockquote>
+<p>经过一番查询发现还是有方法实现的(在不写代码的情况下,这里指出了shell以外的任何代码</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HTTPS]]></title>
+        <id>https://www.vlinux.cn/posts/HTTPS</id>
+        <link href="https://www.vlinux.cn/posts/HTTPS"/>
+        <updated>2019-10-16T21:12:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第一章 HTTPS 安全证书基本概述</h1>
+<p>为什么需要使用HTTPS, 因为HTTP 不安全。当我们使用http 网站时，经常会遇到包遭到劫持和篡改，如果采用https 协议，那么数据在传输过程中</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Harbor部署总结]]></title>
+        <id>https://www.vlinux.cn/posts/Harbor部署总结</id>
+        <link href="https://www.vlinux.cn/posts/Harbor部署总结"/>
+        <updated>2021-01-13T14:14:44.000Z</updated>
+        <content type="html"><![CDATA[<h1>Harbor部署总结</h1>
+<h3>简介概述</h3>
+<p>Harbor是由VMWare公司开源的容器镜像仓库。事实上，Harbor是在Docker Registry上进行了相应的企业级扩展，</p>
+<p>从而</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jenkins汉化并修改插件源为国内源]]></title>
+        <id>https://www.vlinux.cn/posts/Jenkins汉化并修改插件源为国内源</id>
+        <link href="https://www.vlinux.cn/posts/Jenkins汉化并修改插件源为国内源"/>
+        <updated>2020-10-14T09:17:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>jenkins插件安装更换为国内源</h1>
+<p>1.在jenkins登陆后进入“系统管理”-“插件管理”-“高级”中，设置升级站点</p>
+<p>![22988262-5fa9df82a2f0e033]</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jenkins（CA/CI）部署]]></title>
+        <id>https://www.vlinux.cn/posts/Jenkins（CA-CI）部署</id>
+        <link href="https://www.vlinux.cn/posts/Jenkins（CA-CI）部署"/>
+        <updated>2020-03-10T20:13:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>Jenkins</h3>
+<p>官网</p>
+<p><a href="https://jenkins.io/">https://jenkins.io</a></p>
+<p>Jenkins 是一个开源软件项目，是基于 Java 开发的一种持续</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jumpserver安装使用]]></title>
+        <id>https://www.vlinux.cn/posts/Jumpserver安装使用</id>
+        <link href="https://www.vlinux.cn/posts/Jumpserver安装使用"/>
+        <updated>2020-02-21T23:39:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>xo.1 Jumpserver堡垒机概述-部署Jumpserver运行环境</h1>
+<h2>xo.1.1 跳板机概述：</h2>
+<p>**跳板机就是一台服务器，开发或运维人员在维护过程中首</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[K8S(kubernetes)实践认知]]></title>
+        <id>https://www.vlinux.cn/posts/K8S(kubernetes)实践认知</id>
+        <link href="https://www.vlinux.cn/posts/K8S(kubernetes)实践认知"/>
+        <updated>2020-03-09T09:16:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Kubernetes快速入门</h1>
+<p>学习Kubernetes最权威的知识来源就是Kubernetes官方文档，而且对于初学者来说，官方文档可能不是最佳选择。本章将带你循循序渐进的学习Kuberne</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kafka运维笔记]]></title>
+        <id>https://www.vlinux.cn/posts/Kafka运维笔记</id>
+        <link href="https://www.vlinux.cn/posts/Kafka运维笔记"/>
+        <updated>2022-03-11T11:05:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>消息队列的流派</h1>
+<h3>什么是 MQ</h3>
+<blockquote>
+<p>Message Queue（MQ），消息队列中间件。很多人都说：MQ  通过将消息的发送和接收分离来实现应用程序的异步和解偶，这个给人的直觉是</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes-Operator配置自动发现新增ServiceMonitor的NameSpace]]></title>
+        <id>https://www.vlinux.cn/posts/Kubernetes-Operator配置自动发现新增ServiceMonitor的NameSpace</id>
+        <link href="https://www.vlinux.cn/posts/Kubernetes-Operator配置自动发现新增ServiceMonitor的NameSpace"/>
+        <updated>2022-01-29T14:26:32.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>最近在监控k8s当中的Jenkins 的时候,新增ServiceMonitor总是不显示,这里的不显示指的是不在Prometheus-Operator中显示,我认为这其中一定有问题,于是查阅了大量</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes 使用Nginx-Ingress实现蓝绿发布/金丝雀发布/AB测试]]></title>
+        <id>https://www.vlinux.cn/posts/Kubernetes-使用Nginx-Ingress实现蓝绿发布-金丝雀发布-AB测试</id>
+        <link href="https://www.vlinux.cn/posts/Kubernetes-使用Nginx-Ingress实现蓝绿发布-金丝雀发布-AB测试"/>
+        <updated>2019-08-09T14:44:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>背景介绍</h2>
+<blockquote>
+<p>某些情况下，我们在使用Kubernetes作为业务应用的云平台，想要实现应用的蓝绿部署用来迭代应用版本，用lstio太重太复杂，而且它本身定位于流控和网格治理；Ingress</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes使用NFS作为动态存储（提供下载YAML）]]></title>
+        <id>https://www.vlinux.cn/posts/Kubernetes使用NFS作为动态存储（提供下载YAML）</id>
+        <link href="https://www.vlinux.cn/posts/Kubernetes使用NFS作为动态存储（提供下载YAML）"/>
+        <updated>2021-01-19T11:30:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>记录一下小实验，以免以后忘记</p>
+</blockquote>
+<h2>一、nfs服务器安装nfs与配置</h2>
+<pre><code>yum -y install nfs-utils rpcbind
+systemctl  start </code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes排障指南]]></title>
+        <id>https://www.vlinux.cn/posts/Kubernetes排障指南</id>
+        <link href="https://www.vlinux.cn/posts/Kubernetes排障指南"/>
+        <updated>2022-10-09T10:55:24.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>原文：https://learnk8s.io/troubleshooting-deployments
+一份排障指南流程图。
+</code></pre>
+<p>[点击下载 PDF 版本](<a href="https://vf">https://vf</a></p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LInux系统介绍]]></title>
+        <id>https://www.vlinux.cn/posts/LInux系统介绍</id>
+        <link href="https://www.vlinux.cn/posts/LInux系统介绍"/>
+        <updated>2020-03-17T11:38:33.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>**1.**linux版本有：redhat（收费），centos，ubuntu，suse（开发使用）</p>
+</li>
+<li>
+<p><strong>2.</strong>/目录下的：etc配置文件目录，media挂载点，opt第三方安装目录，</p>
+</li>
+</ul>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LVM添加硬盘并扩容至已有分区]]></title>
+        <id>https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区</id>
+        <link href="https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区"/>
+        <updated>2022-01-26T15:42:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>LVM添加硬盘并扩容至已有分区</h1>
+<h2>LVM简介</h2>
+<p>LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制。LVM将</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux find 命令详解]]></title>
+        <id>https://www.vlinux.cn/posts/Linux-find-命令详解</id>
+        <link href="https://www.vlinux.cn/posts/Linux-find-命令详解"/>
+        <updated>2020-09-29T17:56:20.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>Linux 上的 <code>find</code> 命令是 <code>findutil</code> 软件包的一部分，一般已经默认集成在了几乎所有的发行版中。<br>
+find 命令有非常大的灵活性，可以向其指定丰富的搜索条件（</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux 双网卡绑定]]></title>
+        <id>https://www.vlinux.cn/posts/Linux-双网卡绑定</id>
+        <link href="https://www.vlinux.cn/posts/Linux-双网卡绑定"/>
+        <updated>2019-10-09T11:21:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Linux 双网卡绑定</h1>
+<p>双网卡绑定这项继续特别适合利用再生产环境7x24小时的网络传输服务，采取双网卡绑定模式不仅可以提高网络传输速度，更重要的是，还可以确保其中一块网卡</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux指令入门指令]]></title>
+        <id>https://www.vlinux.cn/posts/Linux指令入门指令</id>
+        <link href="https://www.vlinux.cn/posts/Linux指令入门指令"/>
+        <updated>2020-04-07T10:24:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Linux指令入门-文件与权限</h1>
+<h2>文件目录管理命令</h2>
+<h2>tree</h2>
+<p>命令描述：tree命令用于以树状图列出目录的内容。</p>
+<p>tree命令没有内置在系统中，使用tree命令需</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MarkDown语法解析]]></title>
+        <id>https://www.vlinux.cn/posts/MarkDown语法解析</id>
+        <link href="https://www.vlinux.cn/posts/MarkDown语法解析"/>
+        <updated>2021-01-12T10:54:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<p>相比WYSIWYG编辑器</p>
+<p><strong>优点：</strong><br>
+1、因为是纯文本，所以只要支持Markd</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MySQL高可用晋升]]></title>
+        <id>https://www.vlinux.cn/posts/MySQL高可用晋升</id>
+        <link href="https://www.vlinux.cn/posts/MySQL高可用晋升"/>
+        <updated>2019-02-05T23:54:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>企业高可用性标准</h1>
+<h2>全年无故障率(非计划内故障停机)</h2>
+<pre><code>99.9%                 ----&gt; 0.
+</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mysql+Keepalived 双主热备高可用图文配置详解]]></title>
+        <id>https://www.vlinux.cn/posts/Mysql+Keepalived-双主热备高可用图文配置详解</id>
+        <link href="https://www.vlinux.cn/posts/Mysql+Keepalived-双主热备高可用图文配置详解"/>
+        <updated>2018-11-05T11:07:00.000Z</updated>
+        <content type="html"><![CDATA[<h2><strong>环境描述：</strong></h2>
+<pre><code>Centos7 版本
+Master1：192.168.10.1        安装mysql和keepalived
+Mast
+</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PXE+Kickstart批量装机]]></title>
+        <id>https://www.vlinux.cn/posts/PXE+Kickstart批量装机</id>
+        <link href="https://www.vlinux.cn/posts/PXE+Kickstart批量装机"/>
+        <updated>2020-02-17T11:43:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>简介</h1>
+<blockquote>
+<p>PXE（预启动执行环境）是由intel公司开发的技术，可以让计算机通过网络来启动操作系统（前提是网卡支持pxe技术），主要用于在无人值守安装系统中引导客户端主机安装linux操</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prometheus+Grafana全方位监控系统]]></title>
+        <id>https://www.vlinux.cn/posts/Prometheus+Grafana全方位监控系统</id>
+        <link href="https://www.vlinux.cn/posts/Prometheus+Grafana全方位监控系统"/>
+        <updated>2020-08-30T16:38:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Prometheus+Grafana全方位监控系统</h1>
+<p><code>emmm</code>，前段时间写了一篇关于使用<code>Prometheus+grafana+node-exporter</code>监控<code>k8s</code>的文章，那篇写的很</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prometheus-Operator配置自动发现新增ServiceMonitor的NameSpace]]></title>
+        <id>https://www.vlinux.cn/posts/Prometheus-Operator配置自动发现新增ServiceMonitor的NameSpace</id>
+        <link href="https://www.vlinux.cn/posts/Prometheus-Operator配置自动发现新增ServiceMonitor的NameSpace"/>
+        <updated>2021-11-24T16:23:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>最近在监控k8s当中的Jenkins 的时候,新增ServiceMonitor总是不显示,这里的不显示指的是不在Prometheus-Operator中显示,我认为这其中一定有问题,于是查阅了大量</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Redis-5.x知识体系梳理]]></title>
+        <id>https://www.vlinux.cn/posts/Redis-5.x知识体系梳理</id>
+        <link href="https://www.vlinux.cn/posts/Redis-5.x知识体系梳理"/>
+        <updated>2021-01-01T13:10:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Redis-5.x</h1>
+<h1>第1章 关系型与非关系型</h1>
+<pre><code>CODE
+关系型： mysql oracle
+非关系型：redis mongo ES 
+</code></pre>
+<h1>第2章 Re</h1>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件]]></title>
+        <id>https://www.vlinux.cn/posts/Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件</id>
+        <link href="https://www.vlinux.cn/posts/Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件"/>
+        <updated>2020-09-16T16:26:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件</h1>
+<p><strong>实现需求：</strong></p>
+<p>用Haproxy做负载均衡，手动方式在配置文</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SSH服务初识]]></title>
+        <id>https://www.vlinux.cn/posts/SSH服务初识</id>
+        <link href="https://www.vlinux.cn/posts/SSH服务初识"/>
+        <updated>2018-09-08T16:38:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第一章 远程连接服务概念介绍</h1>
+<p>SSH: 系统默认配置 22 默认可以使用root用户进行登录 数据信息进行加密<br>
+TELNET：网络设备默认开启 23 默认只能使</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台]]></title>
+        <id>https://www.vlinux.cn/posts/Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</id>
+        <link href="https://www.vlinux.cn/posts/Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台"/>
+        <updated>2021-01-13T14:02:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</h1>
+<h2>写在前面</h2>
+<p>因为监控Docker的事情头疼了很久,终于找到了这个很适合业务需求的方案.(我知道你</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Typecho博客更改邮件发送模板]]></title>
+        <id>https://www.vlinux.cn/posts/Typecho博客更改邮件发送模板</id>
+        <link href="https://www.vlinux.cn/posts/Typecho博客更改邮件发送模板"/>
+        <updated>2021-01-20T14:12:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>声明博主使用的插件为Comment2Mail，如果你跟我的一样，那么你可以继续看下去，如果不一样，你可以接着去百度。</p>
+</blockquote>
+<p>默认模板：</p>
+<p>打开插件目录下有个文件叫做Plugin.php,编辑它</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[k8s删除pv一直处于terminating]]></title>
+        <id>https://www.vlinux.cn/posts/k8s删除pv一直处于terminating</id>
+        <link href="https://www.vlinux.cn/posts/k8s删除pv一直处于terminating"/>
+        <updated>2021-02-24T17:16:14.000Z</updated>
+        <content type="html"><![CDATA[<p>pod显示解决办法</p>
+<p>kubectl delete pod [pod name] --force --grace-period=0 -n [namespace]<br>
+pv 显示解决办法</p>
+<p>kub</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[kubernetes coredns添加自定义DNS解析记录]]></title>
+        <id>https://www.vlinux.cn/posts/kubernetes-coredns添加自定义DNS解析记录</id>
+        <link href="https://www.vlinux.cn/posts/kubernetes-coredns添加自定义DNS解析记录"/>
+        <updated>2022-02-25T10:10:18.000Z</updated>
+        <content type="html"><![CDATA[<h1>kubernetes  coredns 添加自定义DNS解析记录</h1>
+<blockquote>
+<p>coredns 自带 hosts 插件， 允许像配置 hosts 一样配置自定义 DNS 解析，修改 `kube-sys</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题]]></title>
+        <id>https://www.vlinux.cn/posts/kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题</id>
+        <link href="https://www.vlinux.cn/posts/kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题"/>
+        <updated>2021-03-02T15:26:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>一、问题描述</h2>
+<hr>
+<blockquote>
+<p>在部署kube-prometheus到kubernetes集群中总会遇到一个问题，当pod都正常运行的时候，却发现kube-controlle</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[linux 性能、统计、分析、优化，常用的命令]]></title>
+        <id>https://www.vlinux.cn/posts/linux-性能、统计、分析、优化，常用的命令</id>
+        <link href="https://www.vlinux.cn/posts/linux-性能、统计、分析、优化，常用的命令"/>
+        <updated>2020-08-27T16:26:08.000Z</updated>
+        <content type="html"><![CDATA[<h3>uptime</h3>
+<p>显示当前时间、系统已经运行多长时间，当前有多少用户登录，过去一段时间平均负载</p>
+<pre><code>[root@Email ~]# uptime 
+ 14:03:56 up</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[linux压力测试工具]]></title>
+        <id>https://www.vlinux.cn/posts/linux压力测试工具</id>
+        <link href="https://www.vlinux.cn/posts/linux压力测试工具"/>
+        <updated>2020-02-21T12:18:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>ab网站压力测试工具</h2>
+<p>水一篇~~~~~~~~~~~~~~<br>
+<strong>参数：</strong></p>
+<p><strong>语法： ab -n 数字 -c 数字 <a href="http://xn--gzu811i">http://链接</a></strong></p>
+<p>`-n requests Number</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[node-exporter扩展用法-shell自定义exporter监控]]></title>
+        <id>https://www.vlinux.cn/posts/node-exporter扩展用法-shell自定义exporter监控</id>
+        <link href="https://www.vlinux.cn/posts/node-exporter扩展用法-shell自定义exporter监控"/>
+        <updated>2019-11-20T11:08:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>当Prometheus的node_exporter中没有我们需要的一些监控项时，就可以使用自定义exporter的扩展功能，但是对于那些开发能力稍微弱一些的朋友（特指我），如果你会shell脚本的</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[什么是 istio？]]></title>
+        <id>https://www.vlinux.cn/posts/什么是-istio？</id>
+        <link href="https://www.vlinux.cn/posts/什么是-istio？"/>
+        <updated>2021-01-13T14:11:46.000Z</updated>
+        <content type="html"><![CDATA[<h1>什么是 istio</h1>
+<p>如果你比较关注新兴技术的话，那么很可能在不同的地方听说过 istio，并且知道它和 service mesh 有着牵扯。这篇文章是我之前在公司内部做过的分享，可以</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你真的掌握 LVS、Nginx 及 HAProxy 的工作原理吗？]]></title>
+        <id>https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？</id>
+        <link href="https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？"/>
+        <updated>2019-07-14T09:51:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>当前大多数的互联网系统都使用了服务器集群技术，集群是将相同服务部署在多台服务器上构成一个集群整体对外提供服务，这些集群可以是 Web应用服务器集群，也可以是数据库服务器集群，还可以是分布式缓存服务</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用 Docker 自建 Bitwarden 密码管理服务器]]></title>
+        <id>https://www.vlinux.cn/posts/使用-Docker-自建-Bitwarden-密码管理服务器</id>
+        <link href="https://www.vlinux.cn/posts/使用-Docker-自建-Bitwarden-密码管理服务器"/>
+        <updated>2022-03-16T15:54:00.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://bitwarden.com/">Bitwarden</a>是一款优秀的跨平台密码管理软件，类似于 1Password、EnPass、LastPass 等。Bitwarden  是免费开源的</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用PHP自制一个图片API接口]]></title>
+        <id>https://www.vlinux.cn/posts/使用PHP自制一个图片API接口</id>
+        <link href="https://www.vlinux.cn/posts/使用PHP自制一个图片API接口"/>
+        <updated>2021-01-13T14:07:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>使用php自制一个图片API接口@(你懂的)</h1>
+<p>有时候我们需要获得一些随机图片，如果用别人的api接口，可能接口不太稳定，也可能别人的图片不符合你的审美，这时候我们就需要自制一个简易的图片ap</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分享10个可免费使用的网站CDN加速服务]]></title>
+        <id>https://www.vlinux.cn/posts/分享10个可免费使用的网站CDN加速服务</id>
+        <link href="https://www.vlinux.cn/posts/分享10个可免费使用的网站CDN加速服务"/>
+        <updated>2021-01-14T09:47:42.000Z</updated>
+        <content type="html"><![CDATA[<h2>分享10个可免费使用的网站CDN加速服务</h2>
+<p>CDN也称内容分发网络，其原理大概是将服务内容分发至全网加速节点，让用户从就近的服务器节点上获取内容，从而提高网站的访问速度。大部分服务商（如阿里云，</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初识Zabbix4.0~]]></title>
+        <id>https://www.vlinux.cn/posts/初识Zabbix4.0~</id>
+        <link href="https://www.vlinux.cn/posts/初识Zabbix4.0~"/>
+        <updated>2019-05-09T23:09:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>zabbix监控服务</h1>
+<hr>
+<h1>第一章 监控知识基本概述</h1>
+<h2>1.为什么要使用监控</h2>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[各大搜索引擎 User-Agent]]></title>
+        <id>https://www.vlinux.cn/posts/各大搜索引擎-User-Agent</id>
+        <link href="https://www.vlinux.cn/posts/各大搜索引擎-User-Agent"/>
+        <updated>2019-11-11T09:32:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>由于项目需求，所以搜集了各大搜索引擎的蜘蛛User-Agent，做了个统计</p>
+</blockquote>
+<h2>百度搜索User-Agent：</h2>
+<p>百度 PC UA</p>
+<pre><code class="language-bash">Mozilla/5.0 (c</code></pre>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在k8s中搭建有状态应用Nacos集群]]></title>
+        <id>https://www.vlinux.cn/posts/在k8s中搭建有状态应用Nacos集群</id>
+        <link href="https://www.vlinux.cn/posts/在k8s中搭建有状态应用Nacos集群"/>
+        <updated>2022-02-25T14:09:01.000Z</updated>
+        <content type="html"><![CDATA[<h2>在k8s中部署的难点</h2>
+<p>在k8s中部署nacos集群和在裸机器上直接部署nacos机器其实差别不大。<br>
+最主要的区别是k8s中部署的服务没有固定的IP，而nacos集群部署需要配置所有实例的</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何选择最佳的 Kubernetes 集群自动伸缩策略]]></title>
+        <id>https://www.vlinux.cn/posts/如何选择最佳的-Kubernetes-集群自动伸缩策略-</id>
+        <link href="https://www.vlinux.cn/posts/如何选择最佳的-Kubernetes-集群自动伸缩策略-"/>
+        <updated>2022-10-10T17:51:27.000Z</updated>
+        <content type="html"><![CDATA[<h2>前言</h2>
+<p>这篇内容篇幅比较长，如果不想深入探讨或时间有限，这是全文简述： 在默认设置下，扩展 Kubernetes 集群中的 pod 和节点可能需要几分钟时间。 了解如何调整集群节点的大小、配</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[简述文件系统共享网络服务NFS]]></title>
+        <id>https://www.vlinux.cn/posts/简述文件系统共享网络服务NFS</id>
+        <link href="https://www.vlinux.cn/posts/简述文件系统共享网络服务NFS"/>
+        <updated>2019-06-27T13:42:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>第1章 存储与nfs存储概述</h1>
+<blockquote>
+<p>1.为什么用共享存储<br>
+2.存储有哪些工具<br>
+3.共享存储应用场景有哪些<br>
+4.部署nfs共享存储</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[腾讯云对象存储COSCMD工具安装配置与使用命令详解]]></title>
+        <id>https://www.vlinux.cn/posts/腾讯云对象存储COSCMD工具安装配置与使用命令详解</id>
+        <link href="https://www.vlinux.cn/posts/腾讯云对象存储COSCMD工具安装配置与使用命令详解"/>
+        <updated>2021-01-22T09:37:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>前言</h2>
+<p>COSCMD 工具是一款腾讯云 COS 的命令行操作工具,能方便的在 Linux 服务器上管理对象存储 COS 中的桶文件,支持上传文件,文件夹,下载文件,文件夹,以及删除功能.配合</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记一次源码编译安装LAMP（附源码包）]]></title>
+        <id>https://www.vlinux.cn/posts/记一次源码编译安装LAMP（附源码包）</id>
+        <link href="https://www.vlinux.cn/posts/记一次源码编译安装LAMP（附源码包）"/>
+        <updated>2018-06-04T17:25:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>源码编译安装LAMP</h1>
+<p><strong>为什么要源码编译</strong><br>
+一般来说，我们软件的安装方式有yum（rpm），和源码编译两种方式，那么为什么我们需要源码编译安装一部分软件？选择源</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[轻量级日志分析新秀Loki]]></title>
+        <id>https://www.vlinux.cn/posts/轻量级日志分析新秀Loki</id>
+        <link href="https://www.vlinux.cn/posts/轻量级日志分析新秀Loki"/>
+        <updated>2021-04-07T14:08:55.000Z</updated>
+        <content type="html"><![CDATA[<h3>简介：</h3>
+<p>Loki的第一个稳定版本于2019年11月19日发布，是 Grafana Labs 团队最新的开源项目，是一个水平可扩展，高可用性，多租户的日志聚合系统。Loki 是专门用于聚集</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这些百度搜索小技巧，让你的搜索高效无广告]]></title>
+        <id>https://www.vlinux.cn/posts/这些百度搜索小技巧，让你的搜索高效无广告</id>
+        <link href="https://www.vlinux.cn/posts/这些百度搜索小技巧，让你的搜索高效无广告"/>
+        <updated>2020-03-23T13:46:36.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>不同的搜索方式会导致搜索的结果往往大大不同，利用好搜索引擎可以大大提升我们查阅资料的效率</strong>，目前几乎所有的浏览器都适用以上几种小技巧，可以举一反三哦。</p>
+<p><strong>01</strong><br>
+去广告搜索</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[镜像批量迁移工具skopeo从docker-registry到harbor]]></title>
+        <id>https://www.vlinux.cn/posts/镜像批量迁移工具skopeo从docker-registry到harbor</id>
+        <link href="https://www.vlinux.cn/posts/镜像批量迁移工具skopeo从docker-registry到harbor"/>
+        <updated>2022-09-20T15:23:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>背景</h2>
+<blockquote>
+<p>docker-registry地址：<a href="http://docker-registry.kococ.cn">docker-registry.kococ.cn</a></p>
+<p>新镜像仓库harbor地址：<a href="http://harbor.kococ.cn">harbor.kococ.cn</a></p>
+<p>本例将doc</p>
+</blockquote>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从 Vite 与 Vue 开始的 D3 数据可视化之旅]]></title>
+        <id>https://www.vlinux.cn/posts/vue-d3-demo</id>
+        <link href="https://www.vlinux.cn/posts/vue-d3-demo"/>
+        <updated>2020-11-21T19:56:09.000Z</updated>
+        <content type="html"><![CDATA[<p>这是一个极其简单的并尽可能面向未来的新手教程，它将指导你简单地使用 Vite 启动 Vue 的脚手架，并开始 D3 数据可视化的相关开发。而你无需 Vue 相关的前置使用知识，你只需跟随教程简单地使用它。<br>
+在课后如果你仍有兴趣，那么你可以继续地深入了解它。</p>
+<p><s>「简单」是不是用的太多了</s></p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2020-11-21T19:56:09.000Z</published>
+    </entry>
+</feed>
