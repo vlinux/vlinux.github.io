@@ -9,7 +9,7 @@ git commit -m "$info"
 git push 
 pnpm run build
 #上传mian分支
-cd /Users/vlinux/vlinux/blog/valaxy/vlinux.github.io/html/vlinux.github.io  && rm -rf * && cp -rp ../../dist/* . 
+cd /Users/vlinux/vlinux/blog/vlinux.github.io/  && rm -rf * && cp -rp /Users/vlinux/vlinux/blog/valaxy/vlinux.github.io/dist/* .
 git add -A
 git commit -m "$info"
-git push 
+git push --force
