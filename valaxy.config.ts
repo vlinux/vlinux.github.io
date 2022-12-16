@@ -11,7 +11,7 @@ const config: UserConfig<ThemeUserConfig> = {
   title: '运维之境',
   author: {
     name: '卷饼',
-    avatar: 'http://cos.vlinux.cn/vlinux-logo/user.jpg',
+    avatar: 'https://cos.vlinux.cn/vlinux-logo/user.jpg',
   },
   subtitle: '如果你太在意别人的话',
   description: '那你终将成为别人的一条裤衩',
