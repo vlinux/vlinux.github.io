@@ -54,9 +54,9 @@ const config: UserConfig<ThemeUserConfig> = {
       color: '#8E71C1',
     },
     {
-      name: 'Travelling',
-      link: 'https://travellings.link',
-      icon: 'i-ri-train-line',
+      name: 'Games',
+      link: 'https://www.vlinux.cn/play',
+      icon: 'i-ri-gamepad-line',
       color: 'var(--va-c-text)',
     },
   ],
