@@ -471,11 +471,11 @@ docker restart prometheus alertmanager PrometheusAlert
 
 *点击模板编辑-*
 
-![image-20201130180052868](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180052868.png)
+![image-20201130180052868](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180052868.png)
 
 温馨提示: 企业微信告警分两种,一种是企业微信应用告警,一种是企业微信机器人告警.这里采用的是企业微信机器人告警.如需使用企业微信应用告警请自行摸索配置文件app.conf
 
-![image-20201130180349108](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180349108.png)
+![image-20201130180349108](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180349108.png)
 
 ```yaml
 {{ $var := .externalURL}}{{ range $k,$v:=.alerts }}
@@ -499,13 +499,13 @@ docker restart prometheus alertmanager PrometheusAlert
 
 往下滑
 
-![image-20201130180530253](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180530253.png)
+![image-20201130180530253](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180530253.png)
 
 这里填入你在企业微信中新建的**机器人地址**,填写后点击**保存模板**
 
 回到刚刚的界面复制路径
 
-![image-20201130180809297](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180809297.png)
+![image-20201130180809297](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201130180809297.png)
 
 
 将你复制的路径地址填写在config.yml文件中.**记得更换其中企业微信的地址**
