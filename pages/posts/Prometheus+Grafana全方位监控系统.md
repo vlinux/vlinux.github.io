@@ -36,7 +36,7 @@ date: 2020-08-30 16:38:00
 
 来看一张图，官方扒到的
 
-![20190702133835](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702133835.png#mirages-width=774&mirages-height=462&mirages-cdn-type=5)
+![20190702133835](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702133835.png#mirages-width=774&mirages-height=462&mirages-cdn-type=5)
 
 | 名称              | 说明                                       |
 | ----------------- | ------------------------------------------ |
@@ -85,7 +85,7 @@ nginx_http_access{method="GET",uri="/index.html"}
 
 先通过二进制来部署`Prometheus`吧，[下载地址](https://github.com/prometheus/prometheus/releases)，我们要下载服务端，也就是这个包
 
-![20190702152359](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702152359.png#mirages-width=1214&mirages-height=339&mirages-cdn-type=5)
+![20190702152359](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702152359.png#mirages-width=1214&mirages-height=339&mirages-cdn-type=5)
 
 我在服务器上直接下载了，下载完后解压移动到别的目录。
 
@@ -135,7 +135,7 @@ console_libraries  consoles  LICENSE  NOTICE  prometheus  prometheus.yml  promto
 
 这样就启动了撒，去访问`9090`端口就可以看到页面了，这个页面能看到的东西很多，自己点点看吧，能看到这个页面就表示莫得问题。
 
-![20190702163712](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702163712.png#mirages-width=1845&mirages-height=454&mirages-cdn-type=5)
+![20190702163712](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702163712.png#mirages-width=1845&mirages-height=454&mirages-cdn-type=5)
 
 目前使用二进制部署主要是因为方便改配置文件，下面开始看配置文件。
 
@@ -205,11 +205,11 @@ job_name: <job_name>  ##指定job名字
 
 它默认暴露监控数据的接口就是`ip:9090/metrics`，你可以去指定这个名称，访问一下这里看看，
 
-![20190702171903](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702171903.png#mirages-width=647&mirages-height=399&mirages-cdn-type=5)
+![20190702171903](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702171903.png#mirages-width=647&mirages-height=399&mirages-cdn-type=5)
 
 在`ip:9090/targets`能看到当前监控的主机，现在只有本机一个，标签显示也在这里。
 
-![20190702171956](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702171956.png#mirages-width=1450&mirages-height=277&mirages-cdn-type=5)
+![20190702171956](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190702171956.png#mirages-width=1450&mirages-height=277&mirages-cdn-type=5)
 
 在看下一段，这里定义的是要如何去访问采集目标
 
@@ -274,7 +274,7 @@ metric_relabel_configs:
 
 就是用来重新打标记的，对于`prometheus` 数据模型最关键点就是一个指标名称和一组标签来组成一个多维度的数据模型，你想完成一个复杂的查询就需要你有很多维度，`relabel_configs` 就是对标签进行处理的，他能帮你在数据采集之前对任何目标的标签进行修改，重打标签的意义就是如果标签有重复的可以帮你重命名，看一哈现在的，上面铁锅
 
-![20190708111918](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708111918.png#mirages-width=1855&mirages-height=455&mirages-cdn-type=5)
+![20190708111918](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708111918.png#mirages-width=1855&mirages-height=455&mirages-cdn-type=5)
 
 现在`instance`是他默认给我加的标签，想改的话就需要`relabel_configs`去帮你重打标签，他也可以删除标签，如果某个标签用不到了也可以删掉，再就是过滤标签，再看一下`relabel_configs`的配置有哪些，也就是这一段
 
@@ -314,7 +314,7 @@ relabel_configs:
 
 看一下有没有生效，刷新一下页面就能看到了，
 
-![20190708113120](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708113120.png#mirages-width=694&mirages-height=480&mirages-cdn-type=5)
+![20190708113120](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708113120.png#mirages-width=694&mirages-height=480&mirages-cdn-type=5)
 
 然后可以根据这个标签去查了，语法是这样的，内置函数，
 
@@ -322,7 +322,7 @@ relabel_configs:
 sum(process_cpu_seconds_total{server="local"})
 ```
 
-![201907081124](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708113824.png#mirages-width=1214&mirages-height=413&mirages-cdn-type=5)
+![201907081124](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708113824.png#mirages-width=1214&mirages-height=413&mirages-cdn-type=5)
 
 所以就算你有`N`个被监控的服务器打上这个标签之后在这里就可以看到总数了，添加标签很简单，下面看一下重命名标签，就是将现有的标签进行重命名。
 
@@ -349,7 +349,7 @@ scrape_configs:
 
 重启一下，刷新页面就可以看到了，
 
-![20190708160319](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708160319.png#mirages-width=1543&mirages-height=371&mirages-cdn-type=5)
+![20190708160319](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708160319.png#mirages-width=1543&mirages-height=371&mirages-cdn-type=5)
 
 我现在要将`job`这个标签标记为`local`，也就是将`job="server21`改为`local="server21`，下面开始用`relabel`进行重命名，改完之后的配置是这样的，
 
@@ -369,11 +369,11 @@ scrape_configs:
 
 这样就可以了撒，重新加载一下，看页面，
 
-![20190708161317](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708161317.png#mirages-width=617&mirages-height=368&mirages-cdn-type=5)
+![20190708161317](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708161317.png#mirages-width=617&mirages-height=368&mirages-cdn-type=5)
 
 新的数据已经有了，之前的标签还会保留，因为没有配置删除他，这样就可以了，现在就可以聚合了，
 
-![20190708161530](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708161530.png#mirages-width=1136&mirages-height=419&mirages-cdn-type=5)
+![20190708161530](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708161530.png#mirages-width=1136&mirages-height=419&mirages-cdn-type=5)
 
 这样他就会将所有实例使用率相加求和。
 
@@ -411,7 +411,7 @@ scrape_configs:
 
 删除标签为`job`的节点，目前只有一个节点，所以这个跑了之后就看不到数据了，如果真的要用这个给不需要监控的节点打一个标签，然后在这里匹配就行了，所以现在重新载入的话就没数据了，
 
-![20190708164048](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708164048.png#mirages-width=515&mirages-height=325&mirages-cdn-type=5)
+![20190708164048](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708164048.png#mirages-width=515&mirages-height=325&mirages-cdn-type=5)
 
 最后看一下删除标签。
 
@@ -437,7 +437,7 @@ scrape_configs:
 
 重载一下就看到`job`的标签了。
 
-![20190708164600](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708164600.png#mirages-width=467&mirages-height=413&mirages-cdn-type=5)
+![20190708164600](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708164600.png#mirages-width=467&mirages-height=413&mirages-cdn-type=5)
 
 这样就可以了撒，下面看看基于文件的服务发现功能
 
@@ -462,7 +462,7 @@ scrape_configs:
   - job_name: 'prometheus'
 ```
 
-![20190708171041](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708171041.png#mirages-width=942&mirages-height=299&mirages-cdn-type=5)
+![20190708171041](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708171041.png#mirages-width=942&mirages-height=299&mirages-cdn-type=5)
 
 然后就可以去改配置文件了，通过服务发现将自身加入进去，
 
@@ -497,11 +497,11 @@ scrape_configs:
 
 这样就可以了，文件保存五秒后就能看到发现的主机了，查数据也没问题
 
-![20190708173554](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173554.png#mirages-width=1234&mirages-height=334&mirages-cdn-type=5)
+![20190708173554](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173554.png#mirages-width=1234&mirages-height=334&mirages-cdn-type=5)
 
-![20190708173611](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173611.png#mirages-width=1432&mirages-height=254&mirages-cdn-type=5)
+![20190708173611](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173611.png#mirages-width=1432&mirages-height=254&mirages-cdn-type=5)
 
-![20190708173654](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173654.png#mirages-width=940&mirages-height=419&mirages-cdn-type=5)
+![20190708173654](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190708173654.png#mirages-width=940&mirages-height=419&mirages-cdn-type=5)
 
 就是这种原理，下面开始监控`linux`和一些服务吧
 
@@ -543,7 +543,7 @@ scrape_configs:
 [root@kubeadm-node /usr/local/node_exporter]# curl -s 127.0.0.1:9100/metrics | head 
 ```
 
-![20190709105800](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709105800.png#mirages-width=766&mirages-height=390&mirages-cdn-type=5)
+![20190709105800](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709105800.png#mirages-width=766&mirages-height=390&mirages-cdn-type=5)
 
 正常启动了撒，现在要配置`prometheus`来监控这个主机了，之前配置过动态发现了，现在再加一个，把服务端和被监控端分开，所以新加了这个。
 
@@ -563,9 +563,9 @@ scrape_configs:
 
 直接去看页面吧，应该已经添加进去了，顺便查一下数据
 
-![20190709111843](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709111843.png#mirages-width=1390&mirages-height=400&mirages-cdn-type=5)
+![20190709111843](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709111843.png#mirages-width=1390&mirages-height=400&mirages-cdn-type=5)
 
-![20190709112040](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709112040.png#mirages-width=851&mirages-height=441&mirages-cdn-type=5)
+![20190709112040](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709112040.png#mirages-width=851&mirages-height=441&mirages-cdn-type=5)
 
 这样就可以了，莫得问题，下面用`PromSQL`获取`CPU&`内存硬盘使用率
 
@@ -577,7 +577,7 @@ scrape_configs:
 
 比如果我想查看刚刚加进来的`nodes CPU`利用率，以`node`开头的`sql`都是`node_expores`采集的指标，度量很多，看`CPU`使用率看着一个指标就够了，
 
-![](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709112714.png#mirages-width=1723&mirages-height=923&mirages-cdn-type=5)
+![](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709112714.png#mirages-width=1723&mirages-height=923&mirages-cdn-type=5)
 
 总`CPU`使用情况，会列出你处理器多少核，每个核的使用情况，这个CPU是干什么使用的，用户态还是内核态还是操作`IO`等待的时间，还有优先级调度使用的`CPU`，他会通过一个名为`mode`的标签去区分这些，一般不会这么去统计，现在统计一下刚刚加进去的那个`nodes`五分钟之内`CPU`平均使用率是多少，还是得写`PromSQL`，大概是这样，
 
@@ -587,15 +587,15 @@ scrape_configs:
 
 `emmm`，`node_cpu_seconds_total{mode="idle"}[5m]`这一段是统计出了服务器最近5分钟`CPU`的空闲率，执行之后是这种效果，
 
-![20190709114438](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709114438.png#mirages-width=1682&mirages-height=808&mirages-cdn-type=5)
+![20190709114438](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709114438.png#mirages-width=1682&mirages-height=808&mirages-cdn-type=5)
 
 这是五分钟之内所有值，然后使用了`irate`函数来统计它的平均值，转化成了百分比，乘了一百，所以执行结果如下。
 
-![20190709114935](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709114935.png#mirages-width=1761&mirages-height=439&mirages-cdn-type=5)
+![20190709114935](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709114935.png#mirages-width=1761&mirages-height=439&mirages-cdn-type=5)
 
 这就是所有`CPU`的空闲率了，我要取的是所有CPU的使用率，所以又一百减去了空闲率的值就是使用率了，所以上面第一条`sql`执行发回的结果如下。
 
-![20190709115136](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709115136.png#mirages-width=1667&mirages-height=420&mirages-cdn-type=5)
+![20190709115136](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709115136.png#mirages-width=1667&mirages-height=420&mirages-cdn-type=5)
 
 这就是五分钟之内总的`CPU`的平均使用率了，我的那个节点就是四核`CPU`，每个都被列出来了，真鸡儿麻烦，再看一下内存使用率，和上面其实一样，值都有了，求出他的百分比就行了，
 
@@ -603,7 +603,7 @@ scrape_configs:
 
 `linux`内核有一个内存缓存机制，所以`buff/cache`的占用不算是已被使用的物理内存，所以计算方式就是将这三个值加到一起就是剩余内存了，
 
-![20190709134042](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709134042.png#mirages-width=611&mirages-height=61&mirages-cdn-type=5)
+![20190709134042](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709134042.png#mirages-width=611&mirages-height=61&mirages-cdn-type=5)
 
 `sql`的话这样写，直接查一下，
 
@@ -611,7 +611,7 @@ scrape_configs:
 node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes
 ```
 
-![20190709134504](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709134504.png#mirages-width=1600&mirages-height=341&mirages-cdn-type=5)
+![20190709134504](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709134504.png#mirages-width=1600&mirages-height=341&mirages-cdn-type=5)
 
 这就是总共剩余的内存，单位是`bite`，现在我要计算使用内存百分比，和上面看`CPU`使用率的方法一致，`sql`如下
 
@@ -619,7 +619,7 @@ node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes
 100 - (node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes) / node_memory_MemTotal_bytes *100
 ```
 
-![20190709135149](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709135149.png#mirages-width=1505&mirages-height=408&mirages-cdn-type=5)
+![20190709135149](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709135149.png#mirages-width=1505&mirages-height=408&mirages-cdn-type=5)
 
 下面看看硬盘使用率
 
@@ -627,7 +627,7 @@ node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes
 
 你的磁盘和挂载点可能不止一个，先看一下目前收集到的信息，
 
-![20190709145758](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709145758.png#mirages-width=1470&mirages-height=478&mirages-cdn-type=5)
+![20190709145758](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709145758.png#mirages-width=1470&mirages-height=478&mirages-cdn-type=5)
 
 所以就要指定分区进行计算了，所以匹配这里写了一个正则去匹配你挂载的磁盘，如下
 
@@ -637,9 +637,9 @@ node_memory_MemFree_bytes+node_memory_Cached_bytes+node_memory_Buffers_bytes
 
 `node_filesystem_size_bytes`查的是`/`总大小，`node_filesystem_free_bytes`查的是剩余大小，只匹配`ext4&xfs`类型的，像是什么`tmpfs&shm`类型的都不匹配，还是算出了剩余的百分比，所以执行后的结果是这样，
 
-![20190709150539](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709150539.png#mirages-width=1907&mirages-height=326&mirages-cdn-type=5)
+![20190709150539](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709150539.png#mirages-width=1907&mirages-height=326&mirages-cdn-type=5)
 
-![20190709150559](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709150559.png#mirages-width=1185&mirages-height=254&mirages-cdn-type=5)
+![20190709150559](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709150559.png#mirages-width=1185&mirages-height=254&mirages-cdn-type=5)
 
 计算方式大概就是这样，现在还没涉及到图形展示这一块，下面看一下获取系统服务运行状态。
 
@@ -673,7 +673,7 @@ WantedBy=multi-user.target
 node_systemd_unit_state{exported_name=~"(docker|sshd).service"}
 ```
 
-![20190709153503](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709153503.png#mirages-width=1908&mirages-height=601&mirages-cdn-type=5)
+![20190709153503](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709153503.png#mirages-width=1908&mirages-height=601&mirages-cdn-type=5)
 
 目前`state=active`的值为`0`，说明正常运行，所以之后写告警规则的时候就去判断这个值是不是`1`，如果不是就要进行某些操作了，下面装一下`grafana`吧
 
@@ -693,11 +693,11 @@ node_systemd_unit_state{exported_name=~"(docker|sshd).service"}
 
 这样就行了，直接访问`3000`端口就好了，用户名密码默认`admin/admin`，初次登陆会让你修改密码，就可以看到主页了，然后直接添加数据源，把`prometheus`加进去，保存就行了，
 
-![20190709163321](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709163321.png#mirages-width=556&mirages-height=777&mirages-cdn-type=5)
+![20190709163321](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709163321.png#mirages-width=556&mirages-height=777&mirages-cdn-type=5)
 
 然后直接导入一个仪表盘进来吧，`ID`是`9276`，大概是这种效果，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709173630.png#mirages-width=1786&mirages-height=883&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709173630.png#mirages-width=1786&mirages-height=883&mirages-cdn-type=5)
 
 然后网络带宽那里没数据，我看了一下他的`sql`，只需要将`$nic`改为你的网卡名就有数据了，所以现在监控`linux`服务器是没问题了，下面试试监控`docker`。
 
@@ -728,7 +728,7 @@ docker run \
 
 加完直接重载，页面直接导入一个图表吧，`ID`是`193`或者11277再或者11600！！！，效果是这样的，
 
-![20190709181607](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709181607.png#mirages-width=1787&mirages-height=969&mirages-cdn-type=5)
+![20190709181607](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709181607.png#mirages-width=1787&mirages-height=969&mirages-cdn-type=5)
 
 主要就是监控容器的`CPU`内存网络流量的，都可看到，目前我`248`就运行了六个容器，就是这样，下面在看看监控`mysql`
 
@@ -749,7 +749,7 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> select user,host from mysql.user;
 ```
 
-![20190709184630](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709184630.png#mirages-width=476&mirages-height=226&mirages-cdn-type=5)
+![20190709184630](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709184630.png#mirages-width=476&mirages-height=226&mirages-cdn-type=5)
 
 用户创建好了去解压包吧，
 
@@ -773,7 +773,7 @@ password=exporter
 [root@mysql mysqld_exporter]# ./mysqld_exporter --config.my-cnf=.my.cnf
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709185400.png#mirages-width=692&mirages-height=115&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709185400.png#mirages-width=692&mirages-height=115&mirages-cdn-type=5)
 
 现在把这个加到普罗米修斯中，
 
@@ -785,7 +785,7 @@ password=exporter
 
 然后导入一个仪表盘，`ID`为`7362`，看页面，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709190259.png#mirages-width=1795&mirages-height=900&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190709190259.png#mirages-width=1795&mirages-height=900&mirages-cdn-type=5)
 
 还是有些空值，而且官方也说了`5.6`版本有些不支持，我看了一下`Buffer Pool Size of Total RAM`的`sql`，是这样写的，
 
@@ -938,25 +938,25 @@ groups:
 
 每个实例都会有一个`up`的指标，上面的标签名`job`都能看到，用`sql`去查一下，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711145721.png#mirages-width=1720&mirages-height=403&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711145721.png#mirages-width=1720&mirages-height=403&mirages-cdn-type=5)
 
 采集器在开启状态下返回值就是`1`，如果采集器出现问题没启动或是什么别的异常都会返回`0`，`0`就是代表异常了，所以说白了就是那条规则就是监控所有实例的`up`指标，如果指标值为`0`且持续时间超过一分钟我就要告警了，保存吧，直接重启`prometheus`吧，重启之后可以在`web`控制台看到你配置的规则了，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711152123.png#mirages-width=1840&mirages-height=360&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711152123.png#mirages-width=1840&mirages-height=360&mirages-cdn-type=5)
 
 emmmm，既然配置完了，验证一下吧，随便关掉一个采集器，等邮件就行了，我把明月三千里的关掉了，然后发现有一条告警处于`PENDING`状态，他已经准备去通知`alertmanager`了，
 
-![](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711153136.png#mirages-width=1834&mirages-height=466&mirages-cdn-type=5)
+![](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711153136.png#mirages-width=1834&mirages-height=466&mirages-cdn-type=5)
 
 
 
 一分钟之后我收到邮件了，长这样，
 
-![20190711154859](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711154859.png#mirages-width=1120&mirages-height=578&mirages-cdn-type=5)
+![20190711154859](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711154859.png#mirages-width=1120&mirages-height=578&mirages-cdn-type=5)
 
 如果问题没解决他每分钟都会给你发一封邮件，刚刚配置了，发送邮件的等待时间一会会细说一下，我再停一个，我再把`docker`停了，看看他发出的邮件是什么样的，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711155830.png#mirages-width=1118&mirages-height=766&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711155830.png#mirages-width=1118&mirages-height=766&mirages-cdn-type=5)
 
 这里两条告警被合并到一个邮件里发出来了，这就是做了分组，如果你有同类告警的，也就是根据`alertname `去区分的，都会给你合并，`mysql&docker`被合并到一起了，再看一下他还是支持哪些方式来告警，看[这里](https://prometheus.io/docs/alerting/configuration/)吧，拉到最下面可以看到支持微信，丁丁目前是不支持的，有第三方的，我将来会对接企业微信的撒，暂时现用邮件吧，下面看看`alertmanager`的告警状态吧。
 
@@ -1074,7 +1074,7 @@ route:
 
 如果是相同名字的告警在一定时间内出现多条，这个一定时间指的就是`group_wait`的时间，那么多条就会合并成一条告警信息发出来，这个之前就配置了，所以在我停掉`mysql&docker`采集器之后他就把这两条告警合并成一条信息发了出来，也就是这张图，上面贴过了。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711155830.png#mirages-width=1118&mirages-height=766&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190711155830.png#mirages-width=1118&mirages-height=766&mirages-cdn-type=5)
 
 这两条的告警名字都是采集器凉了撒，而且在十秒钟之内出现了两条，所以就被合并成一条发出来了，分组的目的就是为了减少告警信息的数量，同类告警聚合，所以现在总结一下配置分组的参数。
 
@@ -1106,9 +1106,9 @@ inhibit_rules:
 
 就是一个简单的特定时间静音提醒的机制，主要是使用标签匹配这一批不发送告警，譬如说我某天要对服务器进行维护，可能会涉及到服务器重启，在这期间肯定会有`N`多告警发出来，所以你可以子啊这期间配置一个静默，这类的告警就不要发了，我知道发生了啥子事情，配置静默就很简单了，直接在`web`页面配置就行了，`9093`端口，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715113322.png#mirages-width=1435&mirages-height=425&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715113322.png#mirages-width=1435&mirages-height=425&mirages-cdn-type=5)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715113602.png#mirages-width=1173&mirages-height=769&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715113602.png#mirages-width=1173&mirages-height=769&mirages-cdn-type=5)
 
 选择开始时间结束时间，通过标签匹配去做，我匹配了`job=docker`的机器，创建，所以我先在把容器采集器停掉也不会有告警出来了，我就不停了，就是这样配置，比较简单，扯了一堆，是时候自己写一个告警规则了，结合上面一切的东西。
 
@@ -1149,9 +1149,9 @@ groups:
 
 重启一下撒，能看到这些，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715142721.png#mirages-width=1225&mirages-height=304&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715142721.png#mirages-width=1225&mirages-height=304&mirages-cdn-type=5)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715143146.png#mirages-width=666&mirages-height=692&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715143146.png#mirages-width=666&mirages-height=692&mirages-cdn-type=5)
 
 然后去配置一下告警的分配，我要把关于明月三千里的告警发送到另一个邮箱，所以这里改了一哈，
 
@@ -1189,11 +1189,11 @@ inhibit_rules:
 
 所以一会收到明月三千里的邮件是我`cn`的邮箱，这样就可以了撒，重启`alertmanager`，为了让他发出告警邮件，我调一下阈值，改为百分之`20`，所以我`com`收到的邮件如下，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715150334.png#mirages-width=971&mirages-height=460&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715150334.png#mirages-width=971&mirages-height=460&mirages-cdn-type=5)
 
 `cn`收到的邮件如下
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715150419.png#mirages-width=936&mirages-height=437&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715150419.png#mirages-width=936&mirages-height=437&mirages-cdn-type=5)
 
 然后再试一下抑制，我再加一个监控项，我要监控`TCP`连接数，状态是`ESTABLISHED`的，超过`300`我就要告警了，定义告警级别为`critical`，所以`rule`文件如下，
 
@@ -1215,18 +1215,18 @@ groups:
 
 重启后看页面，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715160750.png#mirages-width=1534&mirages-height=809&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715160750.png#mirages-width=1534&mirages-height=809&mirages-cdn-type=5)
 
 有三条告警已经进入`Pending`状态了，没意外的话`cn`邮箱只有一条告诉你连接数过高的告警信息发出来了，内存使用率过高的就会被抑制，看一下，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161059.png#mirages-width=1861&mirages-height=792&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161059.png#mirages-width=1861&mirages-height=792&mirages-cdn-type=5)
 
 所以这条已经被抑制了，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161644.png#mirages-width=907&mirages-height=452&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161644.png#mirages-width=907&mirages-height=452&mirages-cdn-type=5)
 
 `248`服务器不受影响，`com`邮箱还是会收到内存炸了的告警，
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161714.png#mirages-width=891&mirages-height=456&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161714.png#mirages-width=891&mirages-height=456&mirages-cdn-type=5)
 
 就是这样撒，你想编写其他的告警规则流程和上面是一样的，告警的分配和抑制不是必需的，自行琢磨吧，下一篇准备重写`K8S`监控方面的东西，了解这些东西之后之后就应该很简单了撒，本篇就这样，过。

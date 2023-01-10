@@ -318,7 +318,7 @@ groups:
 ```
 >这里提供一些已经适配的Prometheus告警规则，别谢我，往下滑有打赏按钮谢谢
 
-[file href="https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/code/rules.tar.gz"]常用告警规则下载[/file]
+[file href="https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/code/rules.tar.gz"]常用告警规则下载[/file]
 
 [button href="https://awesome-prometheus-alerts.grep.to/rules"]告警规则全家桶[/button]
 >告警规则中serverity默认不被调用,PrometheusAlert默认使用的是level.含义为告警等级,是为了不同的告警等级分发给不同的告警平台准备的，算是抑制把，我也不知道
