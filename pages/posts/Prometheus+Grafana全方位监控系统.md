@@ -1223,10 +1223,10 @@ groups:
 
 所以这条已经被抑制了，
 
-![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161644.png#mirages-width=907&mirages-height=452&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161644.png)
 
 `248`服务器不受影响，`com`邮箱还是会收到内存炸了的告警，
 
-![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161714.png#mirages-width=891&mirages-height=456&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20190715161714.png)
 
 就是这样撒，你想编写其他的告警规则流程和上面是一样的，告警的分配和抑制不是必需的，自行琢磨吧，下一篇准备重写`K8S`监控方面的东西，了解这些东西之后之后就应该很简单了撒，本篇就这样，过。
