@@ -13,7 +13,7 @@
         {
             "id": "",
             "content_html": "<h2>背景</h2>\n<blockquote>\n<p>公司的服务资源几乎都在腾讯云上,现在客户需求每天看到服务器和部分服务的使用报告</p>\n</blockquote>\n<p>经过一番查询发现还是有方法实现的(在不写代码的情况下,这里指出了shell以外的任何代码</p>\n",
-            "url": "https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信",
+            "url": "https://www.vlinux.cn/posts/Grafana-Tencent-Exporter-Image-Send-Wechat",
             "title": "Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信",
             "date_modified": "2022-01-26T16:18:23.000Z",
             "date_published": "2023-01-12T07:36:12.000Z",
