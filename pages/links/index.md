@@ -24,6 +24,13 @@ links:
     desc:     風傾
     email: fengqing@fengqing.ltd
     color: "#0078e7"
+  - url: https://www.hukdoesn.cn
+    avatar: https://www.hukdoesn.cn/wp-content/uploads/2022/12/WechatIMG114.jpeg
+    name: 胡图图
+    blog: 胡同学
+    desc: 撸猫撸到满手油
+    email: hukdoesn@163.com
+    color: "#0078e7"
 # 也可以是一个 JSON 链接
 # links: https://friends.yunyoujun.cn/links.json
 random: true

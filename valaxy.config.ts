@@ -12,6 +12,7 @@ const config: UserConfig<ThemeUserConfig> = {
   author: {
     name: '卷饼',
     avatar: 'https://cos.vlinux.cn/vlinux-logo/user.jpg',
+    email: 'ilinux@88.com',
     status: {
       emoji: '🥺',
     },
