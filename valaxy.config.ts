@@ -12,6 +12,9 @@ const config: UserConfig<ThemeUserConfig> = {
   author: {
     name: '卷饼',
     avatar: 'https://cos.vlinux.cn/vlinux-logo/user.jpg',
+    status: {
+      emoji: '🥺',
+    },
   },
   subtitle: '如果你太在意别人的话',
   description: '那你终将成为别人的一条裤衩',
