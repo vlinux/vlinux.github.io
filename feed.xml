@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Wed, 11 Jan 2023 10:00:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jan 2023 07:38:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,19 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信]]></title>
+            <link>https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信</link>
+            <guid>https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信</guid>
+            <pubDate>Thu, 12 Jan 2023 07:36:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>背景</h2>
+<blockquote>
+<p>公司的服务资源几乎都在腾讯云上,现在客户需求每天看到服务器和部分服务的使用报告</p>
+</blockquote>
+<p>经过一番查询发现还是有方法实现的(在不写代码的情况下,这里指出了shell以外的任何代码</p>
+]]></content:encoded>
+            <author>i@valaxy.site (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[Prometheus+Grafana全方位监控系统]]></title>
             <link>https://www.vlinux.cn/posts/Prometheus+Grafana全方位监控系统</link>
@@ -461,19 +474,6 @@ GlusterFS是一个开源的分布式文件系统，同时也是Scale-Out存储�
             <guid>https://www.vlinux.cn/posts/Grafana为Dashboard添加独立权限控制</guid>
             <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
             <content:encoded><![CDATA[<p>Grafana作为一款开源的度量分析与可视化套件，已经得到了大家的认可并被广泛使用，他可用于基础设施的时序监控数据展示，应用程序数据分析可视化，另外在包括气象、家庭自动化和过程控制等其他领域也使用广泛</p>
-]]></content:encoded>
-            <author>i@valaxy.site (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信]]></title>
-            <link>https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信</link>
-            <guid>https://www.vlinux.cn/posts/Grafana使用腾讯云监控插件监控腾讯云产品并形成Dashboard图片或PDF文件发送企业微信</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>背景</h2>
-<blockquote>
-<p>公司的服务资源几乎都在腾讯云上,现在客户需求每天看到服务器和部分服务的使用报告</p>
-</blockquote>
-<p>经过一番查询发现还是有方法实现的(在不写代码的情况下,这里指出了shell以外的任何代码</p>
 ]]></content:encoded>
             <author>i@valaxy.site (卷饼)</author>
         </item>
