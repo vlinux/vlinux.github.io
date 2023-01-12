@@ -72,11 +72,7 @@ PID_FILE_DIR=/var/run/grafana
 
 从上面文件中可以找到 Grafana 的各种数据配置路径，比如数据目录、日志目录、插件目录等等，正常启动完成后 Grafana 会监听在 3000 端口上，所以我们可以在浏览器中打开 Grafana 的 WebUI。
 
-![图片](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/640)
-
 默认的用户名和密码为 `admin`，也可以在配置文件 `/etc/grafana/grafana.ini` 中配置 `admin_user` 和 `admin_password` 两个参数来进行覆盖。
-
-![图片](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/640)
 
 当然如果我们想要部署一个高可用版本的 Grafana 的话，那么使用 SQLite 数据库就不行了，需要切换到 MySQL 或者 PostgreSQL，我们可以在 Grafana 配置的 `[database]` 部分找到数据库的相关配置，Grafana 会将所有长期数据保存在数据库中，然后部署多个 Grafana 实例使用同一个数据库即可实现高可用。
 
@@ -102,15 +98,15 @@ systemctl restart grafana-server
 
 > Grafana在配置数据源的时候需要使用该key进行认证.
 
-![image-20220112151154005](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/image-20220112151154005.png#mirages-width=1920&mirages-height=940&mirages-cdn-type=5)
+![image-20220112151154005](https://cos.vlinux.cn/www-vlinux-cn-blog-img/image-20220112151154005.png#mirages-width=1920&mirages-height=940&mirages-cdn-type=5)
 
 在Grafana插件中打开该应用,然后在数据源中进行配置
 
-![image-20220112151259213](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/image-20220112151259213.png#mirages-width=1920&mirages-height=640&mirages-cdn-type=5)
+![image-20220112151259213](https://cos.vlinux.cn/www-vlinux-cn-blog-img/image-20220112151259213.png#mirages-width=1920&mirages-height=640&mirages-cdn-type=5)
 
 
 
-![image-20220112151417057](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/image-20220112151417057.png#mirages-width=1920&mirages-height=937&mirages-cdn-type=5)
+![image-20220112151417057](https://cos.vlinux.cn/www-vlinux-cn-blog-img/image-20220112151417057.png#mirages-width=1920&mirages-height=937&mirages-cdn-type=5)
 
 配置后好点击最下方得Save&Test就可以了.这时候你就可以在Grafana中查看你在腾讯云中得服务资源监控了.
 
@@ -149,11 +145,11 @@ systemctl restart grafana-server
 
 任选一Panel,点击Share,点击拍照图标即可生成该Panel图片
 
-![image-20220112152306485](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/image-20220112152306485.png#mirages-width=939&mirages-height=372&mirages-cdn-type=5)
+![image-20220112152306485](https://cos.vlinux.cn/www-vlinux-cn-blog-img/image-20220112152306485.png#mirages-width=939&mirages-height=372&mirages-cdn-type=5)
 
 
 
-![image-20220112152355044](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/image-20220112152355044.png#mirages-width=870&mirages-height=476&mirages-cdn-type=5)
+![image-20220112152355044](https://cos.vlinux.cn/www-vlinux-cn-blog-img/image-20220112152355044.png#mirages-width=870&mirages-height=476&mirages-cdn-type=5)
 
 ### 安装Grafana-report生成PDF文件
 
