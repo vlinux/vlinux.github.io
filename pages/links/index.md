@@ -19,9 +19,9 @@ links:
     color: "#6058d9"
   - url: https://www.linux18.com
     avatar: https://www.linux18.com/images/avatar.jpg
-    name: linux运维博客
-    blog: linux运维博客
-    desc:     風傾
+    name: linux运维博客-风倾
+    blog: linux运维博客-风倾
+    desc: 这个运维是真菜，但是风倾那小子是真的坏
     email: fengqing@fengqing.ltd
     color: "#0078e7"
   - url: https://www.hukdoesn.cn
