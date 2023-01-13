@@ -47,7 +47,7 @@ const config: UserConfig<ThemeUserConfig> = {
     },
     {
       name: 'Music',
-      link: 'https://music.kococ.cn/',
+      link: 'https://www.vlinux.cn/music/',
       icon: 'i-ri-speaker-fill',
       color: '#E6162D',
     },
