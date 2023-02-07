@@ -52,7 +52,3 @@ metadata:
   namespace: kube-system
   resourceVersion: "460"
 ```
-
-
-
-<!-- Q.E.D. -->
