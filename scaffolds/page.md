@@ -1,6 +1,11 @@
 ---
-title: {{ title }}
-date: {{ date }}
-updated: {{ date }}
-type:
+title: <%=title%>
+date: <%=date%>
+updated: <%=date%>
+tags:
+categories:
+end: false
 ---
+
+<!-- more -->
+
