@@ -1,6 +1,6 @@
 ---
-title: {{ 合理配置Coredns的Hosts }}
-date: {{ 2023-02-16 18:42:00 }}
+title: 合理配置Coredns的Hosts
+date: 2023-02-16 18:42:00
 tags: coredns
 categories: Kubernetes
 ---
