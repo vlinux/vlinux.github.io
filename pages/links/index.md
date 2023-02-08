@@ -31,6 +31,13 @@ links:
     desc: 撸猫撸到满手油
     email: hukdoesn@163.com
     color: "#0078e7"
+  - url: https://www.cnblogs.com/tcy1/
+    avatar: https://images.cnblogs.com/cnblogs_com/tcy1/1849771/t_210927102236af293c80cd3faee6f98c5b10928391f7.jpeg
+    name: 元气少女郭德纲
+    blog: 永不止步
+    desc: 永不止步
+    email: 123@163.com
+    color: "#0078e7"
 # 也可以是一个 JSON 链接
 # links: https://friends.yunyoujun.cn/links.json
 random: true
