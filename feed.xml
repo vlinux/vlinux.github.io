@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Tue, 07 Feb 2023 06:39:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Feb 2023 05:12:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,265 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[分享10个可免费使用的网站CDN加速服务]]></title>
+            <link>https://www.vlinux.cn/posts/分享10个可免费使用的网站CDN加速服务</link>
+            <guid>https://www.vlinux.cn/posts/分享10个可免费使用的网站CDN加速服务</guid>
+            <pubDate>Wed, 08 Feb 2023 05:10:13 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>分享10个可免费使用的网站CDN加速服务</h2>
+<p>CDN也称内容分发网络，其原理大概是将服务内容分发至全网加速节点，让用户从就近的服务器节点上获取内容，从而提高网站的访问速度。大部分服务商（如阿里云，</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Centos7编译安装SHC并加密脚本文件]]></title>
+            <link>https://www.vlinux.cn/posts/Centos7编译安装SHC并加密脚本文件</link>
+            <guid>https://www.vlinux.cn/posts/Centos7编译安装SHC并加密脚本文件</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>工具说明</h2>
+<blockquote>
+<ul>
+<li>shc是一个加密shell脚本的工具.它的作用是把shell脚本转换为一个可执行的二进制文件.</li>
+<li>用shell脚本对系统进行自动化维护,简单,便捷而且可移植性好.</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Consul+Registrator+Nginx实现容器服务自动发现]]></title>
+            <link>https://www.vlinux.cn/posts/Consul+Registrator+Nginx实现容器服务自动发现</link>
+            <guid>https://www.vlinux.cn/posts/Consul+Registrator+Nginx实现容器服务自动发现</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架</h1>
+<blockquote>
+<p>我们先来看一下服务发现常用的框架有哪些：</p>
+<ul>
+<li>zookeeper</li>
+<li>eureka</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Consul使用中文手册]]></title>
+            <link>https://www.vlinux.cn/posts/Consul使用中文手册</link>
+            <guid>https://www.vlinux.cn/posts/Consul使用中文手册</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>使用consul</h1>
+<h2>介绍</h2>
+<p>Consul包含多个组件,但是作为一个整体,为你的基础设施提供服务发现和服务配置的工具.他提供以下关键特性:</p>
+<p><strong>服务发现</strong> Consul的客户端</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Docker搭建Nginx日志高级监控-基于Loki + Promtail + Grafana]]></title>
+            <link>https://www.vlinux.cn/posts/Docker搭建Nginx日志高级监控-基于Loki-+-Promtail-+-Grafana</link>
+            <guid>https://www.vlinux.cn/posts/Docker搭建Nginx日志高级监控-基于Loki-+-Promtail-+-Grafana</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>手把手搭建Nginx日志高级监控 —— 基于Loki + Promtail + Grafana</h1>
+<blockquote>
+<p>参考官方文档：</p>
+<p>Loki: <a href="https://grafana.com/docs/lo">https://grafana.com/docs/lo</a></p>
+</blockquote>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[ELK+Redis+Grafana监控分析Nginx生产日志终极版]]></title>
+            <link>https://www.vlinux.cn/posts/ELK+Redis+Grafana监控分析Nginx生产日志终极版</link>
+            <guid>https://www.vlinux.cn/posts/ELK+Redis+Grafana监控分析Nginx生产日志终极版</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>先上架构图</h2>
+<p>![74899ea95827d087e0f86d034cfbaea6](<a href="https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-b">https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-b</a></p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[ELK 部署文档]]></title>
+            <link>https://www.vlinux.cn/posts/ELK-部署文档</link>
+            <guid>https://www.vlinux.cn/posts/ELK-部署文档</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>1. 前言</h2>
+<p>在日常运维工作中，对于系统和业务日志的处理尤为重要。尤其是分布式架构，每个服务都会有很多节点，如果要手工一个一个的去取日志，运维怕是要累死。</p>
+<p><strong>简单介绍：</strong></p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Go语言入门-安装踩坑]]></title>
+            <link>https://www.vlinux.cn/posts/Go语言入门-安装踩坑</link>
+            <guid>https://www.vlinux.cn/posts/Go语言入门-安装踩坑</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>前景</h2>
+<blockquote>
+<p>GO近几年真的越来越热火朝天，本着人道主义精神，学吧。</p>
+<p>其实是为了生存，本篇会详细介绍安装环境过程中的所有报错及解决方法</p>
+<p>本文基于Win系统</p>
+</blockquote>
+<h2></h2>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Jenkins汉化并修改插件源为国内源]]></title>
+            <link>https://www.vlinux.cn/posts/Jenkins汉化并修改插件源为国内源</link>
+            <guid>https://www.vlinux.cn/posts/Jenkins汉化并修改插件源为国内源</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>jenkins插件安装更换为国内源</h1>
+<p>1.在jenkins登陆后进入“系统管理”-“插件管理”-“高级”中，设置升级站点</p>
+<p>![22988262-5fa9df82a2f0e033]</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Jenkins（CA/CI）部署]]></title>
+            <link>https://www.vlinux.cn/posts/Jenkins（CA-CI）部署</link>
+            <guid>https://www.vlinux.cn/posts/Jenkins（CA-CI）部署</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>Jenkins</h3>
+<p>官网</p>
+<p><a href="https://jenkins.io/">https://jenkins.io</a></p>
+<p>Jenkins 是一个开源软件项目，是基于 Java 开发的一种持续</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[MarkDown语法解析]]></title>
+            <link>https://www.vlinux.cn/posts/MarkDown语法解析</link>
+            <guid>https://www.vlinux.cn/posts/MarkDown语法解析</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<p>相比WYSIWYG编辑器</p>
+<p><strong>优点：</strong><br>
+1、因为是纯文本，所以只要支持Markd</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[PrometheusAlert 一个基于Prometheus_alertmanager的全家桶告警项目]]></title>
+            <link>https://www.vlinux.cn/posts/PrometheusAlert-一个基于Prometheus_alertmanager的全家桶告警项目</link>
+            <guid>https://www.vlinux.cn/posts/PrometheusAlert-一个基于Prometheus_alertmanager的全家桶告警项目</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>PrometheusAlert 一个基于Prometheus_alertmanager的全家桶告警项目</h1>
+<p>Prometheus Alert是开源的运维告警中心消息转发系统,支持主流的监控系统P</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Redis-5.x知识体系梳理]]></title>
+            <link>https://www.vlinux.cn/posts/Redis-5.x知识体系梳理</link>
+            <guid>https://www.vlinux.cn/posts/Redis-5.x知识体系梳理</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Redis-5.x</h1>
+<h1>第1章 关系型与非关系型</h1>
+<pre><code>CODE
+关系型： mysql oracle
+非关系型：redis mongo ES 
+</code></pre>
+<h1>第2章 Re</h1>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[SSH服务初识]]></title>
+            <link>https://www.vlinux.cn/posts/SSH服务初识</link>
+            <guid>https://www.vlinux.cn/posts/SSH服务初识</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>第一章 远程连接服务概念介绍</h1>
+<p>SSH: 系统默认配置 22 默认可以使用root用户进行登录 数据信息进行加密<br>
+TELNET：网络设备默认开启 23 默认只能使</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台]]></title>
+            <link>https://www.vlinux.cn/posts/Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</link>
+            <guid>https://www.vlinux.cn/posts/Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</h1>
+<h2>写在前面</h2>
+<p>因为监控Docker的事情头疼了很久,终于找到了这个很适合业务需求的方案.(我知道你</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Tomcat认知梳理]]></title>
+            <link>https://www.vlinux.cn/posts/Tomcat认知梳理</link>
+            <guid>https://www.vlinux.cn/posts/Tomcat认知梳理</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>第1章 tomcat简介</h1>
+<p>Tomcat是Apache软件基金会(Apache Software Foundation)的Jakarta项目中的一个核心项目,由Apache,Sun和其他一些公</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Typecho博客更改邮件发送模板]]></title>
+            <link>https://www.vlinux.cn/posts/Typecho博客更改邮件发送模板</link>
+            <guid>https://www.vlinux.cn/posts/Typecho博客更改邮件发送模板</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<blockquote>
+<p>声明博主使用的插件为Comment2Mail，如果你跟我的一样，那么你可以继续看下去，如果不一样，你可以接着去百度。</p>
+</blockquote>
+<p>默认模板：</p>
+<p>打开插件目录下有个文件叫做Plugin.php,编辑它</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题]]></title>
+            <link>https://www.vlinux.cn/posts/kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题</link>
+            <guid>https://www.vlinux.cn/posts/kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>一、问题描述</h2>
+<hr>
+<blockquote>
+<p>在部署kube-prometheus到kubernetes集群中总会遇到一个问题，当pod都正常运行的时候，却发现kube-controlle</p>
+</blockquote>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[什么是 istio？]]></title>
+            <link>https://www.vlinux.cn/posts/什么是-istio？</link>
+            <guid>https://www.vlinux.cn/posts/什么是-istio？</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>什么是 istio</h1>
+<p>如果你比较关注新兴技术的话，那么很可能在不同的地方听说过 istio，并且知道它和 service mesh 有着牵扯。这篇文章是我之前在公司内部做过的分享，可以</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用 Docker 自建 Bitwarden 密码管理服务器]]></title>
+            <link>https://www.vlinux.cn/posts/使用-Docker-自建-Bitwarden-密码管理服务器</link>
+            <guid>https://www.vlinux.cn/posts/使用-Docker-自建-Bitwarden-密码管理服务器</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://bitwarden.com/">Bitwarden</a>是一款优秀的跨平台密码管理软件，类似于 1Password、EnPass、LastPass 等。Bitwarden  是免费开源的</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用PHP自制一个图片API接口]]></title>
+            <link>https://www.vlinux.cn/posts/使用PHP自制一个图片API接口</link>
+            <guid>https://www.vlinux.cn/posts/使用PHP自制一个图片API接口</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>使用php自制一个图片API接口@(你懂的)</h1>
+<p>有时候我们需要获得一些随机图片，如果用别人的api接口，可能接口不太稳定，也可能别人的图片不符合你的审美，这时候我们就需要自制一个简易的图片ap</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[轻量级日志分析新秀Loki]]></title>
+            <link>https://www.vlinux.cn/posts/轻量级日志分析新秀Loki</link>
+            <guid>https://www.vlinux.cn/posts/轻量级日志分析新秀Loki</guid>
+            <pubDate>Wed, 08 Feb 2023 05:09:47 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>简介：</h3>
+<p>Loki的第一个稳定版本于2019年11月19日发布，是 Grafana Labs 团队最新的开源项目，是一个水平可扩展，高可用性，多租户的日志聚合系统。Loki 是专门用于聚集</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[合理配置Coredns的Hosts]]></title>
             <link>https://www.vlinux.cn/posts/edit-coredns-config-hosts</link>
@@ -43,16 +302,6 @@
             <pubDate>Tue, 10 Jan 2023 08:27:34 GMT</pubDate>
             <content:encoded><![CDATA[<h1>Prometheus+Grafana全方位监控系统</h1>
 <p><code>emmm</code>，前段时间写了一篇关于使用<code>Prometheus+grafana+node-exporter</code>监控<code>k8s</code>的文章，那篇写的很</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[PrometheusAlert 一个基于Prometheus_alertmanager的全家桶告警项目]]></title>
-            <link>https://www.vlinux.cn/posts/PrometheusAlert-一个基于Prometheus_alertmanager的全家桶告警项目</link>
-            <guid>https://www.vlinux.cn/posts/PrometheusAlert-一个基于Prometheus_alertmanager的全家桶告警项目</guid>
-            <pubDate>Tue, 10 Jan 2023 08:17:31 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>PrometheusAlert 一个基于Prometheus_alertmanager的全家桶告警项目</h1>
-<p>Prometheus Alert是开源的运维告警中心消息转发系统,支持主流的监控系统P</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
@@ -156,16 +405,6 @@
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[Tomcat认知梳理]]></title>
-            <link>https://www.vlinux.cn/posts/Tomcat认知梳理</link>
-            <guid>https://www.vlinux.cn/posts/Tomcat认知梳理</guid>
-            <pubDate>Thu, 15 Dec 2022 07:56:12 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>第1章 tomcat简介</h1>
-<p>Tomcat是Apache软件基金会(Apache Software Foundation)的Jakarta项目中的一个核心项目,由Apache,Sun和其他一些公</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[MYSQL命令行输入密码警告问题解决方案]]></title>
             <link>https://www.vlinux.cn/posts/MYSQL命令行输入密码警告问题解决方案</link>
             <guid>https://www.vlinux.cn/posts/MYSQL命令行输入密码警告问题解决方案</guid>
@@ -237,49 +476,6 @@ mysql: [Warning] Using a password o</code></pre>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[Centos7编译安装SHC并加密脚本文件]]></title>
-            <link>https://www.vlinux.cn/posts/Centos7编译安装SHC并加密脚本文件</link>
-            <guid>https://www.vlinux.cn/posts/Centos7编译安装SHC并加密脚本文件</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>工具说明</h2>
-<blockquote>
-<ul>
-<li>shc是一个加密shell脚本的工具.它的作用是把shell脚本转换为一个可执行的二进制文件.</li>
-<li>用shell脚本对系统进行自动化维护,简单,便捷而且可移植性好.</li>
-</ul>
-</blockquote>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Consul+Registrator+Nginx实现容器服务自动发现]]></title>
-            <link>https://www.vlinux.cn/posts/Consul+Registrator+Nginx实现容器服务自动发现</link>
-            <guid>https://www.vlinux.cn/posts/Consul+Registrator+Nginx实现容器服务自动发现</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架</h1>
-<blockquote>
-<p>我们先来看一下服务发现常用的框架有哪些：</p>
-<ul>
-<li>zookeeper</li>
-<li>eureka</li>
-</ul>
-</blockquote>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Consul使用中文手册]]></title>
-            <link>https://www.vlinux.cn/posts/Consul使用中文手册</link>
-            <guid>https://www.vlinux.cn/posts/Consul使用中文手册</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>使用consul</h1>
-<h2>介绍</h2>
-<p>Consul包含多个组件,但是作为一个整体,为你的基础设施提供服务发现和服务配置的工具.他提供以下关键特性:</p>
-<p><strong>服务发现</strong> Consul的客户端</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[DHCP动态分配IP地址（Linux）]]></title>
             <link>https://www.vlinux.cn/posts/DHCP动态分配IP地址（Linux）</link>
             <guid>https://www.vlinux.cn/posts/DHCP动态分配IP地址（Linux）</guid>
@@ -326,19 +522,6 @@ mysql: [Warning] Using a password o</code></pre>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[Docker搭建Nginx日志高级监控-基于Loki + Promtail + Grafana]]></title>
-            <link>https://www.vlinux.cn/posts/Docker搭建Nginx日志高级监控-基于Loki-+-Promtail-+-Grafana</link>
-            <guid>https://www.vlinux.cn/posts/Docker搭建Nginx日志高级监控-基于Loki-+-Promtail-+-Grafana</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>手把手搭建Nginx日志高级监控 —— 基于Loki + Promtail + Grafana</h1>
-<blockquote>
-<p>参考官方文档：</p>
-<p>Loki: <a href="https://grafana.com/docs/lo">https://grafana.com/docs/lo</a></p>
-</blockquote>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[Docker的daemon.json配置详解]]></title>
             <link>https://www.vlinux.cn/posts/Docker的daemon.json配置详解</link>
             <guid>https://www.vlinux.cn/posts/Docker的daemon.json配置详解</guid>
@@ -363,16 +546,6 @@ mysql: [Warning] Using a password o</code></pre>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[ELK+Redis+Grafana监控分析Nginx生产日志终极版]]></title>
-            <link>https://www.vlinux.cn/posts/ELK+Redis+Grafana监控分析Nginx生产日志终极版</link>
-            <guid>https://www.vlinux.cn/posts/ELK+Redis+Grafana监控分析Nginx生产日志终极版</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>先上架构图</h2>
-<p>![74899ea95827d087e0f86d034cfbaea6](<a href="https://vlinux-1259060227.cos.ap-shanghai.myqcloud.c">https://vlinux-1259060227.cos.ap-shanghai.myqcloud.c</a></p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[ELK-Nginx日志分析及绘图]]></title>
             <link>https://www.vlinux.cn/posts/ELK-Nginx日志分析及绘图</link>
             <guid>https://www.vlinux.cn/posts/ELK-Nginx日志分析及绘图</guid>
@@ -380,17 +553,6 @@ mysql: [Warning] Using a password o</code></pre>
             <content:encoded><![CDATA[<h2>1. 前言</h2>
 <p>先上一张整体的效果图：</p>
 <p>[![img](<a href="https://cdn.jsdelivr.net/gh/kococ/TYPECHO_IMG/mu77/828019-2019091">https://cdn.jsdelivr.net/gh/kococ/TYPECHO_IMG/mu77/828019-2019091</a></p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[ELK 部署文档]]></title>
-            <link>https://www.vlinux.cn/posts/ELK-部署文档</link>
-            <guid>https://www.vlinux.cn/posts/ELK-部署文档</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>1. 前言</h2>
-<p>在日常运维工作中，对于系统和业务日志的处理尤为重要。尤其是分布式架构，每个服务都会有很多节点，如果要手工一个一个的去取日志，运维怕是要累死。</p>
-<p><strong>简单介绍：</strong></p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
@@ -463,21 +625,6 @@ GlusterFS是一个开源的分布式文件系统，同时也是Scale-Out存储�
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[Go语言入门-安装踩坑]]></title>
-            <link>https://www.vlinux.cn/posts/Go语言入门-安装踩坑</link>
-            <guid>https://www.vlinux.cn/posts/Go语言入门-安装踩坑</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>前景</h2>
-<blockquote>
-<p>GO近几年真的越来越热火朝天，本着人道主义精神，学吧。</p>
-<p>其实是为了生存，本篇会详细介绍安装环境过程中的所有报错及解决方法</p>
-<p>本文基于Win系统</p>
-</blockquote>
-<h2></h2>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[Grafana为Dashboard添加独立权限控制]]></title>
             <link>https://www.vlinux.cn/posts/Grafana为Dashboard添加独立权限控制</link>
             <guid>https://www.vlinux.cn/posts/Grafana为Dashboard添加独立权限控制</guid>
@@ -505,29 +652,6 @@ GlusterFS是一个开源的分布式文件系统，同时也是Scale-Out存储�
 <h3>简介概述</h3>
 <p>Harbor是由VMWare公司开源的容器镜像仓库。事实上，Harbor是在Docker Registry上进行了相应的企业级扩展，</p>
 <p>从而</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Jenkins汉化并修改插件源为国内源]]></title>
-            <link>https://www.vlinux.cn/posts/Jenkins汉化并修改插件源为国内源</link>
-            <guid>https://www.vlinux.cn/posts/Jenkins汉化并修改插件源为国内源</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>jenkins插件安装更换为国内源</h1>
-<p>1.在jenkins登陆后进入“系统管理”-“插件管理”-“高级”中，设置升级站点</p>
-<p>![22988262-5fa9df82a2f0e033]</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Jenkins（CA/CI）部署]]></title>
-            <link>https://www.vlinux.cn/posts/Jenkins（CA-CI）部署</link>
-            <guid>https://www.vlinux.cn/posts/Jenkins（CA-CI）部署</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h3>Jenkins</h3>
-<p>官网</p>
-<p><a href="https://jenkins.io/">https://jenkins.io</a></p>
-<p>Jenkins 是一个开源软件项目，是基于 Java 开发的一种持续</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
@@ -677,18 +801,6 @@ find 命令有非常大的灵活性，可以向其指定丰富的搜索条件（
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[MarkDown语法解析]]></title>
-            <link>https://www.vlinux.cn/posts/MarkDown语法解析</link>
-            <guid>https://www.vlinux.cn/posts/MarkDown语法解析</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-<p>相比WYSIWYG编辑器</p>
-<p><strong>优点：</strong><br>
-1、因为是纯文本，所以只要支持Markd</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[MySQL高可用晋升]]></title>
             <link>https://www.vlinux.cn/posts/MySQL高可用晋升</link>
             <guid>https://www.vlinux.cn/posts/MySQL高可用晋升</guid>
@@ -737,21 +849,6 @@ Mast
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[Redis-5.x知识体系梳理]]></title>
-            <link>https://www.vlinux.cn/posts/Redis-5.x知识体系梳理</link>
-            <guid>https://www.vlinux.cn/posts/Redis-5.x知识体系梳理</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>Redis-5.x</h1>
-<h1>第1章 关系型与非关系型</h1>
-<pre><code>CODE
-关系型： mysql oracle
-非关系型：redis mongo ES 
-</code></pre>
-<h1>第2章 Re</h1>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件]]></title>
             <link>https://www.vlinux.cn/posts/Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件</link>
             <guid>https://www.vlinux.cn/posts/Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件</guid>
@@ -759,41 +856,6 @@ Mast
             <content:encoded><![CDATA[<h1>Registrator+Consul+Consul-template+HaProxy实现动态修改Haproty配置文件</h1>
 <p><strong>实现需求：</strong></p>
 <p>用Haproxy做负载均衡，手动方式在配置文</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[SSH服务初识]]></title>
-            <link>https://www.vlinux.cn/posts/SSH服务初识</link>
-            <guid>https://www.vlinux.cn/posts/SSH服务初识</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>第一章 远程连接服务概念介绍</h1>
-<p>SSH: 系统默认配置 22 默认可以使用root用户进行登录 数据信息进行加密<br>
-TELNET：网络设备默认开启 23 默认只能使</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台]]></title>
-            <link>https://www.vlinux.cn/posts/Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</link>
-            <guid>https://www.vlinux.cn/posts/Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>Telegraf+InfluxDB+Grafana+Docker搭建服务器监控平台</h1>
-<h2>写在前面</h2>
-<p>因为监控Docker的事情头疼了很久,终于找到了这个很适合业务需求的方案.(我知道你</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Typecho博客更改邮件发送模板]]></title>
-            <link>https://www.vlinux.cn/posts/Typecho博客更改邮件发送模板</link>
-            <guid>https://www.vlinux.cn/posts/Typecho博客更改邮件发送模板</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<blockquote>
-<p>声明博主使用的插件为Comment2Mail，如果你跟我的一样，那么你可以继续看下去，如果不一样，你可以接着去百度。</p>
-</blockquote>
-<p>默认模板：</p>
-<p>打开插件目录下有个文件叫做Plugin.php,编辑它</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
@@ -817,19 +879,6 @@ pv 显示解决办法</p>
             <content:encoded><![CDATA[<h1>kubernetes  coredns 添加自定义DNS解析记录</h1>
 <blockquote>
 <p>coredns 自带 hosts 插件， 允许像配置 hosts 一样配置自定义 DNS 解析，修改 `kube-sys</p>
-</blockquote>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题]]></title>
-            <link>https://www.vlinux.cn/posts/kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题</link>
-            <guid>https://www.vlinux.cn/posts/kubernetes中部署kube-prometheus项目解决ControllerManager与Scheduler无法监控问题</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>一、问题描述</h2>
-<hr>
-<blockquote>
-<p>在部署kube-prometheus到kubernetes集群中总会遇到一个问题，当pod都正常运行的时候，却发现kube-controlle</p>
 </blockquote>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
@@ -871,16 +920,6 @@ pv 显示解决办法</p>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
-            <title><![CDATA[什么是 istio？]]></title>
-            <link>https://www.vlinux.cn/posts/什么是-istio？</link>
-            <guid>https://www.vlinux.cn/posts/什么是-istio？</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>什么是 istio</h1>
-<p>如果你比较关注新兴技术的话，那么很可能在不同的地方听说过 istio，并且知道它和 service mesh 有着牵扯。这篇文章是我之前在公司内部做过的分享，可以</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
             <title><![CDATA[你真的掌握 LVS、Nginx 及 HAProxy 的工作原理吗？]]></title>
             <link>https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？</link>
             <guid>https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？</guid>
@@ -888,35 +927,6 @@ pv 显示解决办法</p>
             <content:encoded><![CDATA[<blockquote>
 <p>当前大多数的互联网系统都使用了服务器集群技术，集群是将相同服务部署在多台服务器上构成一个集群整体对外提供服务，这些集群可以是 Web应用服务器集群，也可以是数据库服务器集群，还可以是分布式缓存服务</p>
 </blockquote>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[使用 Docker 自建 Bitwarden 密码管理服务器]]></title>
-            <link>https://www.vlinux.cn/posts/使用-Docker-自建-Bitwarden-密码管理服务器</link>
-            <guid>https://www.vlinux.cn/posts/使用-Docker-自建-Bitwarden-密码管理服务器</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://bitwarden.com/">Bitwarden</a>是一款优秀的跨平台密码管理软件，类似于 1Password、EnPass、LastPass 等。Bitwarden  是免费开源的</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[使用PHP自制一个图片API接口]]></title>
-            <link>https://www.vlinux.cn/posts/使用PHP自制一个图片API接口</link>
-            <guid>https://www.vlinux.cn/posts/使用PHP自制一个图片API接口</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>使用php自制一个图片API接口@(你懂的)</h1>
-<p>有时候我们需要获得一些随机图片，如果用别人的api接口，可能接口不太稳定，也可能别人的图片不符合你的审美，这时候我们就需要自制一个简易的图片ap</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[分享10个可免费使用的网站CDN加速服务]]></title>
-            <link>https://www.vlinux.cn/posts/分享10个可免费使用的网站CDN加速服务</link>
-            <guid>https://www.vlinux.cn/posts/分享10个可免费使用的网站CDN加速服务</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>分享10个可免费使用的网站CDN加速服务</h2>
-<p>CDN也称内容分发网络，其原理大概是将服务内容分发至全网加速节点，让用户从就近的服务器节点上获取内容，从而提高网站的访问速度。大部分服务商（如阿里云，</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
@@ -1000,16 +1010,6 @@ pv 显示解决办法</p>
             <content:encoded><![CDATA[<h1>源码编译安装LAMP</h1>
 <p><strong>为什么要源码编译</strong><br>
 一般来说，我们软件的安装方式有yum（rpm），和源码编译两种方式，那么为什么我们需要源码编译安装一部分软件？选择源</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[轻量级日志分析新秀Loki]]></title>
-            <link>https://www.vlinux.cn/posts/轻量级日志分析新秀Loki</link>
-            <guid>https://www.vlinux.cn/posts/轻量级日志分析新秀Loki</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h3>简介：</h3>
-<p>Loki的第一个稳定版本于2019年11月19日发布，是 Grafana Labs 团队最新的开源项目，是一个水平可扩展，高可用性，多租户的日志聚合系统。Loki 是专门用于聚集</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
