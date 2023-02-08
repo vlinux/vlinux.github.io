@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2023-02-08T05:39:54.207Z</updated>
+    <updated>2023-02-08T05:44:47.968Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -1463,21 +1463,5 @@ pv 显示解决办法</p>
             <uri>https://valaxy.site</uri>
         </author>
         <published>2022-11-28T06:22:37.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[从 Vite 与 Vue 开始的 D3 数据可视化之旅]]></title>
-        <id>https://www.vlinux.cn/posts/vue-d3-demo</id>
-        <link href="https://www.vlinux.cn/posts/vue-d3-demo"/>
-        <updated>2020-11-21T19:56:09.000Z</updated>
-        <content type="html"><![CDATA[<p>这是一个极其简单的并尽可能面向未来的新手教程，它将指导你简单地使用 Vite 启动 Vue 的脚手架，并开始 D3 数据可视化的相关开发。而你无需 Vue 相关的前置使用知识，你只需跟随教程简单地使用它。<br>
-在课后如果你仍有兴趣，那么你可以继续地深入了解它。</p>
-<p><s>「简单」是不是用的太多了</s></p>
-]]></content>
-        <author>
-            <name>卷饼</name>
-            <email>ilinux@88.com</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2020-11-21T19:56:09.000Z</published>
     </entry>
 </feed>
