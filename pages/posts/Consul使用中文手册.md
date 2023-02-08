@@ -15,7 +15,7 @@ Consul包含多个组件,但是作为一个整体,为你的基础设施提供服
 **Key/Value存储** 应用程序可用根据自己的需要使用Consul的层级的Key/Value存储.比如动态配置,功能标记,协调,领袖选举等等,简单的HTTP API让他更易于使用.
 **多数据中心** Consul支持开箱即用的多数据中心.这意味着用户不需要担心需要建立额外的抽象层让业务扩展到多个区域.
 Consul面向DevOps和应用开发者友好.是他适合现代的弹性的基础设施.
-![consul-cluster](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/cluster.png)
+![consul-cluster](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/cluster.png)
 
 ## 基础架构
 
@@ -398,7 +398,7 @@ s1.node.dc1.consul.     0       IN      A       10.201.102.198
 
 Consul同时提供了一个漂亮的功能齐全的WEB界面,开箱即用.界面可以用来查看所有的节点,可以查看健康检查和他们的当前状态.可以读取和设置K/V 存储的数据.UI自动支持多数据中心.[点击前往下载](https://www.consul.io/downloads.html)
 
-![UI_Download](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/ui_download.png)
+![UI_Download](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/ui_download.png)
 
 下载完后上传至服务器，建议所有server角色都使用WebUI，。
 
@@ -410,7 +410,7 @@ consul agent -server -bootstrap-expect 1 -data-dir /tmp/consul -node=s1 -bind=10
 - `-client`：consul服务侦听地址，这个地址提供HTTP、DNS、RPC等服务，默认是127.0.0.1所以不对外提供服务，如果你要对外提供服务改成0.0.0.0
   可通过[http://10.201.102.198:8500](http://10.201.102.198:8500/)访问WEB管理界面。
 
-![UI_Download](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/ui.png)
+![UI_Download](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/ui.png)
 
 ## 健康检查
 

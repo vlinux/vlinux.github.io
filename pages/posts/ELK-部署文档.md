@@ -40,7 +40,7 @@ Filebeat 是一个轻量级开源日志文件数据收集器，可以将它安�
 
 实验拓扑图：
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132209462-937984345.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132209462-937984345.png)
 
  
 
@@ -48,7 +48,7 @@ Filebeat 是一个轻量级开源日志文件数据收集器，可以将它安�
 
 实验环境主机服务介绍：
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132222075-940189767.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132222075-940189767.png)
 
  
 
@@ -117,7 +117,7 @@ Filebeat 是一个轻量级开源日志文件数据收集器，可以将它安�
 [root@192.168.118.14 ~``/ELK``]``#yum localinstall elasticsearch-6.8.2.rpm``修改配置文件如下：``[root@192.168.118.14 ~``/ELK``]``#egrep ^[a-z] /etc/elasticsearch/elasticsearch.yml``cluster.name: super-cluster``node.name: node1``path.data: ``/var/lib/elasticsearch``path.logs: ``/var/log/elasticsearch``bootstrap.memory_lock: ``true``network.host: 0.0.0.0``http.port: 9200``discovery.zen.``ping``.unicast.hosts: [``"192.168.118.14"``]``http.cors.enabled: ``true``http.cors.allow-origin: ``"*"
 ```
 
- ![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132531738-1407142167.png)
+ ![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132531738-1407142167.png)
 
  
 
@@ -185,7 +185,7 @@ yum ``install` `git nodejs openssl-devel ``screen` `-y` `克隆 elasticsearch-``
 
 浏览器访问：
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132738040-373062108.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132738040-373062108.png)
 
  
 
@@ -207,7 +207,7 @@ Kibana 下载地址：https://www.elastic.co/cn/downloads/past-releases#kibana
 
  修改配置文件：
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132823879-2055244822.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914132823879-2055244822.png)
 
  
 
@@ -299,7 +299,7 @@ Filebeat 下载地址：https://www.elastic.co/cn/downloads/past-releases#filebe
 [root@192.168.118.16 ~]``#vim /etc/filebeat/modules.d/nginx.yml
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133218360-1373188441.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133218360-1373188441.png)
 
  
 
@@ -331,7 +331,7 @@ Filebeat 下载地址：https://www.elastic.co/cn/downloads/past-releases#filebe
 [root@192.168.118.15 ``/etc/logstash/conf``.d]``#vim test.conf
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133348056-757315483.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133348056-757315483.png)
 
  
 
@@ -345,7 +345,7 @@ Logstash 可以根据配置文件来启动，启动方式如下：
 
 启动成功后，我们尝试访问 nginx 生成日志数据。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133413721-1077865656.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133413721-1077865656.png)
 
  
 
@@ -355,7 +355,7 @@ Logstash 可以根据配置文件来启动，启动方式如下：
 
 继续修改配置文件：
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133428819-800242405.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133428819-800242405.png)
 
 通过配置文件启动 logstash
 
@@ -365,11 +365,11 @@ Logstash 可以根据配置文件来启动，启动方式如下：
 
 尝试访问 nginx 查看 elasticsearch-head中是否有新的索引被创建出来。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133459096-999337824.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133459096-999337824.png)
 
  如上图，一个新的索引被创建出来，可以通过 elasticsearch-head 查看该索引中的数据。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133507826-994463079.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133507826-994463079.png)
 
  
 
@@ -377,9 +377,9 @@ Logstash 可以根据配置文件来启动，启动方式如下：
 
 目前已经将日志数据写入到 elasticsearch中了， 然后通过 kibana 展示出来，浏览器访问上面装好的 kibana
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133516828-996668443.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133516828-996668443.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133533459-1057666429.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133533459-1057666429.png)
 
  
 
@@ -387,7 +387,7 @@ Logstash 可以根据配置文件来启动，启动方式如下：
 
 多访问几次nginx，查看日志是否展示出来。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133554679-219380505.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/828019-20190914133554679-219380505.png)
 
  
 

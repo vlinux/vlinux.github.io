@@ -14,7 +14,7 @@ date: 2019-01-01 15:34:00
 > - consul
 
 这里就不挨个来介绍它们了，本文中主要以consul为主，如果你在大量接触或使用微服务的话，你可能会碰到一个问题？当你创建的服务数量越来越多时，这些服务之间的通信便越难管理，而且维护代价会越来越高。consul可以给你答案，我们一起来了解一下consul：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/41b1033a119139c1375c52d5300eced9.jpg)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/41b1033a119139c1375c52d5300eced9.jpg)
 
 ## 1.了解consul
 
@@ -31,7 +31,7 @@ Consul是一个分布式，高度可用且支持多数据中心的服务发现�
 - Docker+Consul+Nginx
 
 本文中我们主要来介绍 Docker+Consul+Nginx方案，此方案更加高效、快捷，并且维护代价和容错率更低，分布式支持力度更强，如下图所示：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/de11c5f722122d7f4f64b27c0d56a7a3.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/de11c5f722122d7f4f64b27c0d56a7a3.png)
 
 使用Docker将Consul、Consul Template、Registrator和Nginx组装成一个值得信任且可扩展的服务框架，这套架构让你在这个框架中添加和移除服务，不需要重写任何配置，也不需要重启任何服务，一切都能正常运行，工作流程很简单：
 
@@ -142,7 +142,7 @@ consul启动后它会在前台显示，如果你想让它在后台运行，可�
 ```
 
 4、查看consul启动后的情况：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/cbcdb4563e083359c0beb09e8cd66d3a.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/cbcdb4563e083359c0beb09e8cd66d3a.png)
 启动consul后默认会监听5个端口：
 8300： replication、leader farwarding的端口
 8301： lan cossip的端口
@@ -150,7 +150,7 @@ consul启动后它会在前台显示，如果你想让它在后台运行，可�
 8500： web ui界面的端口
 8600： 使用dns协议查看节点信息的端口
 可参考下图查看端口的意思：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/30228798a59a97b32f4018de04ec2f40.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/30228798a59a97b32f4018de04ec2f40.png)
 
 ### 4.2 查看consul集群信息
 
@@ -176,11 +176,11 @@ consul启动后它会在前台显示，如果你想让它在后台运行，可�
 ```
 
 一般我们通过 [http://consul服务器:8500](http://xn--consul-gf4jr3wwp4b:8500/) web界面来访问查看：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/90afa2e429dcac75f0b794cd889763b0.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/90afa2e429dcac75f0b794cd889763b0.png)
 从上图可以看到，consul 界面有5个菜单项（SERVICES、NODES、KEY/VALUE、ACL、DC1）。在SERVICES中，目前因为没有任何服务加入进来，只显示了consul它自己的服务状态。
 
 我们在来看下NODES，从图中很好理解， 在server01这台节点上有个consul :8300的服务：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/fbd5cf540d3daba111834be03eaebbaa.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/fbd5cf540d3daba111834be03eaebbaa.png)
 
 接下来，我们去nginx服务器上配置一下nginx模板，并在两台docker主机上运行registrator服务进行测试。
 
@@ -379,7 +379,7 @@ server {
 ```
 
 然后访问一下nginx服务器的IP地址，[http://172.18.18.32:8000](http://172.18.18.32:8000/) ，从下图可以看出是可以访问的：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/f9e6667d74a7be1d42284ffdffb4574d.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/f9e6667d74a7be1d42284ffdffb4574d.png)
 
 2、在docker01上启动第2台nginx，也就是端口为82的容器，并修改好index.html：
 
@@ -391,13 +391,13 @@ root@b66febfa0753:/usr/share/nginx/html# echo  "docker01:82" > index.html
 ```
 
 在去nginx服务器上验证下vhost.conf，从下面可以看到docker01的nginx 82也注册进来了：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/875b40266e4604d164bde45162d241f2.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/875b40266e4604d164bde45162d241f2.png)
 
 接着，我们访问下consul服务的web界面，[http://172.18.18.33:8500](http://172.18.18.33:8500/) ，从下图可以看出，在SERVICE中是不是发现多了个nginx 服务：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/e65f922f8c5d94cd4747c491c446f510.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/e65f922f8c5d94cd4747c491c446f510.png)
 
 然后，在看看NODES，从下图可以看出，刚才创建的两个nginx容器（81、82）都注册到了server01这台consul服务器，如果我们的consul是集群环境的话，可以分别注册到server02或server03中：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/75754c5d4892ed121ef07809d531bcc4.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/75754c5d4892ed121ef07809d531bcc4.png)
 
 3、把docker02服务器上的nginx容器83和84也创建了
 创建nginx:83
@@ -419,19 +419,19 @@ root@0f9d72ff453b:/usr/share/nginx/html#  echo  "docker02:84" > index.html
 ```
 
 4、去nginx服务器上验证vhost.conf：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/5a805084f033178c246e11009878b25d.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/5a805084f033178c246e11009878b25d.png)
 从上图可以看出，docker02服务器上的83和84也自动注册进来了。
 
 5、在来看看consul服务器上的web界面：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/b01af6a525853a49150d3a9078982d78.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/b01af6a525853a49150d3a9078982d78.png)
 从上图可以看出，SERVICE中的nginx已经有了4个，并且还多了些其它的服务，这些服务是我docker02上跑的其它应用容器，也都会自动注册进来。
 
 6、访问nginx服务器做最后的验证，[http://172.18.18.32:8000](http://172.18.18.32:8000/) ，记得用f5刷新验证：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/b2ee65f22819aea534d34d1568a95310.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/b2ee65f22819aea534d34d1568a95310.png)
 F5刷新一下页面：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/843ea731f4d6f357ed22541f5a01b546.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/843ea731f4d6f357ed22541f5a01b546.png)
 在刷新一下，是不是访问到了docker02这台主机了：
-![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/6f08d5ad7e7369095d726a3434aad4f7.png)
+![基于Consul+Registrator+Nginx实现容器服务自动发现的集群框架](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/6f08d5ad7e7369095d726a3434aad4f7.png)
 
 到此，自动注册服务的过程就完成了，想要详细了解consul的朋友可以参考官方文档：
 

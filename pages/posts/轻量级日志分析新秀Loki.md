@@ -87,27 +87,27 @@ docker-compose -f docker-compose.yaml up
 
 #### 5.0 配置服务
 
-http://192.168.106.202:3000/![640](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140410.png)
+http://192.168.106.202:3000/![640](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140410.png)
 
 默认granfna密码admin/admin
 
 ##### 5.1 配置数据源
 
-![640 (1)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140449.png)
+![640 (1)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140449.png)
 
 配置ip和默认数据源，配置完成点击测试/保存
 
-![640 (2)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140524.png)
+![640 (2)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140524.png)
 
 ##### 5.2 配置数据源
 
 explore 查询样例
 
-![640 (3)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140548.png)
+![640 (3)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140548.png)
 
 ##### 5.3 输出匹配日志信息
 
-![640 (4)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140619.png)
+![640 (4)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140619.png)
 
 至此一次样例日志查询完成
 
@@ -189,10 +189,10 @@ docker-compose up -d
 
 ##### 8.0 去loki上查看检索
 
-![640 (5)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140652.png)
+![640 (5)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140652.png)
 
-![640 (6)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140730.png)
+![640 (6)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140730.png)
 
-![640 (7)](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140756.png)
+![640 (7)](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210407140756.png)
 
 可以根据数据查询到相应日志信息

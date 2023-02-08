@@ -10,7 +10,7 @@ date: 2020-10-14 09:17:00
 
 1.在jenkins登陆后进入“系统管理”-“插件管理”-“高级”中，设置升级站点
 
-![22988262-5fa9df82a2f0e033](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/22988262-5fa9df82a2f0e033.png)
+![22988262-5fa9df82a2f0e033](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/22988262-5fa9df82a2f0e033.png)
 
 
 
@@ -32,7 +32,7 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 
 
 
-![22988262-00136718ba2d05b6](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/22988262-00136718ba2d05b6.png)
+![22988262-00136718ba2d05b6](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/22988262-00136718ba2d05b6.png)
 
 5.重启jenkins服务service jenkins restart,重新登录，速度飞快
 

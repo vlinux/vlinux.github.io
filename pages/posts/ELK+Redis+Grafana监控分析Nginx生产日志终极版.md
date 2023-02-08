@@ -6,7 +6,7 @@ date: 2020-10-13 13:23:00
 ---
 ## 先上架构图
 
-![74899ea95827d087e0f86d034cfbaea6](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/74899ea95827d087e0f86d034cfbaea6.png)
+![74899ea95827d087e0f86d034cfbaea6](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/74899ea95827d087e0f86d034cfbaea6.png)
 
 - Nginx 会将我们定义的log*format写入/var/log/nginx/access*json.log文件，Filebeat会将其作为输入项。
 - Filebeat会将数据输出到Redis
@@ -388,18 +388,18 @@ systemctl start grafana-server
 
 ##### 配置数据源
 
-![image-20201013131436778](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131436778.png)
+![image-20201013131436778](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131436778.png)
 
 点击Save&test测试成功后Back
 
 导入监控模板
 
-![image-20201013131610205](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131610205.png)
+![image-20201013131610205](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131610205.png)
 
-![image-20201013131647199](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131647199.png)
+![image-20201013131647199](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131647199.png)
 
-![image-20201013131729032](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131729032.png)
+![image-20201013131729032](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201013131729032.png)
 
-下面直接出图![123](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/123.png)
+下面直接出图![123](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/123.png)
 
-![456](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/456.png)
+![456](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/456.png)

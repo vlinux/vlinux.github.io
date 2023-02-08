@@ -48,5 +48,8 @@
     "valaxy-addon-algolia": "^0.0.2",
     "valaxy-theme-yun": "0.14.0",
     "vite-plugin-remote-assets": "^0.3.0"
+  },
+  "dependencies": {
+    "vue-gtag-next": "^1.14.0"
   }
 }

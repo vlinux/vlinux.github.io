@@ -50,7 +50,7 @@ date: 2019-08-27 15:28:00
 >shc -v
 >```
 >
->[![QQ截图20200217230443.png](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/1370841726.png)](https://www.myyblog.cn/usr/uploads/2020/02/1370841726.png)
+>[![QQ截图20200217230443.png](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/1370841726.png)](https://www.myyblog.cn/usr/uploads/2020/02/1370841726.png)
 
  ## 简单的使用
 

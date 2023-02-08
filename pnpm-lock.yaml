@@ -9,6 +9,10 @@ specifiers:
   valaxy-addon-algolia: ^0.0.2
   valaxy-theme-yun: 0.14.0
   vite-plugin-remote-assets: ^0.3.0
+  vue-gtag-next: ^1.14.0
+
+dependencies:
+  vue-gtag-next: 1.14.0
 
 devDependencies:
   '@antfu/eslint-config': 0.35.0_eslint@8.33.0+typescript@4.9.4
@@ -4995,6 +4999,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-gtag-next/1.14.0:
+    resolution: {integrity: sha512-iJl+cOG2GU5NuxqzSSIpt03WVOvZqyKB9TOy7d55KiuvRklcnb2nlqxW5B/a3/sbIt7fla+XEkRyMCcoz0zAHw==}
+    peerDependencies:
+      vue: ^3.0.0-rc.11
+    dev: false
 
   /vue-i18n/9.2.2_vue@3.2.45:
     resolution: {integrity: sha512-yswpwtj89rTBhegUAv9Mu37LNznyu3NpyLQmozF3i1hYOhwpG8RjcjIFIIfnu+2MDZJGSZPXaKWvnQA71Yv9TQ==}

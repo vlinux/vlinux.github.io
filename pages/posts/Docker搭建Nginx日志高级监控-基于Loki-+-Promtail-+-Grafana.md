@@ -14,9 +14,9 @@ date: 2021-06-30 14:55:35
 
 日志收集效果截图：
 
-![12345678](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/12345678.png)
+![12345678](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/12345678.png)
 
-![23456](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/23456.png)
+![23456](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/23456.png)
 
 # 1. Loki + Promtail简介
 
@@ -123,7 +123,7 @@ docker restart promtail
 
 # 6. 配置Grafana数据源
 
-![image-20210630142131562](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142131.png)
+![image-20210630142131562](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142131.png)
 
 # 7. 配置Grafana模版
 
@@ -133,13 +133,13 @@ docker restart promtail
 
 导入方法与本博客多篇日志收集Grafana导入方法相同
 
-![image-20210630142256248](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142256.png)
+![image-20210630142256248](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142256.png)
 
 # 8. 查看面板
 
-![image-20210630142558503](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142558.png)
+![image-20210630142558503](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142558.png)
 
-![image-20210630142622826](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142622.png)
+![image-20210630142622826](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630142622.png)
 
 插件因素显示不全请自行安装，grafana-cli plugins install *****
 
@@ -161,7 +161,7 @@ Country面板无数据，是因为Grafana没有地图面板插件，且Nginx默�
 
 # 11. 资源消耗
 
-![image-20210630143102322](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630143102.png)
+![image-20210630143102322](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630143102.png)
 
 就这资源消耗，还要啥自行车？要啥ELK？
 
@@ -189,7 +189,7 @@ sudo apt install libgeoip1 libgeoip-dev geoip-bin
 
 github文档如下
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630143344.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630143344.png)
 
 ### 1.2.2 进入nginx/sbin目录查看现有nginx模块依赖
 
@@ -197,7 +197,7 @@ github文档如下
 ./nginx -V
 ```
 
-![image-20210630143504540](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630143504.png)
+![image-20210630143504540](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630143504.png)
 
 如上图，将红线位置拷贝，用于添加模块重新编译
 
@@ -249,7 +249,7 @@ nginx -s reload
 
 ## 1.6. 查看大图
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630144706.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/20210630144706.png)
 
 ## 1.7. 监控日志支持正则匹配
 

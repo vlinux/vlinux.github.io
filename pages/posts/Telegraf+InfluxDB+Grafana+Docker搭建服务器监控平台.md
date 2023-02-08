@@ -246,11 +246,11 @@ docker run -d -p 3000:3000 --name=grafana grafana/grafana
 
 ### Grafana绘图示例
 
-![img1](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/70.jpg)
+![img1](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/70.jpg)
 
 按照主页向导完成初次配置。
 
-![img2](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/71.jpg)
+![img2](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/71.jpg)
 
 #### 1 添加数据源
 
@@ -262,30 +262,30 @@ InfluxDB Details需填写数据名（默认telegraf）、用户名和密码（�
 
 填写完成后，点击`Save&Test`按钮，若访问正常，会出现`Data source is working`提示，否则请检查配置内容以及网络（防火墙）。
 
-![img3](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/72.jpg)
+![img3](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/72.jpg)
 
-![img4](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/79.jpg)
+![img4](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/79.jpg)
 
 ------
 
 #### 添加仪表板
 
 返回主页，点击添加仪表板按钮添加新仪表板，点击`Graph`创建一个Graph Panel。
-![img5](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/80.jpg)
+![img5](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/80.jpg)
 
 点击标题展开菜单，选择`Edit`进入面板编辑。
 
-![img6](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/75.jpg)
+![img6](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/75.jpg)
 
 选择`Metrics`选项卡配置面板数据。
 
 如图示配置可显示一条CPU-total的数据曲线。
 
-![img7](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/76.jpg)
+![img7](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/76.jpg)
 
 还可添加多条查询，同时在一个panel显示多条曲线。
 
-![img8](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/77.jpg)
+![img8](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/77.jpg)
 
 配置完成后点击上方保存按钮保存仪表板。
 
@@ -293,12 +293,12 @@ Grafana详细的使用方法请参考官方文档：http://docs.grafana.org/或�
 
 ### 引用Grafana官网模板
 
-![image-20201117101720227](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201117101720227.png)
+![image-20201117101720227](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201117101720227.png)
 
-![image-20201117102348557](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201117102348557.png)
+![image-20201117102348557](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201117102348557.png)
 
-![image-20201117102511029](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201117102511029.png)
+![image-20201117102511029](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20201117102511029.png)
 
-![cascascascascas](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/cascascascascas.png)
+![cascascascascas](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/cascascascascas.png)
 
 就写到这里.欢迎大佬补充.

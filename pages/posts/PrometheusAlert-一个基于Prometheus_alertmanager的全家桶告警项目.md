@@ -393,7 +393,7 @@ groups:
 ```html
 <html>
 <meta charset="utf-8">
-<div style="position:relative;width:450px;height:auto;margin:0 auto;padding-bottom:5px;border:rgb(224, 221, 224) solid 1px;border-radius:10px">    <div style="background-image:url(https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/1-1.jpg);width:100%;height:300px;background-size:cover;background-repeat:no-repeat;border-radius:10px 10px 0px 0px"></div>
+<div style="position:relative;width:450px;height:auto;margin:0 auto;padding-bottom:5px;border:rgb(224, 221, 224) solid 1px;border-radius:10px">    <div style="background-image:url(https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/1-1.jpg);width:100%;height:300px;background-size:cover;background-repeat:no-repeat;border-radius:10px 10px 0px 0px"></div>
     <div style="width:40%;height:40px;background-color:rgb(231, 145, 145);margin-top:-20px;margin-left:20px;color:#fff;text-align:center;line-height:40px;border-radius:30px">
         亲爱的：运维同学！
     </div>

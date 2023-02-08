@@ -47,7 +47,7 @@ date: 2021-01-20 14:12:00
 
 > 好看的模板
 
-![image-20210120140157435](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/%20image/image-20210120140157435.png)
+![image-20210120140157435](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/%20image/image-20210120140157435.png)
 
 这是模板使用后的图片，涉及到一些作者的自定义变量，如果你会改的话，那就可以直接用原版主题模板
 
@@ -92,7 +92,7 @@ date: 2021-01-20 14:12:00
 ```html
 <html>
 <meta charset="utf-8">
-<div style="position:relative;width:450px;height:auto;margin:0 auto;padding-bottom:5px;border:rgb(224, 221, 224) solid 1px;border-radius:10px">    <div style="background-image:url(https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/1-1.jpg);width:100%;height:300px;background-size:cover;background-repeat:no-repeat;border-radius:10px 10px 0px 0px"></div>
+<div style="position:relative;width:450px;height:auto;margin:0 auto;padding-bottom:5px;border:rgb(224, 221, 224) solid 1px;border-radius:10px">    <div style="background-image:url(https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/1-1.jpg);width:100%;height:300px;background-size:cover;background-repeat:no-repeat;border-radius:10px 10px 0px 0px"></div>
     <div style="width:40%;height:40px;background-color:rgb(231, 145, 145);margin-top:-20px;margin-left:20px;color:#fff;text-align:center;line-height:40px;border-radius:30px">
         亲爱的：小家伙 ！
     </div>

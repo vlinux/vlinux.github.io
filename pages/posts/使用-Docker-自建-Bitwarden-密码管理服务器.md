@@ -28,7 +28,7 @@ Shell
 
 添加反向代理，目标URL为`http://127.0.0.1:6666`，端口号与上面创建容器时的服务端口保持一致。
 
-[![在宝塔面板中可以很便捷地创建反向代理](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/3405439263-20220316155158798.jpg#mirages-width=748&mirages-height=704&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/01/3405439263.jpg)
+[![在宝塔面板中可以很便捷地创建反向代理](https://cos.vlinux.cn/www-vlinux-cn-blog-img/3405439263-20220316155158798.jpg#mirages-width=748&mirages-height=704&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/01/3405439263.jpg)
 
 [在宝塔面板中可以很便捷地创建反向代理](https://cdn.angustar.com/usr/uploads/2021/01/3405439263.jpg)
 
@@ -49,13 +49,13 @@ Shell
 全部完成后，不出意外的话访问`https://bitwarden.angustar.com`就能看到界面啦~
  之后创建账号并登录，如需更改语言，可以进入`设置`-`选项`-`语言`中更改。
 
-[![首次登陆前需要先创建账号](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/3724638843.png#mirages-width=797&mirages-height=727&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/3724638843.png)
+[![首次登陆前需要先创建账号](https://cos.vlinux.cn/www-vlinux-cn-blog-img/3724638843.png#mirages-width=797&mirages-height=727&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/3724638843.png)
 
 [首次登陆前需要先创建账号](https://cdn.angustar.com/usr/uploads/2021/08/3724638843.png)
 
 
 
-[![更改默认语言](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/1355640409.png#mirages-width=902&mirages-height=772&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/1355640409.png)
+[![更改默认语言](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1355640409.png#mirages-width=902&mirages-height=772&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/1355640409.png)
 
 [更改默认语言](https://cdn.angustar.com/usr/uploads/2021/08/1355640409.png)
 
@@ -98,7 +98,7 @@ Shell
 
 容器创建完成后，再创建账号就会出现错误提示：
 
-[![禁止注册](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/4245330164.png#mirages-width=1296&mirages-height=810&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/4245330164.png)
+[![禁止注册](https://cos.vlinux.cn/www-vlinux-cn-blog-img/4245330164.png#mirages-width=1296&mirages-height=810&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/4245330164.png)
 
 [禁止注册](https://cdn.angustar.com/usr/uploads/2021/08/4245330164.png)
 
@@ -124,7 +124,7 @@ https://rs.bitwarden.in
 
 软件和浏览器插件可以到 Bitwarden 官网下载：https://bitwarden.com/download/
 
-[![软件 & 浏览器插件下载](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/2291328307.png#mirages-width=1260&mirages-height=737&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/2291328307.png)
+[![软件 & 浏览器插件下载](https://cos.vlinux.cn/www-vlinux-cn-blog-img/2291328307.png#mirages-width=1260&mirages-height=737&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/2291328307.png)
 
 [软件 & 浏览器插件下载](https://cdn.angustar.com/usr/uploads/2021/08/2291328307.png)
 
@@ -132,7 +132,7 @@ https://rs.bitwarden.in
 
 软件/浏览器插件安装完成后，需要连接自建的服务器（默认连接的是 Bitwarden 官方的服务器）才能正常使用，以 Chrome 插件为例，点击左上角齿轮状的设置图标，在`自托管环境`处填写自建服务器的 URL 后保存即可。
 
-[![连接自建的服务器](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/1639469236.jpg#mirages-width=538&mirages-height=244&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/1639469236.jpg)
+[![连接自建的服务器](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1639469236.jpg#mirages-width=538&mirages-height=244&mirages-cdn-type=5)](https://cdn.angustar.com/usr/uploads/2021/08/1639469236.jpg)
 
 [连接自建的服务器](https://cdn.angustar.com/usr/uploads/2021/08/1639469236.jpg)
 

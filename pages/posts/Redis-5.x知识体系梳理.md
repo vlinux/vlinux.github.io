@@ -578,11 +578,11 @@ ZCOUNT SZ3 90 110
 
 # 第11章 持久化
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-4bec444f44920615.png#mirages-width=382&mirages-height=352&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-4bec444f44920615.png#mirages-width=382&mirages-height=352&mirages-cdn-type=5)
 
 RDB流程图
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-e70993005208cde6.png#mirages-width=220&mirages-height=310&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-e70993005208cde6.png#mirages-width=220&mirages-height=310&mirages-cdn-type=5)
 
 AOF流程图
 
@@ -861,7 +861,7 @@ RUBY
 
 # 第15章 Redis哨兵
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-c5cf045607671b40.png#mirages-width=1200&mirages-height=605&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-c5cf045607671b40.png#mirages-width=1200&mirages-height=605&mirages-cdn-type=5)
 
 ## 1.哨兵的作用
 
@@ -1066,11 +1066,11 @@ redis-cli -h 10.0.0.51 -p 26379 Sentinel get-master-addr-by-name myredis
 
 # 第16章 手动部署Redis集群
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-f6153b9ec44340b7.png#mirages-width=1200&mirages-height=668&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-f6153b9ec44340b7.png#mirages-width=1200&mirages-height=668&mirages-cdn-type=5)
 
 集群架构图1
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-4c60e0aa042e4599.png#mirages-width=1200&mirages-height=749&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-4c60e0aa042e4599.png#mirages-width=1200&mirages-height=749&mirages-cdn-type=5)
 
 集群架构图2
 
@@ -1298,7 +1298,7 @@ CSS
 因为集群模式有ASK路由规则,加入-c参数后,会自动跳转到目标节点处理
 并且最后由目标节点返回信息
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-328242f763d20b0b.png#mirages-width=1886&mirages-height=952&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-328242f763d20b0b.png#mirages-width=1886&mirages-height=952&mirages-cdn-type=5)
 
 ## 11.验证集群是否足够足迹足够平均
 
@@ -1545,7 +1545,7 @@ redis-cli --cluster check 10.0.0.51 6380
 
 # 第19章 使用工具扩容
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-e7e156608ed2c55c.png#mirages-width=1312&mirages-height=974&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-e7e156608ed2c55c.png#mirages-width=1312&mirages-height=974&mirages-cdn-type=5)
 
 ## 1.来自json的灵魂发问：
 
@@ -1602,7 +1602,7 @@ Do you want to proceed with the proposed reshard plan (yes/no)? yes
 
 # 第20章 使用工具缩容
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-eea042bfbf7c3d19.png#mirages-width=1674&mirages-height=958&mirages-cdn-type=5)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-eea042bfbf7c3d19.png#mirages-width=1674&mirages-height=958&mirages-cdn-type=5)
 
 ## 1.操作命令
 

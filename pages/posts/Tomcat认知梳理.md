@@ -140,7 +140,7 @@ tcp    LISTEN     0      1      ::ffff:127.0.0.1:8005                 :::*      
 
 ## 8.访问网站
 
-![](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-0ef5effeee563a3d.png#mirages-width=2626&mirages-height=938&mirages-cdn-type=5)
+![](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-0ef5effeee563a3d.png#mirages-width=2626&mirages-height=938&mirages-cdn-type=5)
 
 
 ## 9.查看tomcat日志

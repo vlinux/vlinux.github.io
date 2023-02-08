@@ -86,15 +86,15 @@ http://10.0.0.201:8080
 e8e69c5646cc4f3b88315fb20156ce6c
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_88.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_88.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_89.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_89.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_90.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_90.png)
 
 修改密码
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_91.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_91.png)
 
 
 
@@ -151,42 +151,42 @@ total 160580
 /var/log/jenkins/jenkins.log：    #Jenkins日志文件
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_92.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_92.png)
 
 
 
 #### 05. 创建项目
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_93.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_93.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_94.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_94.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_95.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_95.png)
 
 进行构建
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_96.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_96.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_97.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_97.png)
 
 进入控制台
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_98.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_98.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_99.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_99.png)
 
 ```
 [root@jenkins plugins]# ll /var/lib/jenkins/workspace/freestyle-job
 total 0
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_100.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_100.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_101.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_101.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_102.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_102.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_103.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_103.png)
 
 ```
 [root@jenkins plugins]# ll /var/lib/jenkins/workspace/freestyle-job
@@ -200,13 +200,13 @@ total 0
 
 这里我们有码云导入一个 HTML 页面的监控平台到 gitlab 仓库，打开码云，找到一个大转盘项目，将其代码路径进行复制
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_104.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_104.png)
 
 在 Gitlab 上面新创建一个项目仓库。将源代码导入进去。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_105.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_105.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_106.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_106.png)
 
 dev 用户端配置从 git 获取代码。
 
@@ -281,23 +281,23 @@ id_rsa id_rsa.pub known_hosts
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCY3WrgTCmZeapjV9Tx6GmmHX+SVigxHnz37f8iUUjAexmR2/gSAjvsY3ez5iITmamf2I62+5n+gx9f1OPXUsUAzOApD6R8zHmvzQ/yheDO1y5XHcmRtklN1HpOq2g0PChrRjrr4QcXITKafU30OjTu4Fx3vndxqD/3RpHD3IVSZGAsiJC6T+C/PYW8YfeLNEAA7O3QKskjuSkoH2PZyF7qQgwjxfudno1g3qLQkmB+CjFFwgj0vkam/W4OwUwapC1O591CU7+VmSWL/z8uMTpSV+FQkyH04qS/HSs27pfpAI0wpBB/gBxx+wU8FCUh++2SWpuJR8/TPqkS8YKhfl+p root@jenkins  #复制该串代码
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_107.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_107.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_108.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_108.png)
 
 Jenkins 配置从 Git 获取代码，配置好后保存
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_109.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_109.png)
 
 
 
 #### 07. 立即构建获取源代码
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_110.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_110.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_111.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_111.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_112.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_112.png)
 
 ```
 Jenkins服务器查看代码
@@ -379,13 +379,13 @@ Connection to 10.0.0.202 closed.
 #Jenkins上面添加脚本进行构建
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_113.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_113.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_114.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_114.png)
 
 查看网站是否更新成功
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_115.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_115.png)
 
 
 
@@ -405,17 +405,17 @@ Connection to 10.0.0.202 closed.
 
 
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_116.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_116.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_117.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_117.png)
 
 Gitlab 上面操作
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_118.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_118.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_119.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_119.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_120.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_120.png)
 
 
 
@@ -439,9 +439,9 @@ To git@10.0.0.100:OPS/dzp.git
 Branch master set up to track remote branch master from origin.
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_121.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_121.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_122.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_122.png)
 
 
 
@@ -454,41 +454,41 @@ Branch master set up to track remote branch master from origin.
 #先获得gitlab的token
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_123.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_123.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_124.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_124.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_125.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_125.png)
 
 将获得的 token 值进行复制备用
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_126.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_126.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_127.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_127.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_128.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_128.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_129.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_129.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_130.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_130.png)
 
 进行测试
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_131.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_131.png)
 
 添加构建后操作
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_132.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_132.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_133.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_133.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_134.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_134.png)
 
 检查结果
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_135.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_135.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_136.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_136.png)
 
 
 
@@ -690,7 +690,7 @@ tcp6 0 0 127.0.0.1:8005 ::: LISTEN 24383/java
 #浏览器使用8080端口访问
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_137.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_137.png)
 
 ```
 #为项目准备好数据库jeesns，设置数据库root用户密码为root
@@ -799,13 +799,13 @@ drwxr-xr-x 3 root root 35 2019-11-20 23:19 maven-status
 #浏览器刷新测试
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_138.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_138.png)
 
 
 
 #### 04. 创建一个 jeesns 项目
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_138.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_138.png)
 
 ```
 #清除上次编译的结果
@@ -835,7 +835,7 @@ Branch master set up to track remote branch master from origin.
 
 #### 05. Jenkins 创建一个 maven
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_140.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_140.png)
 
 
 
@@ -851,11 +851,11 @@ Branch master set up to track remote branch master from origin.
 
 
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_141.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_141.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_142.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_142.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_143.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_143.png)
 
 ```
 #发现已经打包成功了
@@ -879,9 +879,9 @@ ssh root@10.0.0.80 "mv /application/tomcat/webapps/ROOT.war /tmp/$BUILD_ID-ROOT.
 scp /var/lib/jenkins/workspace/maven-job/jeesns-web/target/jeesns-web.war root@10.0.0.80:/application/tomcat/webapps/ROOT.war 
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_144.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_144.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_145.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_145.png)
 
 ```
 [root@tomcat ~]# ll /tmp/ 
@@ -889,7 +889,7 @@ total 50992
 -rw-r--r-- 1 root root 26106004 2019-11-23 01:28 2-ROOT.war 
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_146.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_146.png)
 
 
 
@@ -990,19 +990,19 @@ stages{
 
 #### 02. 创建 pipeline 项目
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_147.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_147.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_148.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_148.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_149.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_149.png)
 
 在仓库创建一个 Jenkinsfile 文件进行调用
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_150.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_150.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_152.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_152.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_152.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_152.png)
 
 编辑 Jenkinsfile 文件
 
@@ -1036,15 +1036,15 @@ stages{
 } 
 ```
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_153.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_153.png)
 
 执行构建报错
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_154.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_154.png)
 
 修改脚本再次构建
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_155.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/112319_1634_155.png)
 
 
 

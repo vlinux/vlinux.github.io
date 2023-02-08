@@ -88,17 +88,17 @@ https://image.datealive.top/images/2020/05/13/timg-2.jpg
 
 (2)直接下载[Github Desktop ](https://desktop.github.com/) ，绑定你的github账号后，克隆你的仓库(注意要有README.md文件)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/15899882811-300x208.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/15899882811-300x208.png)
 
 然后选择你的克隆下来的仓库，右键打开show in explorer，在里面添加图片，打开github Desktop，我们就可以看到刚刚上传的文件。我们首先在summary里输入“第一次”(或者其他)，点击commit to master，最后在push即可。
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/4d9f303f2ad991cb71e02e9749a43d6-300x117.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/4d9f303f2ad991cb71e02e9749a43d6-300x117.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/10b6deaf922f23a36287d33f7e84dd4-300x207.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/10b6deaf922f23a36287d33f7e84dd4-300x207.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/15900269711-1-300x208.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/15900269711-1-300x208.png)
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/d753ed272e3c472d834778219a4eaa7-300x131.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/d753ed272e3c472d834778219a4eaa7-300x131.png)
 
  
 
@@ -110,11 +110,11 @@ https://image.datealive.top/images/2020/05/13/timg-2.jpg
 
 首先，打开你的github仓库，找到releases
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/429dd1317bdf0959971f663e18c3703-300x131.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/429dd1317bdf0959971f663e18c3703-300x131.png)
 
 然后依次输入版本号，描述，最后更新releases即可
 
-![img](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/dd3b0836c8dcd7aeb359b6ac5568d56-300x183.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/dd3b0836c8dcd7aeb359b6ac5568d56-300x183.png)
 
 接下来我们引用资源即可
 

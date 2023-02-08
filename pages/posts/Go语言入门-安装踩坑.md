@@ -18,7 +18,7 @@ date: 2021-03-18 10:22:00
 
 
 
-![image-20210318100030319](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210318100030319.png)
+![image-20210318100030319](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210318100030319.png)
 
 下载后安装一路回车下一步
 
@@ -48,7 +48,7 @@ Linux和Mac平台就参照上面配置环境变量的方式将自己的工作目
 
 如果我们使用版本管理工具（`Version Control System`，`VCS`。常用如`Git`）来管理我们的项目代码时，我们只需要添加`$GOPATH/src`目录的源代码即可。`bin` 和 `pkg` 目录的内容无需版本控制。
 
-![go-path-desc](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/4654654646.png)
+![go-path-desc](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/4654654646.png)
 
 ## 扩展VScode配置
 
@@ -56,7 +56,7 @@ Linux和Mac平台就参照上面配置环境变量的方式将自己的工作目
 
 - 安装GO支持插件
 
-![image-20210318101002945](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210318101002945.png)
+![image-20210318101002945](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210318101002945.png)
 
 - 安装GO-tools
 
@@ -84,7 +84,7 @@ https://goproxy.io是一个国内的代理，非常的OK
 
 进入前面创建的三个目录里面的src目录
 
-![image-20210318102122257](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210318102122257.png)
+![image-20210318102122257](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210318102122257.png)
 
 (2)在`src`目录下创建一个hello目录，在hello目录中创建一个`main.go`文件：
 

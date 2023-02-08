@@ -315,6 +315,6 @@ centos7：掌握
 
 [player id='712292593' type='collect' autoplay='true'/]
 
-  [1]: https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-af025c4191bb5a68.png
+  [1]: https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/14248468-af025c4191bb5a68.png
 
   [2]: http://blog.51cto.com/phenixikki/1546669

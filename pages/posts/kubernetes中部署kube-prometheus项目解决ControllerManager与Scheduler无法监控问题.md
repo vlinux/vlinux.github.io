@@ -82,7 +82,7 @@ vim /etc/kubernetes/manifests/kube-scheduler.yaml
 
 ## 四、结果图
 
-![image-20210302150944346](https://vlinux-1259060227.cos.ap-shanghai.myqcloud.com/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210302150944346.png)
+![image-20210302150944346](https://cos.vlinux.cn/www-vlinux-cn-blog-img/gitee-backup/img-master/image/image-20210302150944346.png)
 
 ## 五、参考信息
 
