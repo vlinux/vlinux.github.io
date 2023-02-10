@@ -2,7 +2,7 @@
 title: Solr集群搭建-v7.4.0
 categories: Linux技术
 tags: [Solr]
-date: 2020-07-12 16:10:00
+date: 2023-01-12 16:10:00
 end: false
 ---
 
