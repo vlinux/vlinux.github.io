@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Fri, 10 Feb 2023 03:30:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Feb 2023 03:37:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,20 +15,20 @@
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[Solr集群搭建-v7.4.0]]></title>
+            <link>https://www.vlinux.cn/posts/solr-cloud-install</link>
+            <guid>https://www.vlinux.cn/posts/solr-cloud-install</guid>
+            <pubDate>Fri, 10 Feb 2023 03:35:43 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Solr是很多年前时代的产物，他会不会被ES所替代，难说</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
             <title><![CDATA[Nginx平滑升级]]></title>
             <link>https://www.vlinux.cn/posts/nginx-updata</link>
             <guid>https://www.vlinux.cn/posts/nginx-updata</guid>
             <pubDate>Fri, 10 Feb 2023 03:28:04 GMT</pubDate>
             <content:encoded><![CDATA[<p>二进制安装的Nginx平滑升级还是有点点麻烦的，这个教程我用它平滑无感知升级过无数次，可放心食用</p>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[Solr集群搭建-v7.4.0]]></title>
-            <link>https://www.vlinux.cn/posts/solr-cloud-install</link>
-            <guid>https://www.vlinux.cn/posts/solr-cloud-install</guid>
-            <pubDate>Fri, 10 Feb 2023 03:26:22 GMT</pubDate>
-            <content:encoded><![CDATA[<p>Solr是很多年前时代的产物，他会不会被ES所替代，难说</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>

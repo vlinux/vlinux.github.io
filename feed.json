@@ -12,11 +12,11 @@
     "items": [
         {
             "id": "",
-            "content_html": "<p>二进制安装的Nginx平滑升级还是有点点麻烦的，这个教程我用它平滑无感知升级过无数次，可放心食用</p>\n",
-            "url": "https://www.vlinux.cn/posts/nginx-updata",
-            "title": "Nginx平滑升级",
-            "date_modified": "2023-01-16T21:00:00.000Z",
-            "date_published": "2023-02-10T03:28:04.000Z",
+            "content_html": "<p>Solr是很多年前时代的产物，他会不会被ES所替代，难说</p>\n",
+            "url": "https://www.vlinux.cn/posts/solr-cloud-install",
+            "title": "Solr集群搭建-v7.4.0",
+            "date_modified": "2023-01-12T16:10:00.000Z",
+            "date_published": "2023-02-10T03:35:43.000Z",
             "author": {
                 "name": "卷饼",
                 "url": "https://valaxy.site"
@@ -24,11 +24,11 @@
         },
         {
             "id": "",
-            "content_html": "<p>Solr是很多年前时代的产物，他会不会被ES所替代，难说</p>\n",
-            "url": "https://www.vlinux.cn/posts/solr-cloud-install",
-            "title": "Solr集群搭建-v7.4.0",
-            "date_modified": "2020-07-12T16:10:00.000Z",
-            "date_published": "2023-02-10T03:26:22.000Z",
+            "content_html": "<p>二进制安装的Nginx平滑升级还是有点点麻烦的，这个教程我用它平滑无感知升级过无数次，可放心食用</p>\n",
+            "url": "https://www.vlinux.cn/posts/nginx-updata",
+            "title": "Nginx平滑升级",
+            "date_modified": "2023-01-16T21:00:00.000Z",
+            "date_published": "2023-02-10T03:28:04.000Z",
             "author": {
                 "name": "卷饼",
                 "url": "https://valaxy.site"
