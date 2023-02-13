@@ -1053,6 +1053,18 @@
                 "name": "卷饼",
                 "url": "https://valaxy.site"
             }
+        },
+        {
+            "id": "",
+            "content_html": "<p>​    本文章可以助你可视化k8s集群中的 TCP 流量。了解微服务如何相互通信，以及建立了多少连接，交换了多少字节，这些连接处于活动状态的时间。</p>\n<p>你在网上看到的任何文章，包括你在Github仓库看到的官方教程，根本搭建不出来，你想少踩坑？</p>\n<p>那就跟我一起......往下看</p>\n",
+            "url": "https://www.vlinux.cn/posts/k8spacket-grafana-view",
+            "title": "使用k8spacket对k8s集群中微服务之间链路调用可视化",
+            "date_modified": "2023-02-13T17:16:14.000Z",
+            "date_published": "2021-02-13T17:16:14.000Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
         }
     ]
 }

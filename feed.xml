@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Fri, 10 Feb 2023 03:37:43 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Feb 2023 06:58:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -1053,6 +1053,17 @@ pv 显示解决办法</p>
 <p>新镜像仓库harbor地址：<a href="http://harbor.kococ.cn">harbor.kococ.cn</a></p>
 <p>本例将doc</p>
 </blockquote>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[使用k8spacket对k8s集群中微服务之间链路调用可视化]]></title>
+            <link>https://www.vlinux.cn/posts/k8spacket-grafana-view</link>
+            <guid>https://www.vlinux.cn/posts/k8spacket-grafana-view</guid>
+            <pubDate>Sat, 13 Feb 2021 17:16:14 GMT</pubDate>
+            <content:encoded><![CDATA[<p>​    本文章可以助你可视化k8s集群中的 TCP 流量。了解微服务如何相互通信，以及建立了多少连接，交换了多少字节，这些连接处于活动状态的时间。</p>
+<p>你在网上看到的任何文章，包括你在Github仓库看到的官方教程，根本搭建不出来，你想少踩坑？</p>
+<p>那就跟我一起......往下看</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>

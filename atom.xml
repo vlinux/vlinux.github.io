@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2023-02-10T03:37:43.702Z</updated>
+    <updated>2023-02-13T06:58:52.135Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -1491,5 +1491,21 @@ pv 显示解决办法</p>
             <uri>https://valaxy.site</uri>
         </author>
         <published>2022-11-28T06:22:37.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用k8spacket对k8s集群中微服务之间链路调用可视化]]></title>
+        <id>https://www.vlinux.cn/posts/k8spacket-grafana-view</id>
+        <link href="https://www.vlinux.cn/posts/k8spacket-grafana-view"/>
+        <updated>2023-02-13T17:16:14.000Z</updated>
+        <content type="html"><![CDATA[<p>​    本文章可以助你可视化k8s集群中的 TCP 流量。了解微服务如何相互通信，以及建立了多少连接，交换了多少字节，这些连接处于活动状态的时间。</p>
+<p>你在网上看到的任何文章，包括你在Github仓库看到的官方教程，根本搭建不出来，你想少踩坑？</p>
+<p>那就跟我一起......往下看</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>ilinux@88.com</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2021-02-13T17:16:14.000Z</published>
     </entry>
 </feed>
