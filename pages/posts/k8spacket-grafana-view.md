@@ -2,7 +2,8 @@
 title: 使用k8spacket对k8s集群中微服务之间链路调用可视化
 date: 2023-02-13 17:16:14
 updated: 2021-02-13 17:16:14
-tags: 全链路监控
+tags: 
+  - 全链路监控
 categories: Kubernetes
 ---
 
