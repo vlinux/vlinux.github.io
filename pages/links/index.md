@@ -17,7 +17,7 @@ links:
     desc: 专注DevOps SRE运维分享优秀i运维技术以梦为马不负韶华
     email: i@valaxy.site
     color: "#6058d9"
-  - url: https://www.linux18.com
+  - url: https://linux2.cn
     avatar: https://www.linux18.com/images/avatar.jpg
     name: linux运维博客-风倾
     blog: linux运维博客-风倾

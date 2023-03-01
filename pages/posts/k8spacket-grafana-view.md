@@ -52,13 +52,13 @@ helm install k8spacket --namespace k8spacket k8spacket/k8spacket --create-namesp
 默认安装会使用下面的命令获取所有需要监听的网络接口：
 
 ```
-ip address | grep @ | sed -E 's/.* (\w+)@.*/\1/' | tr '\n' ',' | sed 's/.$//'1.
+ip address | grep @ | sed -E 's/.* (\w+)@.*/\1/' | tr '\n' ',' | sed 's/.$//'
 ```
 
 其中可能包含一些状态为Down的接口，此时启动k8spacket会报错：
 
 ```
-2022/08/15 00:17:34 error opening pcap handle: tunl0: That device is not up1.
+2022/08/15 00:17:34 error opening pcap handle: tunl0: That device is not up
 ```
 
 报错中提示网络接口tunl0状态不是up。
@@ -99,7 +99,7 @@ k8sPacket:
 安装成功，包含以下Daemonset Pods 和 Service：
 
 ```
-# k get pod -n k8spacket -o wide
+# kubectl get pod -n k8spacket -o wide
 NAME              READY   STATUS    RESTARTS   AGE   IP             NODE                    NOMINATED NODE   READINESS GATES
 k8spacket-9m4cz   1/1     Running   0          10m   192.168.16.4   k8s118-control-plane    <none>           <none>
 k8spacket-b4q9k   1/1     Running   0          10m   192.168.16.6   k8s118-control-plane3   <none>           <none>
@@ -107,9 +107,9 @@ k8spacket-b5nnp   1/1     Running   0          10m   192.168.16.7   k8s118-contr
 k8spacket-c25jh   1/1     Running   0          10m   192.168.16.2   k8s118-worker           <none>           <none>
 k8spacket-cqqxh   1/1     Running   0          10m   192.168.16.5   k8s118-worker2          <none>           <none>
 k8spacket-h9hjc   1/1     Running   0          10m   192.168.16.3   k8s118-worker3          <none>           <none>
-# k get svc -n k8spacket -o wide
+# kubectl get svc -n k8spacket -o wide
 NAME        TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE   SELECTOR
-k8spacket   ClusterIP   11.0.227.158   <none>        8080/TCP   31m   app.kubernetes.io/instance=k8spacket,app.kubernetes.io/name=k8spacket1.2.3.4.5.6.7.8.9.10.11.
+k8spacket   ClusterIP   11.0.227.158   <none>        8080/TCP   31m   app.kubernetes.io/instance=k8spacket,app.kubernetes.io/name=k8spacket
 ```
 
 k8spacket Pod 提供了 /metrics 接口暴露指标：
@@ -120,7 +120,7 @@ curl 192.168.16.4:8080/metrics
 
 ### 安装 dashboards 
 
-> 题外话，这步可以不做，Github仓库人直接有对应的面板Json 你可以直接下载，你做也没关系，更何况我Grafana在安装的时候也携带了面板
+> 题外话，这步可以不做，Github仓库人直接有对应的面板Json 你可以直接下载，你做也没关系，更何况下一步中Grafana在安装的时候也携带了面板
 
 下载k8spacket项目，并将dashboards目录下的面板 configmaps 创建到 K8S 中：
 
