@@ -12,6 +12,18 @@
     "items": [
         {
             "id": "",
+            "content_html": "<p>现有的k8s+prome环境是几年前部署的，所以当时版本的operator并不自带Blackbox_exporter CRD，所以有了这篇文章</p>\n<p>最近有个工作需求是监控域名，实际上我自己玩的机器上早就监控着了，但工资这边貌似一直没有，好了开干吧</p>\n",
+            "url": "https://www.vlinux.cn/posts/k8s-kube-prometheus-probe-blackbox-exporter",
+            "title": "kubernetes中使用Prometheus-Operator和BlackBox—Exporter实现监控域名钉钉告警",
+            "date_modified": "2022-03-01T09:16:00.000Z",
+            "date_published": "2023-03-01T07:39:30.000Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
             "content_html": "<p>Solr是很多年前时代的产物，他会不会被ES所替代，难说</p>\n",
             "url": "https://www.vlinux.cn/posts/solr-cloud-install",
             "title": "Solr集群搭建-v7.4.0",
