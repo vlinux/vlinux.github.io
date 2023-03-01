@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Wed, 01 Mar 2023 07:42:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Mar 2023 07:49:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -18,7 +18,7 @@
             <title><![CDATA[kubernetes中使用Prometheus-Operator和BlackBox—Exporter实现监控域名钉钉告警]]></title>
             <link>https://www.vlinux.cn/posts/k8s-kube-prometheus-probe-blackbox-exporter</link>
             <guid>https://www.vlinux.cn/posts/k8s-kube-prometheus-probe-blackbox-exporter</guid>
-            <pubDate>Wed, 01 Mar 2023 07:39:30 GMT</pubDate>
+            <pubDate>Wed, 01 Mar 2023 07:47:50 GMT</pubDate>
             <content:encoded><![CDATA[<p>现有的k8s+prome环境是几年前部署的，所以当时版本的operator并不自带Blackbox_exporter CRD，所以有了这篇文章</p>
 <p>最近有个工作需求是监控域名，实际上我自己玩的机器上早就监控着了，但工资这边貌似一直没有，好了开干吧</p>
 ]]></content:encoded>
