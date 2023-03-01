@@ -1,6 +1,6 @@
 ---
 title: kubernetes中使用Prometheus-Operator和BlackBox—Exporter实现监控域名钉钉告警
-date: 2022-03-01 09:16:00
+date: 2023-03-01 09:16:00
 updated: 
 tags:
   - Prometheus-Operator
