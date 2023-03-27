@@ -1,8 +1,9 @@
 ---
 title: Iptables防火墙机制
 categories: Linux技术
-tags: [iptables]
-date: 2020-03-20 10:42:00
+tags: 
+  - iptables
+date: 2023-03-20 10:42:00
 ---
 # 第1章 iptables介绍
 
@@ -46,23 +47,23 @@ iptables是采用数据包过滤机制工作的，所以它会对请求的数据
 
 
 
-![img](http://upload-images.jianshu.io/upload_images/14248468-58da03a179b40672.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/14248468-58da03a179b40672.png)
 
 ## 2.FILTER表
 
-![img](http://upload-images.jianshu.io/upload_images/14248468-b418ec2a196015e8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/14248468-b418ec2a196015e8-20230327153700601.png)
 
 ## 3.NAT表
 
-![img](http://upload-images.jianshu.io/upload_images/14248468-1f52b22fab1683cd.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/14248468-1f52b22fab1683cd-20230327153805334.png)
 
 # 第4章 iptables工作原理示意图
 
-![img](http://upload-images.jianshu.io/upload_images/14248468-432aae0a08179e38.png?imageMogr2/auto-orient/strip|imageView2/2/w/664/format/webp)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/14248468-432aae0a08179e38-20230327153822388.png)
 
 
 
-![img](http://upload-images.jianshu.io/upload_images/14248468-d6bea13f8f11f33a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/14248468-d6bea13f8f11f33a-20230327153837198.png)
 
 # 第5章 iptables环境准备
 

@@ -251,3 +251,19 @@ kubectl apply -f alertmanager-config.yaml
 ![image-20230301153036377](https://cos.vlinux.cn/www-vlinux-cn-blog-img/image-20230301153036377.png)
 
 文章就到这里，如有疑问，请直接点击微信联系我
+
+
+
+
+
+
+
+```bash
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4+hofFobukwiaECjTrKm3dNjmP2cFiOFCgkbU0Eg/Ot6BtCkk+Lu9OyRwJs/vELor42CSliNS1uAXqlh3a4vc4c0BvqBSLmuv2kNpm+FjlSB3JbElp2thW5Ris+Q+TuIFd7XfBjX9zZgm2swrumgpinPtHu31lH/lr472C5mjxjv20KmZUasoZ0lFZVWox9dqCq/UPCK1Zv4XeUHESSjT+8cHPsMa36Vej3W29YOzMMnCT70vIVqcM6LYS/5odyiuc+ofCJS0mIuKRG2mPh4f6owSID/xIKW6bX0Qo7M4b6z7lu6xJczzrOrif/47FBzNfzD+Mt3ww7BAi+tPs5Mr3ynZDMeMSeLk3aNtYMtOCwyCI0toxTr+SjMzHKzKJdE0K/f+lloGkC/c7zfIGB+TwO1eHYFoFf0ALyftExioUbJOmflBAgdiFaLfudxu/fCXZenGpCm9D+XhIlFu+lpsViu255xwy18nJNkvgapU7tukgOSyydUiD1kAl+L/NCc= jenkins@025447547acc
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQnmdriCxU7jQzBBg6vCyUKzI102UJpTWBJ6xa8jnpTXzBi8XBMtq96PbWKCp2N+33wNjcGMfIOHXxokomIzmMtHMFP7F9AHLLYQuARoP43cby9/HSS5qXEEpWL2b2X9wh2zIbY96pcCwX7zW9wMofS4AiWZIn/5bzG/qriobCuQKXO+UnmRLGUfGv9BYoGdNFyyMfaZc3JMRugSD9LIdqXvoCcmFp+PHV1ErKrDMLAN4mBc4bdRnU3SYtpnb/tEd6TCrUyze4zQ0TkdDyXfZpytLSAk39BRBR/PSnYiQoWirEixmQb5Y5Ru6Pe4MGwfJL4t5mQ7iIf2U9S1eq1+z4p92/jUr45F9rARt2pu1GOo/xOIndK7el4aRUVKL5oXimzuGH7XTyHL4wwdtYQQP1dWF391iNbD7eEAXB8PVdbV5mo6HwLoAg2aKRIqNyin7zdqA6bm+vtk8CtQfdx6yWL6W18ceSqNgz2GvG8FjPa0uuryIN8njzCKZVCqlvdTk= root@025447547acc
+```
+
+智慧巴士后端接口测试失败，请处理。Jenkins地址：http://10.99.102.11:8081/view/Monitor/job/bus-platform/
