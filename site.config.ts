@@ -98,6 +98,21 @@ const config: UserConfig<ThemeUserConfig> = {
       },
     ],
   },
+  /**
+   * 开启阅读统计
+   */
+  statistics: {
+    enable: true,
+    readTime: {
+      /**
+       * 阅读速度
+       */
+      speed: {
+        cn: 300,
+        en: 200,
+      },
+    },
+  },
   theme: 'yun',
 
   themeConfig: {
