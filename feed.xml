@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Wed, 10 May 2023 01:46:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jul 2023 04:51:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,10 +15,12 @@
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[人纪视频字幕版]]></title>
-            <link>https://www.vlinux.cn/posts/zhenjiudacheng-video-zimu</link>
-            <guid>https://www.vlinux.cn/posts/zhenjiudacheng-video-zimu</guid>
-            <pubDate>Wed, 10 May 2023 01:44:12 GMT</pubDate>
+            <title><![CDATA[倪师易经64卦]]></title>
+            <link>https://www.vlinux.cn/posts/yijing64</link>
+            <guid>https://www.vlinux.cn/posts/yijing64</guid>
+            <pubDate>Mon, 03 Jul 2023 04:48:50 GMT</pubDate>
+            <content:encoded><![CDATA[<p>得救之道，就在其中</p>
+]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
