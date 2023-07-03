@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2023-07-03T04:51:16.142Z</updated>
+    <updated>2023-07-03T05:23:38.447Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -20,14 +20,14 @@
         <id>https://www.vlinux.cn/posts/yijing64</id>
         <link href="https://www.vlinux.cn/posts/yijing64"/>
         <updated>2020-03-20T10:42:00.000Z</updated>
-        <content type="html"><![CDATA[<p>得救之道，就在其中</p>
+        <content type="html"><![CDATA[<center >得救之道，就在其中</center>
 ]]></content>
         <author>
             <name>卷饼</name>
             <email>ilinux@88.com</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2023-07-03T04:48:50.000Z</published>
+        <published>2023-07-03T05:21:40.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[设计素材解析使用说明]]></title>
