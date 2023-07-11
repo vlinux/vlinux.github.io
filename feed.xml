@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Mon, 03 Jul 2023 05:23:38 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Jul 2023 04:31:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,15 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[艾灸最佳时间，顺序，从年到日，这次彻底说清楚！]]></title>
+            <link>https://www.vlinux.cn/posts/aijiu-info</link>
+            <guid>https://www.vlinux.cn/posts/aijiu-info</guid>
+            <pubDate>Tue, 11 Jul 2023 04:29:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p>艾灸最佳时间，顺序，从年到日，这次彻底说清楚！</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[倪师易经64卦]]></title>
             <link>https://www.vlinux.cn/posts/yijing64</link>
