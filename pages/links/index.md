@@ -24,8 +24,8 @@ links:
     desc: 这个运维是真菜，但是风倾那小子是真的坏
     email: fengqing@fengqing.ltd
     color: "#0078e7"
-  - url: https://www.hukdoesn.cn
-    avatar: https://www.hukdoesn.cn/wp-content/uploads/2022/12/WechatIMG114.jpeg
+  - url: https://www.lscpu.cn
+    avatar: http://www.lscpu.cn/wp-content/uploads/2023/04/cropped-WechatIMG184.jpeg
     name: 胡图图
     blog: 胡同学
     desc: 撸猫撸到满手油
