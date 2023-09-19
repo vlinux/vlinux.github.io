@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Thu, 24 Aug 2023 06:42:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Sep 2023 06:28:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,18 +15,23 @@
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[LVM添加硬盘并扩容至已有分区]]></title>
+            <link>https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区</link>
+            <guid>https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区</guid>
+            <pubDate>Tue, 19 Sep 2023 06:26:55 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>LVM添加硬盘并扩容至已有分区</h1>
+<h2>LVM简介</h2>
+<p>LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制。LVM将</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
             <title><![CDATA[倪师易经64卦]]></title>
             <link>https://www.vlinux.cn/posts/yijing64</link>
             <guid>https://www.vlinux.cn/posts/yijing64</guid>
             <pubDate>Sat, 29 Jul 2023 05:43:53 GMT</pubDate>
             <content:encoded><![CDATA[<center >得救之道，就在其中</center>
 ]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <link>https://www.vlinux.cn/posts/Untitled</link>
-            <guid>https://www.vlinux.cn/posts/Untitled</guid>
-            <pubDate>Wed, 12 Jul 2023 06:17:09 GMT</pubDate>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>
@@ -810,17 +815,6 @@ systemctl  start </code></pre>
 <p><strong>2.</strong>/目录下的：etc配置文件目录，media挂载点，opt第三方安装目录，</p>
 </li>
 </ul>
-]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[LVM添加硬盘并扩容至已有分区]]></title>
-            <link>https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区</link>
-            <guid>https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>LVM添加硬盘并扩容至已有分区</h1>
-<h2>LVM简介</h2>
-<p>LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境下对磁盘分区进行管理的一种机制。LVM将</p>
 ]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
