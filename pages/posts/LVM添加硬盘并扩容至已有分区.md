@@ -12,7 +12,7 @@ LVM是 Logical Volume Manager（逻辑卷管理）的简写，它是Linux环境�
 
 LVM模型如下：
 
-![fahp1lv120](https://cos.vlinux.cn/www-vlinux-cn-blog-img/fahp1lv120.png#mirages-width=700&mirages-height=542&mirages-cdn-type=5)
+![fahp1lv120](https://cos.vlinux.cn/www-vlinux-cn-blog-img/fahp1lv120.png)
 
 ### LVM添加硬盘
 
