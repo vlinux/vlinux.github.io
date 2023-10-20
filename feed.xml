@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Tue, 19 Sep 2023 06:28:45 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Oct 2023 05:53:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,13 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2023 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[kaoshi]]></title>
+            <link>https://www.vlinux.cn/posts/kaoshi</link>
+            <guid>https://www.vlinux.cn/posts/kaoshi</guid>
+            <pubDate>Fri, 20 Oct 2023 05:51:40 GMT</pubDate>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[LVM添加硬盘并扩容至已有分区]]></title>
             <link>https://www.vlinux.cn/posts/LVM添加硬盘并扩容至已有分区</link>
