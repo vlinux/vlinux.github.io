@@ -13,10 +13,10 @@
         {
             "id": "",
             "content_html": "",
-            "url": "https://www.vlinux.cn/posts/kaoshi",
-            "title": "kaoshi",
-            "date_modified": "2023-10-20T05:51:40.000Z",
-            "date_published": "2023-10-20T05:51:40.000Z",
+            "url": "https://www.vlinux.cn/posts/install-mongodb-replicas-cluster",
+            "title": "Centos8二进制安装Mongodb副本集群",
+            "date_modified": "2024-02-16T21:12:00.000Z",
+            "date_published": "2024-03-06T08:47:11.000Z",
             "author": {
                 "name": "卷饼",
                 "url": "https://valaxy.site"
