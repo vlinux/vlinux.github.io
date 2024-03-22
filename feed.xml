@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Wed, 06 Mar 2024 09:02:42 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 22 Mar 2024 05:43:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,20 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2024 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Docker升级版本并迁移数据目录]]></title>
+            <link>https://www.vlinux.cn/posts/docker-version-update</link>
+            <guid>https://www.vlinux.cn/posts/docker-version-update</guid>
+            <pubDate>Fri, 22 Mar 2024 05:41:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>前言</h2>
+<ul>
+<li>由于Centos7自带的yum源中的Docker版本过低，先卸载默认的版本</li>
+</ul>
+<pre><code>[root@log jump]# docker --version
+Docker v</code></pre>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[Centos8二进制安装Mongodb副本集群]]></title>
             <link>https://www.vlinux.cn/posts/install-mongodb-replicas-cluster</link>
