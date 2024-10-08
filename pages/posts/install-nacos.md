@@ -106,7 +106,7 @@ public class NacosSecretUtil {
 http://sgz.wz:8848/nacos/v1/cs/configs?dataId=&group=&appName=&config_tags=&pageNo=1&pageSize=10&tenant=&search=accurate&accessToken=&username=
 ```
 
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111151531287-527499284.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111151531287-527499284.png)
 
 2、在未登录认证的情况下，通过postman以get方式访问`/nacos/v1/auth/users`请求来获取nacos的用户信息，可以正常获取到数据。
 
@@ -114,7 +114,7 @@ http://sgz.wz:8848/nacos/v1/cs/configs?dataId=&group=&appName=&config_tags=&page
 http://sgz.wz:8848/nacos/v1/auth/users?pageNo=1&pageSize=9&search=blur
 ```
 
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111151728348-2065281444.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111151728348-2065281444.png)
 
 3、在未登录认证的情况下，通过postman以post方式访问`/nacos/v1/auth/users`请求，传入指定参数，可以直接新增用户。
 
@@ -122,16 +122,16 @@ http://sgz.wz:8848/nacos/v1/auth/users?pageNo=1&pageSize=9&search=blur
 http://sgz.wz:8848/nacos/v1/auth/users?username=test2&password=test2
 ```
 
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111151906922-1323107565.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111151906922-1323107565.png)
 数据库中也存在新增的用户信息
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111152308299-1210876117.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111152308299-1210876117.png)
 
 #### 2.2、开启鉴权测试
 
 如果nacos开启鉴权，即 `nacos.core.auth.enabled = true`，在这种情况下就可以避免上面的nacos权限认证问题，如果不登录认证就不能访问nacos的一些数据，此时访问就会报403 Forbidden错误。
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111152900291-825669718.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111152900291-825669718.png)
 此时在请求header里添加一对属性参数 `authKey=shigzh`，即我们配置的自定义身份识别的 `nacos.core.auth.server.identity.key=authKey` 和 `nacos.core.auth.server.identity.value=shigzh`（这两个属性是auth的白名单，用于标识来自其他服务器的请求），这样也可以正常操作nacos的一些接口，相当于鉴权了，即可跳过权限认证。
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111161156423-206201221.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111161156423-206201221.png)
 
 header属性配置`authKey=shigzh`能够跳过权限认证的原理是 com.alibaba.nacos.core.auth.AuthFilter 过滤器，具体逻辑如下图
-![img](https://img2024.cnblogs.com/blog/1680363/202401/1680363-20240111163713753-808447754.png)
+![img](https://cos.vlinux.cn/www-vlinux-cn-blog-img/1680363-20240111163713753-808447754.png)
