@@ -2,8 +2,8 @@
 title: Linux系统调整系统日志生命周期
 date: 2025-04-14 11:11:13
 updated: 2025-04-14 11:11:13
-tags:
-categories:
+tags: message
+categories: Linux技术
 end: false
 ---
 
