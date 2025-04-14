@@ -12,6 +12,18 @@
     "items": [
         {
             "id": "",
+            "content_html": "<p>默认情况下，Linux 系统日志（如 <code>/var/log/messages</code>）的保留周期可能较短（例如仅保留 4 周）。本文记录如何通过修改 <code>logrotate</code> 配置，将日志生命周期调整为 <strong>保留 180 天</strong>，并实现每日轮转、压缩存储。</p>\n",
+            "url": "https://www.vlinux.cn/posts/linux-syslog-ttl",
+            "title": "Linux系统调整系统日志生命周期",
+            "date_modified": "2025-04-14T11:11:13.000Z",
+            "date_published": "2025-04-14T11:11:13.000Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
             "content_html": "<p>docker，ctr，crictl 清理容器缓存及镜像</p>\n",
             "url": "https://www.vlinux.cn/posts/containerd-clean",
             "title": "清理Docker和Containerd缓存镜像",

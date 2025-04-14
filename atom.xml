@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2025-03-28T03:13:09.706Z</updated>
+    <updated>2025-04-14T03:17:58.280Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -15,6 +15,20 @@
     <logo>https://cos.vlinux.cn/vlinux-logo/user.jpg</logo>
     <icon>https://www.vlinux.cn/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © 卷饼</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux系统调整系统日志生命周期]]></title>
+        <id>https://www.vlinux.cn/posts/linux-syslog-ttl</id>
+        <link href="https://www.vlinux.cn/posts/linux-syslog-ttl"/>
+        <updated>2025-04-14T11:11:13.000Z</updated>
+        <content type="html"><![CDATA[<p>默认情况下，Linux 系统日志（如 <code>/var/log/messages</code>）的保留周期可能较短（例如仅保留 4 周）。本文记录如何通过修改 <code>logrotate</code> 配置，将日志生命周期调整为 <strong>保留 180 天</strong>，并实现每日轮转、压缩存储。</p>
+]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>ilinux@88.com</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-04-14T11:11:13.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[清理Docker和Containerd缓存镜像]]></title>
         <id>https://www.vlinux.cn/posts/containerd-clean</id>

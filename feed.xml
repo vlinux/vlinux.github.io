@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Fri, 28 Mar 2025 03:13:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Apr 2025 03:17:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,15 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Linux系统调整系统日志生命周期]]></title>
+            <link>https://www.vlinux.cn/posts/linux-syslog-ttl</link>
+            <guid>https://www.vlinux.cn/posts/linux-syslog-ttl</guid>
+            <pubDate>Mon, 14 Apr 2025 11:11:13 GMT</pubDate>
+            <content:encoded><![CDATA[<p>默认情况下，Linux 系统日志（如 <code>/var/log/messages</code>）的保留周期可能较短（例如仅保留 4 周）。本文记录如何通过修改 <code>logrotate</code> 配置，将日志生命周期调整为 <strong>保留 180 天</strong>，并实现每日轮转、压缩存储。</p>
+]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[清理Docker和Containerd缓存镜像]]></title>
             <link>https://www.vlinux.cn/posts/containerd-clean</link>
