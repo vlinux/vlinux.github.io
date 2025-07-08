@@ -12,6 +12,18 @@
     "items": [
         {
             "id": "",
+            "content_html": "",
+            "url": "https://www.vlinux.cn/posts/clear-k8s-node-tmp",
+            "title": "clear-k8s-node-tmp",
+            "date_modified": "2025-07-08T16:49:11.000Z",
+            "date_published": "2025-07-08T16:49:11.000Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
             "content_html": "<p>在 OpenShift 环境中，我们遇到一个安全需求：<strong>拦截 <code>/etc/passwd</code> 等敏感路径的访问请求</strong>，防止路径遍历攻击。最初尝试直接在 Route 中配置正则表达式拦截，但发现 OpenShift Route 原生不支持类似 <code>haproxy.router.openshift.io/deny-regex</code> 的注解。经过多次探索，最终通过 <strong>多 Route 组合方案</strong> 成功实现目标。</p>\n",
             "url": "https://www.vlinux.cn/posts/ocp-route-etcpasswd",
             "title": "OpenShift Route 敏感路径拦截实战笔记",

@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Wed, 16 Apr 2025 07:43:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Jul 2025 08:51:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,13 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[clear-k8s-node-tmp]]></title>
+            <link>https://www.vlinux.cn/posts/clear-k8s-node-tmp</link>
+            <guid>https://www.vlinux.cn/posts/clear-k8s-node-tmp</guid>
+            <pubDate>Tue, 08 Jul 2025 16:49:11 GMT</pubDate>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[OpenShift Route 敏感路径拦截实战笔记]]></title>
             <link>https://www.vlinux.cn/posts/ocp-route-etcpasswd</link>
