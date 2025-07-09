@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2025-07-08T08:51:31.452Z</updated>
+    <updated>2025-07-09T01:17:57.513Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -16,7 +16,19 @@
     <icon>https://www.vlinux.cn/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © 卷饼</rights>
     <entry>
-        <title type="html"><![CDATA[clear-k8s-node-tmp]]></title>
+        <title type="html"><![CDATA[Solr到Elasticsearch的踩坑与优化]]></title>
+        <id>https://www.vlinux.cn/posts/solr-to-es</id>
+        <link href="https://www.vlinux.cn/posts/solr-to-es"/>
+        <updated>2025-07-09T09:12:31.000Z</updated>
+        <author>
+            <name>卷饼</name>
+            <email>ilinux@88.com</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-07-09T09:12:31.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[清理k8s节点空间]]></title>
         <id>https://www.vlinux.cn/posts/clear-k8s-node-tmp</id>
         <link href="https://www.vlinux.cn/posts/clear-k8s-node-tmp"/>
         <updated>2025-07-08T16:49:11.000Z</updated>

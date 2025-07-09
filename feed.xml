@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Tue, 08 Jul 2025 08:51:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Jul 2025 01:17:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,7 +15,14 @@
         <copyright>CC BY-NC-SA 4.0 2025 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[clear-k8s-node-tmp]]></title>
+            <title><![CDATA[Solr到Elasticsearch的踩坑与优化]]></title>
+            <link>https://www.vlinux.cn/posts/solr-to-es</link>
+            <guid>https://www.vlinux.cn/posts/solr-to-es</guid>
+            <pubDate>Wed, 09 Jul 2025 09:12:31 GMT</pubDate>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[清理k8s节点空间]]></title>
             <link>https://www.vlinux.cn/posts/clear-k8s-node-tmp</link>
             <guid>https://www.vlinux.cn/posts/clear-k8s-node-tmp</guid>
             <pubDate>Tue, 08 Jul 2025 16:49:11 GMT</pubDate>

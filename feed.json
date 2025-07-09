@@ -13,8 +13,20 @@
         {
             "id": "",
             "content_html": "",
+            "url": "https://www.vlinux.cn/posts/solr-to-es",
+            "title": "Solr到Elasticsearch的踩坑与优化",
+            "date_modified": "2025-07-09T09:12:31.000Z",
+            "date_published": "2025-07-09T09:12:31.000Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "",
             "url": "https://www.vlinux.cn/posts/clear-k8s-node-tmp",
-            "title": "clear-k8s-node-tmp",
+            "title": "清理k8s节点空间",
             "date_modified": "2025-07-08T16:49:11.000Z",
             "date_published": "2025-07-08T16:49:11.000Z",
             "author": {
