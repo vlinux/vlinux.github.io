@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Mon, 25 Aug 2025 11:50:56 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Sep 2025 09:04:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,28 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[SSH Config 配置如何覆盖 Git 默认端口]]></title>
+            <link>https://www.vlinux.cn/posts/gitlab-ssh-forward-port</link>
+            <guid isPermaLink="false">https://www.vlinux.cn/posts/gitlab-ssh-forward-port</guid>
+            <pubDate>Thu, 04 Sep 2025 09:04:04 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>背景</h2>
+<p>因安全需求，Gitlab部署好后，原22端口需替换为2222端口。所以会出现开发拉代码报错，因为git clone默认使用22端口拉代码。</p>
+<p>需要修改SSH相关参数就可以实现在本机对即</p>
+<br/><p>访问 <a href="https://www.vlinux.cn/posts/gitlab-ssh-forward-port" target="_blank">https://www.vlinux.cn/posts/gitlab-ssh-forward-port</a> 阅读全文。</p>]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
+            <title><![CDATA[MTU 不匹配导致网络访问异常的原理与解决方案]]></title>
+            <link>https://www.vlinux.cn/posts/gitlab-mtu</link>
+            <guid isPermaLink="false">https://www.vlinux.cn/posts/gitlab-mtu</guid>
+            <pubDate>Thu, 04 Sep 2025 08:59:32 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>问题现象</h2>
+<p>当用户访问部署在内网的 Gitlab 服务时，出现网络连接不稳定、部分请求失败或 SSH 连接超时等问题，需要将用户端的网卡 MTU 值调整为比服务器端更小的值才能正常访问。</p>
+<h1></h1>
+<br/><p>访问 <a href="https://www.vlinux.cn/posts/gitlab-mtu" target="_blank">https://www.vlinux.cn/posts/gitlab-mtu</a> 阅读全文。</p>]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[Vue项目如何优雅地区分开发/测试/生产环境]]></title>
             <link>https://www.vlinux.cn/posts/vue-build-change-env</link>

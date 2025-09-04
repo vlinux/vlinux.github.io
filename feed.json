@@ -11,6 +11,30 @@
     },
     "items": [
         {
+            "id": "https://www.vlinux.cn/posts/gitlab-ssh-forward-port",
+            "content_html": "<h2>背景</h2>\n<p>因安全需求，Gitlab部署好后，原22端口需替换为2222端口。所以会出现开发拉代码报错，因为git clone默认使用22端口拉代码。</p>\n<p>需要修改SSH相关参数就可以实现在本机对即</p>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/gitlab-ssh-forward-port\" target=\"_blank\">https://www.vlinux.cn/posts/gitlab-ssh-forward-port</a> 阅读全文。</p>",
+            "url": "https://www.vlinux.cn/posts/gitlab-ssh-forward-port",
+            "title": "SSH Config 配置如何覆盖 Git 默认端口",
+            "date_modified": "2025-09-04T16:56:45.000Z",
+            "date_published": "2025-09-04T09:04:04.169Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://www.vlinux.cn/posts/gitlab-mtu",
+            "content_html": "<h2>问题现象</h2>\n<p>当用户访问部署在内网的 Gitlab 服务时，出现网络连接不稳定、部分请求失败或 SSH 连接超时等问题，需要将用户端的网卡 MTU 值调整为比服务器端更小的值才能正常访问。</p>\n<h1></h1>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/gitlab-mtu\" target=\"_blank\">https://www.vlinux.cn/posts/gitlab-mtu</a> 阅读全文。</p>",
+            "url": "https://www.vlinux.cn/posts/gitlab-mtu",
+            "title": "MTU 不匹配导致网络访问异常的原理与解决方案",
+            "date_modified": "2025-09-04T16:56:45.000Z",
+            "date_published": "2025-09-04T08:59:32.133Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
             "id": "https://www.vlinux.cn/posts/vue-build-change-env",
             "content_html": "<h3>Vue 项目如何优雅地区分开发/测试/生产环境</h3>\n<p>本文记录在 Vue CLI 项目中区分环境（本地开发、测试/预发、生产）的常见做法与实用示例，仅依赖 npm 与 node。</p>\n<h2>一、核</h2>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/vue-build-change-env\" target=\"_blank\">https://www.vlinux.cn/posts/vue-build-change-env</a> 阅读全文。</p>",
             "url": "https://www.vlinux.cn/posts/vue-build-change-env",
