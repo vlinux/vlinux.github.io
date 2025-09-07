@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2025-09-04T09:04:54.335Z</updated>
+    <updated>2025-09-07T07:22:26.543Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -15,6 +15,24 @@
     <logo>https://cos.vlinux.cn/vlinux-logo/user.jpg</logo>
     <icon>https://www.vlinux.cn/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © 卷饼</rights>
+    <entry>
+        <title type="html"><![CDATA[记一篇Git使用攻略]]></title>
+        <id>https://www.vlinux.cn/posts/Git命令集合~</id>
+        <link href="https://www.vlinux.cn/posts/Git命令集合~"/>
+        <updated>2025-08-27T16:59:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Git 命令大全与深度解读</h1>
+<p>本文全面梳理了 Git 的常用命令及其应用场景，旨在帮助开发者从入门到精通。</p>
+<h2>一、配置与初始化</h2>
+<h3>1.1 全局配置</h3>
+<pre><code class="language-bash">#</code></pre>
+<br/><p>访问 <a href="https://www.vlinux.cn/posts/Git命令集合~" target="_blank">https://www.vlinux.cn/posts/Git命令集合~</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>ilinux@88.com</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-09-07T07:21:55.532Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SSH Config 配置如何覆盖 Git 默认端口]]></title>
         <id>https://www.vlinux.cn/posts/gitlab-ssh-forward-port</id>
@@ -1137,23 +1155,6 @@ mysql: [Warning] Using a password o</code></pre>
 <p>GitLab简介<br>
 GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。可通过Web界面进行访问公开的或者</p>
 <br/><p>访问 <a href="https://www.vlinux.cn/posts/GItlab设计与部署" target="_blank">https://www.vlinux.cn/posts/GItlab设计与部署</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>卷饼</name>
-            <email>ilinux@88.com</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2022-11-28T06:22:37.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Git命令集合~]]></title>
-        <id>https://www.vlinux.cn/posts/Git命令集合~</id>
-        <link href="https://www.vlinux.cn/posts/Git命令集合~"/>
-        <updated>2019-03-27T16:59:00.000Z</updated>
-        <content type="html"><![CDATA[<h1>水一篇文章</h1>
-<p>1.git init 初始化仓库 把一个目录初始化为版本仓库 （可以是空的目录 也可以是带内容的仓库）</p>
-<p>2.git status 查看当前仓库的状态</p>
-<p><a href="http://3.gi">3.gi</a></p>
-<br/><p>访问 <a href="https://www.vlinux.cn/posts/Git命令集合~" target="_blank">https://www.vlinux.cn/posts/Git命令集合~</a> 阅读全文。</p>]]></content>
         <author>
             <name>卷饼</name>
             <email>ilinux@88.com</email>

@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "https://www.vlinux.cn/posts/Git命令集合~",
+            "content_html": "<h1>Git 命令大全与深度解读</h1>\n<p>本文全面梳理了 Git 的常用命令及其应用场景，旨在帮助开发者从入门到精通。</p>\n<h2>一、配置与初始化</h2>\n<h3>1.1 全局配置</h3>\n<pre><code class=\"language-bash\">#</code></pre>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/Git命令集合~\" target=\"_blank\">https://www.vlinux.cn/posts/Git命令集合~</a> 阅读全文。</p>",
+            "url": "https://www.vlinux.cn/posts/Git命令集合~",
+            "title": "记一篇Git使用攻略",
+            "date_modified": "2025-08-27T16:59:00.000Z",
+            "date_published": "2025-09-07T07:21:55.532Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
             "id": "https://www.vlinux.cn/posts/gitlab-ssh-forward-port",
             "content_html": "<h2>背景</h2>\n<p>因安全需求，Gitlab部署好后，原22端口需替换为2222端口。所以会出现开发拉代码报错，因为git clone默认使用22端口拉代码。</p>\n<p>需要修改SSH相关参数就可以实现在本机对即</p>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/gitlab-ssh-forward-port\" target=\"_blank\">https://www.vlinux.cn/posts/gitlab-ssh-forward-port</a> 阅读全文。</p>",
             "url": "https://www.vlinux.cn/posts/gitlab-ssh-forward-port",
@@ -832,18 +844,6 @@
             "url": "https://www.vlinux.cn/posts/GItlab设计与部署",
             "title": "GItlab设计与部署",
             "date_modified": "2020-03-09T17:16:00.000Z",
-            "date_published": "2022-11-28T06:22:37.000Z",
-            "author": {
-                "name": "卷饼",
-                "url": "https://valaxy.site"
-            }
-        },
-        {
-            "id": "https://www.vlinux.cn/posts/Git命令集合~",
-            "content_html": "<h1>水一篇文章</h1>\n<p>1.git init 初始化仓库 把一个目录初始化为版本仓库 （可以是空的目录 也可以是带内容的仓库）</p>\n<p>2.git status 查看当前仓库的状态</p>\n<p><a href=\"http://3.gi\">3.gi</a></p>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/Git命令集合~\" target=\"_blank\">https://www.vlinux.cn/posts/Git命令集合~</a> 阅读全文。</p>",
-            "url": "https://www.vlinux.cn/posts/Git命令集合~",
-            "title": "Git命令集合~",
-            "date_modified": "2019-03-27T16:59:00.000Z",
             "date_published": "2022-11-28T06:22:37.000Z",
             "author": {
                 "name": "卷饼",
