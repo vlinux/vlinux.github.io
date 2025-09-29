@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Sun, 07 Sep 2025 07:22:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Sep 2025 05:43:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,10 +15,21 @@
         <copyright>CC BY-NC-SA 4.0 2025 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[生产环境 Eureka 集群故障排查与架构降级]]></title>
+            <link>https://www.vlinux.cn/posts/eureka-wentichuli</link>
+            <guid isPermaLink="false">https://www.vlinux.cn/posts/eureka-wentichuli</guid>
+            <pubDate>Mon, 29 Sep 2025 05:43:16 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>🛠️ 生产环境 Eureka 集群故障排查与架构降级总结</h1>
+<h2>一、故障摘要与根本原因</h2>
+<p><strong>问题背景：</strong> 1400 个微服务实例在 Kubernetes 高负载环境中，运行 Spring</p>
+<br/><p>访问 <a href="https://www.vlinux.cn/posts/eureka-wentichuli" target="_blank">https://www.vlinux.cn/posts/eureka-wentichuli</a> 阅读全文。</p>]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
+        <item>
             <title><![CDATA[记一篇Git使用攻略]]></title>
             <link>https://www.vlinux.cn/posts/Git命令集合~</link>
             <guid isPermaLink="false">https://www.vlinux.cn/posts/Git命令集合~</guid>
-            <pubDate>Sun, 07 Sep 2025 07:21:55 GMT</pubDate>
+            <pubDate>Sun, 07 Sep 2025 07:28:27 GMT</pubDate>
             <content:encoded><![CDATA[<h1>Git 命令大全与深度解读</h1>
 <p>本文全面梳理了 Git 的常用命令及其应用场景，旨在帮助开发者从入门到精通。</p>
 <h2>一、配置与初始化</h2>

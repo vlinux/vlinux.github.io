@@ -11,12 +11,24 @@
     },
     "items": [
         {
+            "id": "https://www.vlinux.cn/posts/eureka-wentichuli",
+            "content_html": "<h1>🛠️ 生产环境 Eureka 集群故障排查与架构降级总结</h1>\n<h2>一、故障摘要与根本原因</h2>\n<p><strong>问题背景：</strong> 1400 个微服务实例在 Kubernetes 高负载环境中，运行 Spring</p>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/eureka-wentichuli\" target=\"_blank\">https://www.vlinux.cn/posts/eureka-wentichuli</a> 阅读全文。</p>",
+            "url": "https://www.vlinux.cn/posts/eureka-wentichuli",
+            "title": "生产环境 Eureka 集群故障排查与架构降级",
+            "date_modified": "2025-09-29T13:36:55.000Z",
+            "date_published": "2025-09-29T05:43:16.656Z",
+            "author": {
+                "name": "卷饼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
             "id": "https://www.vlinux.cn/posts/Git命令集合~",
             "content_html": "<h1>Git 命令大全与深度解读</h1>\n<p>本文全面梳理了 Git 的常用命令及其应用场景，旨在帮助开发者从入门到精通。</p>\n<h2>一、配置与初始化</h2>\n<h3>1.1 全局配置</h3>\n<pre><code class=\"language-bash\">#</code></pre>\n<br/><p>访问 <a href=\"https://www.vlinux.cn/posts/Git命令集合~\" target=\"_blank\">https://www.vlinux.cn/posts/Git命令集合~</a> 阅读全文。</p>",
             "url": "https://www.vlinux.cn/posts/Git命令集合~",
             "title": "记一篇Git使用攻略",
             "date_modified": "2025-08-27T16:59:00.000Z",
-            "date_published": "2025-09-07T07:21:55.532Z",
+            "date_published": "2025-09-07T07:28:27.395Z",
             "author": {
                 "name": "卷饼",
                 "url": "https://valaxy.site"
