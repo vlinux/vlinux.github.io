@@ -1,0 +1,25 @@
+node_modules
+pages-new-bak
+dist/
+.env
+.DS_Store
+.vscode/
+coverage/
+npm-debug.log*
+yarn-error.log*
+.idea/
+*.log
+Dockerfile
+nginx.conf
+README.md
+# valaxy fuse
+public/valaxy-fuse-list.json
+
+# valaxy rss
+public/feed.xml
+
+# valaxy rss
+public/atom.xml
+
+# valaxy rss
+public/feed.json
