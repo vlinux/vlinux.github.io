@@ -32,9 +32,7 @@ declare module 'vue-router/auto-routes' {
     '/_drafts/my-next-blog': RouteRecordInfo<'/_drafts/my-next-blog', '/_drafts/my-next-blog', Record<never, never>, Record<never, never>>,
     '/_drafts/my-youth-is-over': RouteRecordInfo<'/_drafts/my-youth-is-over', '/_drafts/my-youth-is-over', Record<never, never>, Record<never, never>>,
     '/_drafts/old/happy-fool-day': RouteRecordInfo<'/_drafts/old/happy-fool-day', '/_drafts/old/happy-fool-day', Record<never, never>, Record<never, never>>,
-    '/_drafts/old/README': RouteRecordInfo<'/_drafts/old/README', '/_drafts/old/README', Record<never, never>, Record<never, never>>,
     '/_drafts/re0-to-be-a-vtuber': RouteRecordInfo<'/_drafts/re0-to-be-a-vtuber', '/_drafts/re0-to-be-a-vtuber', Record<never, never>, Record<never, never>>,
-    '/_drafts/README': RouteRecordInfo<'/_drafts/README', '/_drafts/README', Record<never, never>, Record<never, never>>,
     '/_drafts/today-let-us-cook': RouteRecordInfo<'/_drafts/today-let-us-cook', '/_drafts/today-let-us-cook', Record<never, never>, Record<never, never>>,
     '/_drafts/what-i-do-for-element-plus-style-system': RouteRecordInfo<'/_drafts/what-i-do-for-element-plus-style-system', '/_drafts/what-i-do-for-element-plus-style-system', Record<never, never>, Record<never, never>>,
     '/[...path]': RouteRecordInfo<'/[...path]', '/:path(.*)', { path: ParamValue<true> }, { path: ParamValue<false> }>,
@@ -159,7 +157,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/这些百度搜索小技巧，让你的搜索高效无广告': RouteRecordInfo<'/posts/这些百度搜索小技巧，让你的搜索高效无广告', '/posts/这些百度搜索小技巧，让你的搜索高效无广告', Record<never, never>, Record<never, never>>,
     '/posts/镜像批量迁移工具skopeo从docker-registry到harbor': RouteRecordInfo<'/posts/镜像批量迁移工具skopeo从docker-registry到harbor', '/posts/镜像批量迁移工具skopeo从docker-registry到harbor', Record<never, never>, Record<never, never>>,
     '/projects/': RouteRecordInfo<'/projects/', '/projects', Record<never, never>, Record<never, never>>,
-    '/README': RouteRecordInfo<'/README', '/README', Record<never, never>, Record<never, never>>,
     '/slides/': RouteRecordInfo<'/slides/', '/slides', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
@@ -231,16 +228,8 @@ declare module 'vue-router/auto-routes' {
       routes: '/_drafts/old/happy-fool-day'
       views: never
     }
-    'pages/_drafts/old/README.md': {
-      routes: '/_drafts/old/README'
-      views: never
-    }
     'pages/_drafts/re0-to-be-a-vtuber.md': {
       routes: '/_drafts/re0-to-be-a-vtuber'
-      views: never
-    }
-    'pages/_drafts/README.md': {
-      routes: '/_drafts/README'
       views: never
     }
     'pages/_drafts/today-let-us-cook.md': {
@@ -737,10 +726,6 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/projects/index.md': {
       routes: '/projects/'
-      views: never
-    }
-    'pages/README.md': {
-      routes: '/README'
       views: never
     }
     'pages/slides/index.md': {

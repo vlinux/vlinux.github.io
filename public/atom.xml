@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.vlinux.cn/</id>
     <title>运维之境</title>
-    <updated>2026-01-14T06:16:35.627Z</updated>
+    <updated>2026-01-14T07:23:03.327Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>卷饼</name>
@@ -15,6 +15,23 @@
     <logo>https://cos.vlinux.cn/vlinux-logo/user.jpg</logo>
     <icon>https://www.vlinux.cn/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2026 © 卷饼</rights>
+    <entry>
+        <title type="html"><![CDATA[初识Zabbix4.0~]]></title>
+        <id>https://www.vlinux.cn/posts/初识Zabbix4.0~</id>
+        <link href="https://www.vlinux.cn/posts/初识Zabbix4.0~"/>
+        <updated>2019-05-09T23:09:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>zabbix监控服务</h1>
+<hr>
+<h1>第一章 监控知识基本概述</h1>
+<h2>1.为什么要使用监控</h2>
+<br/><p>访问 <a href="https://www.vlinux.cn/posts/初识Zabbix4.0~" target="_blank">https://www.vlinux.cn/posts/初识Zabbix4.0~</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>卷饼</name>
+            <email>ilinux@88.com</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2026-01-14T06:40:33.383Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[证书 PEM + KEY 合成 P12 并在集群微服务中使用（操作笔记）]]></title>
         <id>https://www.vlinux.cn/posts/p12-hecheng</id>
@@ -1628,23 +1645,6 @@ pv 显示解决办法</p>
 <p>当前大多数的互联网系统都使用了服务器集群技术，集群是将相同服务部署在多台服务器上构成一个集群整体对外提供服务，这些集群可以是 Web应用服务器集群，也可以是数据库服务器集群，还可以是分布式缓存服务</p>
 </blockquote>
 <br/><p>访问 <a href="https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？" target="_blank">https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>卷饼</name>
-            <email>ilinux@88.com</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2022-11-28T06:22:37.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[初识Zabbix4.0~]]></title>
-        <id>https://www.vlinux.cn/posts/初识Zabbix4.0~</id>
-        <link href="https://www.vlinux.cn/posts/初识Zabbix4.0~"/>
-        <updated>2019-05-09T23:09:00.000Z</updated>
-        <content type="html"><![CDATA[<h1>zabbix监控服务</h1>
-<hr>
-<h1>第一章 监控知识基本概述</h1>
-<h2>1.为什么要使用监控</h2>
-<br/><p>访问 <a href="https://www.vlinux.cn/posts/初识Zabbix4.0~" target="_blank">https://www.vlinux.cn/posts/初识Zabbix4.0~</a> 阅读全文。</p>]]></content>
         <author>
             <name>卷饼</name>
             <email>ilinux@88.com</email>

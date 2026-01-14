@@ -1,6 +1,9 @@
 import type { UserConfig } from 'valaxy'
 import type { ThemeUserConfig } from 'valaxy-theme-yun'
+import { addonAlgolia } from 'valaxy-addon-algolia'
+import { addonArtalk } from 'valaxy-addon-artalk'
 import { addonWaline } from 'valaxy-addon-waline'
+import { addonTwikoo } from 'valaxy-addon-twikoo'
 
 /**
  * User Config
@@ -141,6 +144,18 @@ const config: UserConfig<ThemeUserConfig> = {
   addons: [
     addonWaline({
       serverURL: 'https://waline.vlinux.cn',
+    }),
+    addonArtalk({
+      server: 'https://example.com/artalk/',
+      site: 'example',
+    }),
+    addonAlgolia({
+      appId: '',
+      apiKey: '',
+      indexName: '',
+    }),
+    addonTwikoo({
+      envId: '',
     }),
   ],
 }

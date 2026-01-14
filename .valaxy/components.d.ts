@@ -7,12 +7,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AlgoliaSearchBox: typeof import('./../node_modules/.pnpm/valaxy-addon-algolia@0.2.0_@algolia+client-search@5.46.3_search-insights@2.17.3_valaxy@_008852994e84b2a58fdbfea3f7adad81/node_modules/valaxy-addon-algolia/components/AlgoliaSearchBox.vue')['default']
     AppLink: typeof import('./../node_modules/.pnpm/valaxy@0.26.3_@babel+parser@7.28.6_@nuxt+kit@3.20.2_@types+markdown-it@14.1.2_@types+no_43cc6c237ca7dba2ba4b34e46703e88d/node_modules/valaxy/client/components/AppLink.vue')['default']
+    ArtalkClient: typeof import('./../node_modules/.pnpm/valaxy-addon-artalk@0.1.3_marked@16.4.2_typescript@5.9.3_valaxy@0.26.3_@babel+parser@7._5518aaecdd78c4ee588180f762122809/node_modules/valaxy-addon-artalk/components/ArtalkClient.vue')['default']
     LineBurstEffects: typeof import('./../node_modules/.pnpm/valaxy-theme-yun@0.26.3_vue@3.5.26_typescript@5.9.3_/node_modules/valaxy-theme-yun/components/animation/LineBurstEffects.vue')['default']
     PrologueSocialIcon: typeof import('./../node_modules/.pnpm/valaxy-theme-yun@0.26.3_vue@3.5.26_typescript@5.9.3_/node_modules/valaxy-theme-yun/components/prologue/PrologueSocialIcon.vue')['default']
     PrologueSocialLinks: typeof import('./../node_modules/.pnpm/valaxy-theme-yun@0.26.3_vue@3.5.26_typescript@5.9.3_/node_modules/valaxy-theme-yun/components/prologue/PrologueSocialLinks.vue')['default']
     README: typeof import('./../components/README.md')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     ShadowRoot: typeof import('./../node_modules/.pnpm/valaxy@0.26.3_@babel+parser@7.28.6_@nuxt+kit@3.20.2_@types+markdown-it@14.1.2_@types+no_43cc6c237ca7dba2ba4b34e46703e88d/node_modules/valaxy/client/components/internals/ShadowRoot.vue')['default']
+    TwikooClient: typeof import('./../node_modules/.pnpm/valaxy-addon-twikoo@0.0.3_valaxy@0.26.3_@babel+parser@7.28.6_@nuxt+kit@3.20.2_@types+ma_6625328d7736e52703a7e1d019f6ba12/node_modules/valaxy-addon-twikoo/components/TwikooClient.vue')['default']
     ValaxyAddons: typeof import('./../node_modules/.pnpm/valaxy@0.26.3_@babel+parser@7.28.6_@nuxt+kit@3.20.2_@types+markdown-it@14.1.2_@types+no_43cc6c237ca7dba2ba4b34e46703e88d/node_modules/valaxy/client/components/ValaxyAddons.vue')['default']
     ValaxyApp: typeof import('./../node_modules/.pnpm/valaxy@0.26.3_@babel+parser@7.28.6_@nuxt+kit@3.20.2_@types+markdown-it@14.1.2_@types+no_43cc6c237ca7dba2ba4b34e46703e88d/node_modules/valaxy/client/components/ValaxyApp.vue')['default']
     ValaxyCopyright: typeof import('./../node_modules/.pnpm/valaxy@0.26.3_@babel+parser@7.28.6_@nuxt+kit@3.20.2_@types+markdown-it@14.1.2_@types+no_43cc6c237ca7dba2ba4b34e46703e88d/node_modules/valaxy/client/components/ValaxyCopyright.vue')['default']

@@ -4,7 +4,7 @@
         <title>运维之境</title>
         <link>https://www.vlinux.cn/</link>
         <description>那你终将成为别人的一条裤衩</description>
-        <lastBuildDate>Wed, 14 Jan 2026 06:16:35 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Jan 2026 07:23:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,18 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2026 © 卷饼</copyright>
         <atom:link href="https://www.vlinux.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[初识Zabbix4.0~]]></title>
+            <link>https://www.vlinux.cn/posts/初识Zabbix4.0~</link>
+            <guid isPermaLink="false">https://www.vlinux.cn/posts/初识Zabbix4.0~</guid>
+            <pubDate>Wed, 14 Jan 2026 06:40:33 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>zabbix监控服务</h1>
+<hr>
+<h1>第一章 监控知识基本概述</h1>
+<h2>1.为什么要使用监控</h2>
+<br/><p>访问 <a href="https://www.vlinux.cn/posts/初识Zabbix4.0~" target="_blank">https://www.vlinux.cn/posts/初识Zabbix4.0~</a> 阅读全文。</p>]]></content:encoded>
+            <author>ilinux@88.com (卷饼)</author>
+        </item>
         <item>
             <title><![CDATA[证书 PEM + KEY 合成 P12 并在集群微服务中使用（操作笔记）]]></title>
             <link>https://www.vlinux.cn/posts/p12-hecheng</link>
@@ -1142,18 +1154,6 @@ pv 显示解决办法</p>
 <p>当前大多数的互联网系统都使用了服务器集群技术，集群是将相同服务部署在多台服务器上构成一个集群整体对外提供服务，这些集群可以是 Web应用服务器集群，也可以是数据库服务器集群，还可以是分布式缓存服务</p>
 </blockquote>
 <br/><p>访问 <a href="https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？" target="_blank">https://www.vlinux.cn/posts/你真的掌握-LVS、Nginx-及-HAProxy-的工作原理吗？</a> 阅读全文。</p>]]></content:encoded>
-            <author>ilinux@88.com (卷饼)</author>
-        </item>
-        <item>
-            <title><![CDATA[初识Zabbix4.0~]]></title>
-            <link>https://www.vlinux.cn/posts/初识Zabbix4.0~</link>
-            <guid isPermaLink="false">https://www.vlinux.cn/posts/初识Zabbix4.0~</guid>
-            <pubDate>Mon, 28 Nov 2022 06:22:37 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>zabbix监控服务</h1>
-<hr>
-<h1>第一章 监控知识基本概述</h1>
-<h2>1.为什么要使用监控</h2>
-<br/><p>访问 <a href="https://www.vlinux.cn/posts/初识Zabbix4.0~" target="_blank">https://www.vlinux.cn/posts/初识Zabbix4.0~</a> 阅读全文。</p>]]></content:encoded>
             <author>ilinux@88.com (卷饼)</author>
         </item>
         <item>

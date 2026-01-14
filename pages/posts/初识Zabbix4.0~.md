@@ -105,17 +105,19 @@ CPU 监控命令: w、 top、 htop、 glances
  - 3.比较如果大于 100m 则不处理，如果小于 100 则报警
  - 4.如何每隔 1 分钟执行一次
 
-    [root@ZabbixServer ~]# cat free.sh
-      #!/usr/bin/bash
-    HostName=$(hostname)_$(hostname -i)
-    Date=$(date +%F)
-    while true;do
-    Free=$(free -m|awk '/^Mem/{print $NF}')
-    if [ $Free -le 100 ];then
-    echo "$Date: $HostName Mem Is < ${Free}MB"
-    fi
-    sleep 5
-    done
+```bash
+[root@ZabbixServer ~]# cat free.sh
+  #!/usr/bin/bash
+HostName=$(hostname)_$(hostname -i)
+Date=$(date +%F)
+while true;do
+Free=$(free -m|awk '/^Mem/{print $NF}')
+if [ $Free -le 100 ];then
+echo "$Date: $HostName Mem Is < ${Free}MB"
+fi
+sleep 5
+done
+```
 
 第三章 zabbix 监控快速安装
 =================
